@@ -1,0 +1,28 @@
+Space on helppokäyttöinen SRS-sovellus (Spaced Repetition System). Luo ja opettele muistitikkuja missä tahansa oletkin, mahdollisimman tehokkaalla tavalla.
+
+Toisin kuin muut flashcardsovellukset, Space on helppokäyttöinen ja silti varustettu monilla ominaisuuksilla.
+
+<big>Ominaisuudet</big>
+
+1. 🤩 <b>Vapaa</b>: Kaikki on ilmaista eikä mainoksia, mutta voit tukea meitä lahjoituksilla.
+2. 🏬 <b>Markkinapaikka</b>: Jaa muistikorttisi ilmaiseksi ja opi valmiita muistikortteja muilta.
+3. 🤓 <b>AI-pohjainen oppiminen</b>: Älykäs oppimisalgoritmi, joka mukautuu oppimiskäyttäytymiseesi.
+4. 🎨 <b>Luo muistikorttisi</b>: Suunnittele flashcardit muotoilulla ja kuvilla.
+
+1. 🤝 <b>Työskentele yhdessä</b>: Jaa muistikorttisi yksityisesti ja työstä niitä yhdessä.
+2. 🕵️ <b>Opi ilman rekisteröitymistä</b>: Testaa sovellusta rekisteröitymättä.
+3. 🖥️ <b>Kaikkiin laitteisiisi</b>: Android, iOS, Windows, macOS, Linux ja Web (katso <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Setää muistutus</b>: Hanki muistutus muistitikettiesi oppimisesta.
+
+1. 🗃️ <b>Import/Export</b>: Tuo ja vie muistitikkujasi muihin sovelluksiin.
+2. 📈 <b>Seuraa edistymistäsi</b>: Seuraa oppimisesi edistymistä, jotta tiedät, kuinka hyvä olet.
+3. 🎵 <b>Lue ääneen -toiminto</b>: Opettele ääntäminen ja anna flashkorttisi lukea sinulle.
+4. 🛑 <b>Deaktivoi pakat</b>: Deaktivoi pakat, kun et halua opetella niitä.
+
+Näin sanovat käyttäjämme:
+
+"<i>Tämä on yksi niistä sovelluksista, jotka muistan asentaa, kun ostan uuden puhelimen tai tehdasasetusten palautuksen. Myös kaunis sovellus.</i>" - Ricardo Passos
+
+"<i>Erikoinen Spaced Repetition -sovellus! 1000 × parempi kuin vanha ystäväsi Anki. Käyttöliittymä on niin intuitiivinen & sinun ei tarvitse huolehtia käsitteistä kuten Spaced repetition & sen optimaaliset asetukset kuten Anki. Kaikki, mitä sinun tarvitsee tietää, on selitetty niin selkeästi antamatta ylimääräistä tietoa, jota ei edes tarvita. Tämä asia aiheuttaa vain liikaa päänsärkyä. Lataa Space & unohda kaikki nuo huolet & se varmistaa, ettet unohda sitä, mitä kannattaa muistaa.🔥</i>" - Rahul Ranjan Rahul Ranjan
+
+Spacen missio on tehdä oppimisesta tehokasta ja iloista. Toivomme, että liityt seuraamme! 🚀

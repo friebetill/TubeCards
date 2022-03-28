@@ -1,0 +1,14 @@
+# import '../fragments/offer_fragment.graphql'
+
+query SubscribedOffers($first: Int!, $after: String) {
+  subscribedOffers(first: $first, after: $after) {
+    nodes {
+      ...OfferFragment
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+    totalCount
+  }
+}

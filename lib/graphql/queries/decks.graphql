@@ -1,0 +1,31 @@
+# import '../fragments/deck_fragment.graphql'
+
+query Decks(
+  $first: Int!
+  $after: String
+  $isActive: Boolean
+  $roleId: String
+  $isPublic: Boolean
+) {
+  viewer {
+    id
+    deckConnection(
+      first: $first
+      after: $after
+      deckFilterSettings: {
+        roleId: $roleId
+        isPublic: $isPublic
+        isActive: $isActive
+      }
+    ) {
+      totalCount
+      nodes {
+        ...DeckFragment
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+  }
+}

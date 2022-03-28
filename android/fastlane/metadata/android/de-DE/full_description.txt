@@ -1,0 +1,28 @@
+Space ist eine einfach zu bedienende Spaced Repetition System (SRS) App. Erstelle und lerne Karteikarten, wo auch immer du bist, auf die effektivste Weise.
+
+Im Gegensatz zu anderen Karteikarten-Apps ist Space einfach zu bedienen und dennoch mit vielen Funktionen ausgestattet.
+
+<big>Features</big>
+
+1. 🤩 <b>Kostenlos</b>: Alles ist kostenlos und ohne Werbung, aber du kannst uns durch Spenden unterstützen.
+2. 🏬 <b>Marktplatz</b>: Tausche deine Karteikartei und lerne die Karteikarten von anderen.
+3. 🤓 <b>KI-basiertes Lernen</b>: Intelligenter Lernalgorithmus, der sich an dein Lernverhalten anpasst.
+4. 🎨 <b>Erstelle deine Karteikarten</b>: Gestalte deine Karteikarten mit Formatierungen und Bildern.
+
+1. 🤝 <b>Gemeinsam arbeiten</b>: Teilen deine Karteikarten privat und arbeite gemeinsam daran.
+2. 🕵️ <b>Lernen ohne Anmeldung</b>: Teste die App ohne Anmeldung.
+3. 🖥️ <b>Auf all deinen Geräten</b>: Android, iOS, Windows, macOS, Linux und Web (siehe <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Erinnerung einstellen</b>: Lassen dich an das Lernen deiner Karteikarten erinnern.
+
+1. 🗃️ <b>Import/Export</b>: Importiere und exportiere deine Karteikarten in andere Apps.
+2. 📈 <b>Verfolge deinen Fortschritt</b>: Verfolge deinen Lernfortschritt, um zu wissen, wie gut du bist.
+3. 🎵 <b>Vorlesefunktion</b>: Lerne die Aussprache und lass dir deine Karteikarten vorlesen.
+4. 🛑 <b>Deaktiviere Decks</b>: Deaktiviere Decks, wenn du sie nicht mehr lernen willst.
+
+Das sagen unsere Nutzer:
+
+"<i>Dies ist eine dieser Apps, an die ich mich erinnere, wenn ich ein neues Handy kaufe. Außerdem ist es eine schöne App.</i>" - Ricardo Passos
+
+"<i>Ausgezeichnete Spaced Repetition App! 1000 × besser als dein alter Freund Anki. Die Oberfläche ist so intuitiv und man muss sich nicht wie bei Anki mit Konzepten wie Spaced Repetition und seinen optimalen Einstellungen beschäftigen. Alles, was man wissen muss, wird so klar und deutlich erklärt, ohne zusätzliche Informationen zu geben, die man gar nicht braucht. Diese Dinge bereiten einfach zu viel Kopfzerbrechen. Lade dir Space herunter und vergesse all deine Sorgen und stelle sicher, dass du nichts vergisst, was es wert ist sich zu erinnern.🔥</i>" - Rahul Ranjan
+
+Space hat es sich zur Aufgabe gemacht, Lernen effektiv und angenehm zu gestalten. Wir hoffen, dass du dich uns anschließen wirst! 🚀

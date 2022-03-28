@@ -1,0 +1,9 @@
+query DeckLearningState($id: ID!) {
+  deck(id: $id) {
+    id
+    learningState {
+      strength
+      stability
+    }
+  }
+}

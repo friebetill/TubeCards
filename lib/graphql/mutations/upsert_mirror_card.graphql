@@ -1,0 +1,27 @@
+# import '../fragments/card_fragment.graphql'
+
+mutation UpsertMirrorCard(
+  $id: ID,
+  $deckId: ID!,
+  $front: String!,
+  $back: String!,
+  $nextDueDate: DateTime!,
+) {
+  upsertMirrorCard(
+    where: { id: $id }
+    create: {
+      creator: { connect: {id: ""} },
+      deck: { connect: { id: $deckId } },
+      front: $front,
+      back: $back,
+      learningState: { create: { nextRepetition: $nextDueDate } }
+    }
+    update: {
+      deck: { connect: { id: $deckId } },
+      front: $front,
+      back: $back
+    }
+  ) {
+    ...CardFragment
+  }
+}

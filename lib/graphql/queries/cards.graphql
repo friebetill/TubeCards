@@ -1,0 +1,8 @@
+query Cards {
+  viewer {
+    id
+    cardConnection {
+      totalCount
+    }
+  }
+}

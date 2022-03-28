@@ -1,0 +1,5 @@
+query ExportDecks($toEmail: String!) {
+  exportDecks(toEmail: $toEmail) {
+    success
+  }
+}

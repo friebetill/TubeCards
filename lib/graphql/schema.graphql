@@ -1,0 +1,611 @@
+type Role {
+  # The role a member of a deck can have.
+  id: String!
+}
+
+type DeckInvite {
+  id: String!
+  link: String!
+  deck: Deck!
+  inviteeRole: Role!
+}
+
+type AverageLearningState {
+  strength: Float!
+  stability: Float!
+}
+
+type OfferReview {
+  rating: Int!
+  description: String
+  user: User!
+  offer: Offer!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+# A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+scalar DateTime
+
+type PageInfo {
+  # When paginating forwards, are there more items?
+  hasNextPage: Boolean!
+
+  # When paginating forwards, the cursor to continue.
+  endCursor: String
+}
+
+type OfferReviewConnection {
+  nodes: [OfferReview!]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type ReviewSummary {
+  averageRating: Float
+  totalCount: Int!
+  oneStarRatingCount: Int!
+  twoStarRatingCount: Int!
+  threeStarRatingCount: Int!
+  fourStarRatingCount: Int!
+  fiveStarRatingCount: Int!
+}
+
+type Offer {
+  id: ID!
+  viewerReview: OfferReview
+  reviewSummary: ReviewSummary!
+  reviewConnection(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+  ): OfferReviewConnection!
+  subscriberCount: Int!
+  cardSamples: [Card!]!
+  hasViewerBought: Boolean!
+  deck: Deck!
+  creator: User!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type UnsplashImage {
+  id: ID!
+  unsplashId: String!
+  authorName: String!
+  authorUrl: String!
+  smallUrl: String!
+  regularUrl: String!
+  fullUrl: String!
+  decks: [Deck!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type DeckMember {
+  role: Role!
+  user: User!
+  deck: Deck!
+  isActive: Boolean!
+}
+
+type DeckMemberConnection {
+  # A list of nodes.
+  nodes: [DeckMember!]!
+
+  # Information to aid in pagination.
+  pageInfo: PageInfo!
+
+  # The total count of items in the connection.
+  totalCount: Int!
+}
+
+type Deck {
+  id: ID!
+  name: String!
+  description: String!
+  isActive: Boolean!
+    @deprecated(reason: "Prefer using viewerDeckMember.isActive")
+  frontLanguage: String
+  backLanguage: String
+  createMirrorCard: Boolean!
+  creator: User!
+  viewerRole: Role! @deprecated(reason: "Prefer using viewerDeckMember.role")
+  coverImage: UnsplashImage!
+  learningState: AverageLearningState!
+  dueCardConnection(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+  ): CardConnection!
+  cardConnection(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+
+    # Ordering options for card connections
+    orderBy: CardsOrder = { field: CREATED_AT, direction: DESC }
+  ): CardConnection!
+  viewerDeckMember: DeckMember
+  deckMemberConnection(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+  ): DeckMemberConnection!
+  deckInvites: [DeckInvite!]!
+  offer: Offer
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+input CardsOrder {
+  # The field in which to order cards by.
+  field: CardsOrderField = CREATED_AT
+
+  # The direction in which to order cards by the specified field.
+  direction: OrderDirection = DESC
+}
+
+# Properties by which card connections can be ordered.
+enum CardsOrderField {
+  CREATED_AT
+  FRONT
+}
+
+# Possible directions in which to order a list of items when provided an orderBy argument.
+enum OrderDirection {
+  ASC
+  DESC
+}
+
+type LearningState {
+  id: ID!
+  nextDueDate: DateTime!
+  streakKnown: Int!
+  ease: Float!
+  strength: Float!
+  stability: Float!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Card {
+  id: ID!
+  front: String!
+  back: String!
+  deck: Deck!
+  mirrorCard: Card
+  learningState: LearningState!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type CardConnection {
+  # A list of nodes.
+  nodes: [Card!]!
+
+  # Information to aid in pagination.
+  pageInfo: PageInfo!
+
+  # Identifies the total count of items in the connection.
+  totalCount: Int!
+}
+
+type DeckConnection {
+  nodes: [Deck!]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type FixedSizeOfferConnection {
+  nodes: [Offer!]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type User {
+  id: ID!
+  email: String
+  firstName: String
+  lastName: String
+  isAnonymous: Boolean!
+  learningState: AverageLearningState!
+  deckConnection(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+
+    # Returns the subset of decks that are in the specified state.
+    activityState: DeckActivityState
+
+    # The settings after which the decks are filtered.
+    deckFilterSettings: DeckFilterSettings
+  ): DeckConnection
+  dueCardConnection(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+  ): CardConnection
+  cardConnection(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+
+    # Ordering options for card connections
+    orderBy: CardsOrder = { field: CREATED_AT, direction: DESC }
+  ): CardConnection
+  offerConnection(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+  ): FixedSizeOfferConnection!
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+# Property by which decks can be filtered.
+enum DeckActivityState {
+  ACTIVE
+  INACTIVE
+}
+
+input DeckFilterSettings {
+  # If specified returns the subset of decks where the deck is active or not.
+  isActive: Boolean
+
+  # If specified returns the subset of decks where the user has the specified role.
+  roleId: String
+
+  # If specified returns the subset of decks which are public or not.
+  isPublic: Boolean
+}
+
+type AuthPayload {
+  token: String!
+  user: User!
+}
+
+type DeleteDeckInvitePayload {
+  id: ID!
+}
+
+type InsertDeckInvitePayload {
+  deckInvite: DeckInvite!
+}
+
+type JoinDeckPayload {
+  deck: Deck!
+}
+
+type DeleteUserPayload {
+  id: ID!
+}
+
+type DeleteDeckMemberPayload {
+  deckMember: DeckMember!
+}
+
+type UpdateDeckMemberPayload {
+  receivingDeckMember: DeckMember!
+  assigningDeckMember: DeckMember!
+}
+
+type BatchPayload {
+  count: Float!
+}
+
+type DeleteDeckPayload {
+  id: ID!
+}
+
+type ExportDecksPayload {
+  success: Boolean!
+}
+
+type AddOfferPayload {
+  offer: Offer!
+}
+
+type DeleteOfferPayload {
+  id: ID!
+}
+
+type SubscribePayload {
+  offer: Offer!
+  viewer: User!
+}
+
+type UnsubscribePayload {
+  offer: Offer!
+}
+
+type FlexibleSizeOfferConnection {
+  nodes: [Offer!]!
+  pageInfo: PageInfo!
+}
+
+type DeleteOfferReviewPayload {
+  offer: Offer!
+}
+
+type UpsertOfferReviewPayload {
+  offer: Offer!
+}
+
+type Query {
+  card(id: ID!): Card!
+  searchCards(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+
+    # The term by which the cards are searched.
+    searchTerm: String!
+
+    # The ID of the deck that will be searched. If no ID is given, all decks of the user will be searched.
+    deckId: ID
+  ): CardConnection!
+  findCards(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+
+    # The term by which the cards are searched.
+    searchTerm: String!
+
+    # The ID of the deck that will be searched. If no ID is given, all decks of the user will be searched.
+    deckId: ID
+  ): CardConnection! @deprecated(reason: "Use searchCards instead")
+
+  # Returns the deck with the given id.
+  deck(id: ID!): Deck!
+  searchDecks(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+
+    # The term by which the cards are searched.
+    searchTerm: String!
+  ): DeckConnection!
+  findDecks(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+
+    # The term by which the cards are searched.
+    searchTerm: String!
+  ): DeckConnection! @deprecated(reason: "Use searchDecks instead")
+  exportDecks(toEmail: String!): ExportDecksPayload!
+  deckInvite(inviteLink: String!): DeckInvite!
+
+  # Returns the deck member with the given user id and deck id.
+  deckMember(deckId: ID!, userId: ID!): DeckMember!
+  viewer: User!
+
+  # Returns the offer with the given id.
+  offer(id: ID!): Offer!
+  subscribedOffers(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+  ): FixedSizeOfferConnection!
+  newOffers(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+  ): FlexibleSizeOfferConnection!
+  popularOffers(
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+  ): FixedSizeOfferConnection!
+  searchOffers(
+    searchTerm: String!
+
+    # Returns the first *n* elements from the list.
+    first: Int
+
+    # Returns the elements in the list that come after the specified cursor.
+    after: String
+  ): FixedSizeOfferConnection!
+}
+
+type Mutation {
+  login(email: String!, password: String!): AuthPayload!
+  signUp(
+    firstName: String!
+    lastName: String!
+    email: String!
+    password: String!
+  ): AuthPayload!
+  createAnonymousUser: AuthPayload!
+  triggerPasswordReset(email: String!): String!
+  updatePassword(id: String!, password: String!): String!
+  getPreSignedS3PostData(key: String!): String!
+  addRepetition(
+    cardId: ID!
+    confidence: Confidence
+    repetitionDate: DateTime
+  ): Card!
+  upsertCard(
+    id: ID
+    deckId: ID
+    front: String
+    back: String
+    where: CardWhereUniqueInput
+    create: CardCreateInput
+    update: CardUpdateInput
+  ): Card
+  upsertMirrorCard(
+    where: CardWhereUniqueInput!
+    create: CardCreateInput!
+    update: CardUpdateInput!
+  ): [Card!]! @deprecated(reason: "Prefer using upsertCard.")
+  deleteCard(id: ID): Card!
+  upsertDeck(
+    id: ID
+    name: String
+    description: String
+    isActive: Boolean
+    frontLanguage: String
+    backLanguage: String
+    createMirrorCard: Boolean
+    unsplashImageId: String
+  ): Deck!
+  transferDecksOwnership(recipientAuthToken: String!): BatchPayload!
+  deleteDeck(id: ID): DeleteDeckPayload!
+  joinDeck(deckInviteId: ID!): JoinDeckPayload!
+  insertDeckInvite(deckId: ID!, roleId: ID!): InsertDeckInvitePayload!
+  deleteDeckInvite(id: ID): DeleteDeckInvitePayload!
+  updateDeckMember(
+    where: UpdateDeckMemberWhereUniqueInput!
+    update: UpdateDeckMemberInput!
+  ): UpdateDeckMemberPayload!
+  deleteDeckMember(userId: ID!, deckId: ID!): DeleteDeckMemberPayload!
+  updateUser(data: UserUpdateInput!): User!
+  deleteUser: DeleteUserPayload!
+  upsertUnsplashImage(
+    where: UnsplashImageWhereUniqueInput!
+    create: UnsplashImageCreateInput!
+    update: UnsplashImageUpdateInput
+  ): UnsplashImage!
+  addOffer(deckId: ID!): AddOfferPayload!
+  deleteOffer(offerId: ID!): DeleteOfferPayload!
+  subscribe(offerId: ID!): SubscribePayload!
+  unsubscribe(offerId: ID!): UnsubscribePayload!
+  upsertOfferReview(
+    offerId: ID!
+    rating: Int!
+    description: String
+  ): UpsertOfferReviewPayload!
+  deleteOfferReview(offerId: ID!): DeleteOfferReviewPayload!
+}
+
+enum Confidence {
+  KNOWN
+  UNKNOWN
+}
+
+input CardWhereUniqueInput {
+  id: ID
+}
+
+input CardCreateInput {
+  front: String!
+  back: String!
+  creator: UserCreateOneInput
+  deck: DeckCreateOneWithoutCardsInput!
+  learningState: LearningStateCreateOneInput
+}
+
+input UserCreateOneInput {
+  connect: UserWhereUniqueInput!
+}
+
+input UserWhereUniqueInput {
+  id: ID
+  email: String
+}
+
+input DeckCreateOneWithoutCardsInput {
+  connect: DeckWhereUniqueInput!
+}
+
+input DeckWhereUniqueInput {
+  id: ID!
+}
+
+input LearningStateCreateOneInput {
+  create: LearningStateCreateInput
+}
+
+input LearningStateCreateInput {
+  id: ID
+  nextRepetition: DateTime!
+  streakKnown: Int
+  ease: Float
+  createdAt: DateTime
+  updatedAt: DateTime
+  createdAtFixed: DateTime
+  updatedAtFixed: DateTime
+}
+
+input CardUpdateInput {
+  front: String
+  back: String
+  deck: DeckUpdateOneRequiredWithoutCardsInput
+}
+
+input DeckUpdateOneRequiredWithoutCardsInput {
+  connect: DeckWhereUniqueInput!
+}
+
+input UpdateDeckMemberWhereUniqueInput {
+  userId: ID!
+  deckId: ID!
+}
+
+input UpdateDeckMemberInput {
+  role: RoleUpdateInput
+  isActive: Boolean
+}
+
+input RoleUpdateInput {
+  id: ID
+}
+
+input UserUpdateInput {
+  email: String
+  password: String
+  firstName: String
+  lastName: String
+  isAnonymous: Boolean
+}
+
+input UnsplashImageWhereUniqueInput {
+  id: ID
+  unsplashId: String
+}
+
+input UnsplashImageCreateInput {
+  unsplashId: String!
+  authorName: String!
+  authorUrl: String!
+  smallUrl: String!
+  regularUrl: String!
+  fullUrl: String!
+}
+
+input UnsplashImageUpdateInput {
+  placeHolder: String
+}

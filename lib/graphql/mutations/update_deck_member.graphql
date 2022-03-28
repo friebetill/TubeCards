@@ -1,0 +1,49 @@
+# import '../fragments/card_fragment.graphql'
+# import '../fragments/deck_member_fragment.graphql'
+
+mutation UpdateDeckMember(
+  $deckId: ID!
+  $userId: ID!
+  $isActive: Boolean
+  $roleId: ID
+) {
+  updateDeckMember(
+    where: { deckId: $deckId, userId: $userId }
+    update: { isActive: $isActive, role: { id: $roleId } }
+  ) {
+    receivingDeckMember {
+      # Use more fields than in DeckMemberFragment, because they are necessary
+      # for UpdateDeckMemberHandler.
+      role {
+        id
+      }
+      user {
+        id
+        isAnonymous
+        firstName
+        lastName
+      }
+      deck {
+        id
+        name
+        dueCardConnection(first: 20) {
+          totalCount
+          nodes {
+            ...CardFragment
+          }
+          pageInfo {
+            endCursor
+            hasNextPage
+          }
+        }
+        cardConnection {
+          totalCount
+        }
+      }
+      isActive
+    }
+    assigningDeckMember {
+      ...DeckMemberFragment
+    }
+  }
+}

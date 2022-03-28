@@ -1,0 +1,5 @@
+mutation DeleteCard($id: ID) {
+  deleteCard(id: $id) {
+    id
+  }
+}

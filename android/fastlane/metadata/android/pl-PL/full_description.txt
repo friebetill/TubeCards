@@ -1,0 +1,28 @@
+Space jest łatwą w użyciu aplikacją Spaced Repetition System (SRS). Twórz i ucz się flashcards gdziekolwiek jesteś w najbardziej efektywny sposób.
+
+W przeciwieństwie do innych aplikacji do nauki flashcards, Space jest łatwy w użyciu, a jednocześnie wyposażony w wiele funkcji.
+
+<big>Funkcje</big>
+
+1. 🤩 <b>Free</b>: Wszystko jest za darmo i nie ma reklam, ale możesz nas wesprzeć poprzez darowizny.
+2. 🏬 <b>Marketplace</b>: Podziel się swoimi flashcards za darmo i ucz się gotowych flashcards od innych.
+3. 🤓 <b>Uczenie się oparte na AI</b>: Inteligentny algorytm uczenia się, który dostosowuje się do twojego zachowania podczas nauki.
+4. 🎨 <b>Twórz swoje flashcards</b>: Zaprojektuj swoje flashcards z formatowaniem i obrazkami.
+
+1. 🤝 <b>Pracuj razem</b>: Podziel się swoimi kartami prywatnie i pracuj nad nimi razem.
+2. 🕵️ <b>Ucz się bez rejestracji</b>: Przetestuj aplikację bez rejestracji.
+3. 🖥️ <b>Na wszystkich Twoich urządzeniach</b>: Android, iOS, Windows, macOS, Linux i Web (zobacz <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Ustaw przypomnienie</b>: Otrzymuj przypomnienia, aby nauczyć się swoich flashcards.
+
+1. 🗃️ <b>Import/Eksport</b>: Importuj i eksportuj swoje flashcards do innych aplikacji.
+2. 📈 <b>Śledź swoje postępy</b>: Śledź swoje postępy w nauce, aby wiedzieć jak dobry jesteś.
+3. 🎵 <b>Funkcja czytania na głos</b>: Naucz się wymowy i niech twoje flashcards będą ci czytane.
+4. 🛑 <b>Deaktywuj talie</b>: Dezaktywuj talie, kiedy nie chcesz się ich uczyć.
+
+Oto co mówią nasi użytkownicy:
+
+"<i>To jest jedna z tych aplikacji, o których pamiętam, że instaluje się ją, gdy kupuję nowy telefon lub gdy przeprowadzam reset fabryczny. Poza tym, piękna aplikacja.</i>" - Ricardo Passos
+
+"<i>Wyjątkowa aplikacja Spaced Repetition! 1000 razy lepsza niż twój stary przyjaciel Anki. Interfejs jest tak intuicyjny i nie musisz się martwić o pojęcia takie jak Spaced Repetition i jego optymalne ustawienia, jak w Anki. Wszystko, co musisz wiedzieć, jest wyjaśnione tak jasno, bez podawania dodatkowych informacji, które nie są nawet potrzebne. Te rzeczy po prostu przyprawiają o zbyt duży ból głowy. Pobierz Kosmos i zapomnij o tych wszystkich zmartwieniach, a on sprawi, że nie zapomnisz tego, co warto zapamiętać 🔥</i>" - Rahul Ranjan
+
+Misją Space jest uczynić naukę efektywną i radosną. Mamy nadzieję, że do nas dołączysz! 🚀

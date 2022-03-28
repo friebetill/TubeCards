@@ -1,0 +1,35 @@
+Space is an easy-to-use Spaced Repetition System (SRS) app. Create and learn flashcards wherever you are in the most effective way possible.
+
+Unlike other flashcards apps, Space is easy to use and yet equipped with many features.
+
+<big>Features</big>
+
+Space adalah aplikasi Spaced Repetition System (SRS) yang mudah digunakan. Buat dan pelajari kartu flash di mana pun Anda berada dengan cara seefektif mungkin.
+
+Tidak seperti aplikasi kartu flash lainnya, Space mudah digunakan namun dilengkapi dengan banyak fitur.
+
+<big>Fitur</big>
+
+1. 🤩 <b>Gratis</b>: Semuanya gratis dan tidak ada iklan, tetapi Anda dapat mendukung kami melalui donasi.
+2. 🏬 <b>Marketplace</b>: Bagikan kartu flash Anda secara gratis dan pelajari kartu flash yang sudah jadi dari orang lain.
+3. 🤓 <b>Pembelajaran berbasis AI</b>: Algoritme pembelajaran cerdas yang menyesuaikan dengan perilaku belajar Anda.
+4. 🎨 <b>Buat kartu flash Anda</b>: Rancang kartu flash Anda dengan format dan gambar.
+
+1. 🤝 <b>Bekerja bersama</b>: Bagikan kartu flash Anda secara pribadi dan kerjakan bersama-sama.
+2. 🕵️  <b>Belajar tanpa registrasi</b>: Uji aplikasi tanpa mendaftar.
+3. 🖥️ <b>Di semua perangkat Anda</b>: Android, iOS, Windows, macOS, Linux, dan Web (lihat <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Setel pengingat</b>: Dapatkan pengingat untuk mempelajari kartu flash Anda.
+
+
+1. 🗃️  <b>Impor/Ekspor</b>: Impor dan ekspor kartu flash Anda ke aplikasi lain.
+2. 📈 <b>Lacak kemajuan Anda</b>: Lacak kemajuan belajar Anda untuk mengetahui seberapa baik Anda.
+3. 🎵 <b>Fungsi membaca dengan lantang</b>: Pelajari pengucapannya dan minta kartu flash Anda dibacakan untuk Anda.
+4. 🛑 <b>Nonaktifkan Dek</b>: Nonaktifkan dek jika Anda tidak ingin mempelajarinya.
+
+Itulah yang dikatakan pengguna kami:
+
+"<i>Ini adalah salah satu aplikasi yang saya ingat pernah menginstalnya ketika saya membeli ponsel baru atau mengembalikan ke setelan pabrik. Juga, aplikasi yang bagus.</i>" - Ricardo Passos
+
+"<i>Aplikasi Pengulangan Spasi Luar Biasa! 1000 × lebih baik dari teman lama Anda Anki. Antarmukanya sangat intuitif & Anda tidak perlu khawatir tentang konsep seperti pengulangan Spasi & pengaturan optimal seperti yang Anda lakukan di Anki. Semua yang Anda butuhkan untuk mengetahui dijelaskan dengan sangat jelas tanpa memberikan info tambahan yang bahkan tidak diperlukan. Hal ini hanya membuat terlalu banyak sakit kepala. Unduh Space & lupakan semua kekhawatiran itu & itu akan memastikan Anda tidak melupakan apa yang patut diingat.🔥</i >" - Rahul Ranjan
+
+Misi Space adalah membuat pembelajaran menjadi efektif dan menyenangkan. Kami harap Anda akan bergabung dengan kami! 🚀.

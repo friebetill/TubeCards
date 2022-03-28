@@ -1,0 +1,28 @@
+Space je snadno použitelná aplikace Spaced Repetition System (SRS). Vytvářejte a učte se flashkarty, ať jste kdekoli, tím nejefektivnějším možným způsobem.
+
+Na rozdíl od jiných aplikací na flashkarty se Space snadno používá, a přesto je vybaven mnoha funkcemi.
+
+<big>Funkce</big>
+
+1. 🤩 <b>Zdarma</b>: Vše je zdarma a bez reklam, ale můžete nás podpořit prostřednictvím darů.
+2. 🏬 <b>Tržiště</b>: Sdílejte své flashkarty zdarma a učte se hotové flashkarty od ostatních.
+3. 🤓 <b>Učení na bázi AI</b>: Inteligentní algoritmus učení, který se přizpůsobí vašemu chování při učení.
+4. 🎨 <b>Vytvořte si své flashkarty</b>: Navrhněte si své flashkarty s formátováním a obrázky.
+
+1. 🤝 <b>Pracujte společně</b>: Sdílejte své flashkarty soukromě a pracujte na nich společně.
+2. 🕵️ <b>Učte se bez registrace</b>: Vyzkoušejte aplikaci bez registrace.
+3. 🖥️ <b>Na všech svých zařízeních</b>: Vyzkoušejte si, jak se učit, jak se učit, jak se učit, jak se učit, jak se učit, jak se učit, jak se učit, jak se učit, jak se učit: Android, iOS, Windows, macOS, Linux a web (viz <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Nastavení připomenutí</b>: Nechte si připomenout, abyste se naučili své flashkarty.
+
+1. 🗃️ <b>Import/Export</b>: Importujte a exportujte své flashkarty do jiných aplikací.
+2. 📈 <b>Sledujte svůj pokrok</b>: Sledujte svůj pokrok v učení, abyste věděli, jak jste dobří.
+3. 🎵 <b>Funkce hlasitého předčítání</b>: Naučte se výslovnost a nechte si přečíst své flashkarty.
+4. 🛑 <b>Deaktivujte balíčky</b>: Vyzkoušejte si, jak se naučit učit: Deaktivujte balíčky, když se je nechcete učit.
+
+To říkají naši uživatelé:
+
+"<i>To je jedna z těch aplikací, které si pamatuji, že jsem instaloval při koupi nového telefonu nebo obnovení továrního nastavení. Také krásná aplikace.</i>" - Ricardo Passos
+
+"<i>Výjimečná aplikace pro rozložené opakování! 1000× lepší než váš starý známý Anki. Rozhraní je tak intuitivní & nemusíte si lámat hlavu s pojmy jako rozložené opakování & jeho optimální nastavení jako u Anki. Vše, co potřebujete vědět, je vysvětleno tak nuch jasně, aniž by poskytovalo další informace, které ani nejsou potřeba. Z těchto věcí prostě příliš bolí hlava. Stáhněte si Prostor a zapomeňte na všechny ty starosti & zajistí, že nezapomenete, co stojí za zapamatování 🔥</i>." - Rahul Ranjan
+
+Posláním aplikace Space je učinit učení efektivním a radostným. Doufáme, že se k nám přidáte! 🚀

@@ -1,0 +1,28 @@
+Space è un'applicazione del Sistema di Ripetizione Intervallata (SRS) facile da usare. Crea e impara le flashcard ovunque tu sia nel modo più efficace possibile.
+
+A differenza di altre app per flashcards, Space è facile da usare e tuttavia dotata di molte funzioni.
+
+<big>Caratteristiche</big>
+
+1. 🤩 <b>Libero</b>: Tutto è gratuito e senza pubblicità, ma puoi sostenerci attraverso le donazioni.
+2. 🏬 <b>Mercato</b>: Condividi le tue flashcard gratuitamente e impara flashcard già pronte dagli altri.
+3. 🤓 <b>Apprendimento basato su AI</b>: Algoritmo di apprendimento intelligente che si adatta al tuo comportamento di apprendimento.
+4. 🎨 <b>Crea le tue flashcard</b>: Progetta le tue flashcard con formattazione e immagini.
+
+1. 🤝 <b>Lavora insieme</b>: Condividi le tue flashcard privatamente e lavoraci insieme.
+2. 🕵️ <b>Impara senza registrazione</b>: Prova l'app senza registrarti.
+3. 🖥️ <b>Su tutti i tuoi dispositivi</b>: Android, iOS, Windows, macOS, Linux e Web (vedi <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Imposta promemoria</b>: Ottieni un promemoria per imparare le tue flashcard.
+
+1. 🗃️ <b>Importa/Esporta</b>: Importa ed esporta le tue flashcard in altre applicazioni.
+2. 📈 <b>Traccia i tuoi progressi</b>: Traccia i tuoi progressi di apprendimento per sapere quanto sei bravo.
+3. 🎵 <b>Funzione di lettura ad alta voce</b>: Impara la pronuncia e fatti leggere le tue flashcard.
+4. 🛑 <b>Disattiva i mazzi</b>: Disattiva i mazzi quando non vuoi impararli.
+
+Questo è quello che dicono i nostri utenti:
+
+"<i>Questa è una di quelle app che mi ricordo di installare quando compro un nuovo telefono o un reset di fabbrica. Inoltre, bella app.</i>" - Ricardo Passos
+
+"<i>Eccezionale app a ripetizione spaziata! 1000 volte meglio del tuo vecchio amico Anki. L'interfaccia è così intuitiva e non devi preoccuparti di concetti come la ripetizione spaziata e le sue impostazioni ottimali come fai su Anki. Tutto ciò che devi sapere è spiegato molto chiaramente senza dare informazioni extra che non sono nemmeno necessarie. Queste cose fanno venire troppi mal di testa. Scarica Space e dimentica tutte quelle preoccupazioni e ti assicurerà di non dimenticare ciò che vale la pena ricordare.🔥</i>" - Rahul Ranjan
+
+La missione di Space è di rendere l'apprendimento efficace e gioioso. Speriamo che ti unirai a noi! 🚀

@@ -1,0 +1,15 @@
+fragment DeckMemberFragment on DeckMember {
+  role {
+    id
+  }
+  user {
+    id
+    isAnonymous
+    firstName
+    lastName
+  }
+  deck {
+    id
+    name
+  }
+}

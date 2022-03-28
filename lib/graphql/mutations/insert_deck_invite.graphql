@@ -1,0 +1,9 @@
+# import '../fragments/deck_invite_fragment.graphql'
+
+mutation InsertDeckInvite($deckId: ID!, $roleId: ID!) {
+  insertDeckInvite(deckId: $deckId, roleId: $roleId) {
+    deckInvite {
+      ...DeckInviteFragment
+    }
+  }
+}

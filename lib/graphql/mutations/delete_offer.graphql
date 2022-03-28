@@ -1,0 +1,5 @@
+mutation DeleteOffer($offerID: ID!) {
+  deleteOffer(offerId: $offerID) {
+    id
+  }
+}

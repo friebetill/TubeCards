@@ -1,0 +1,28 @@
+Space er en brugervenlig app med Spaced Repetition System (SRS). Opret og lær flashcards, uanset hvor du er, på den mest effektive måde.
+
+I modsætning til andre flashcards-apps er Space let at bruge og alligevel udstyret med mange funktioner.
+
+<big>Funktioner</big>
+
+1. 🤩 <b>Gratis</b>: Alt er gratis og ingen reklamer, men du kan støtte os gennem donationer.
+2. 🏬 <b>Markedsplads</b>: Del dine flashcards gratis, og lær færdige flashcards fra andre.
+3. 🤓 <b>AI-baseret læring</b>: Intelligent læringsalgoritme, der tilpasser sig din læringsadfærd.
+4. 🎨 <b>Skab dine flashcards</b>: Design dine flashcards med formatering og billeder.
+
+1. 🤝 <b>Arbejd sammen</b>: Del dine flashcards privat og arbejd på dem sammen.
+2. 🕵️ <b>Lær uden registrering</b>: Test appen uden at registrere dig.
+3. 🖥️ <b>På alle dine enheder</b>: Android, iOS, Windows, macOS, Linux og web (se <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Sæt påmindelse</b>: Få påmindelse om at lære dine flashcards.
+
+1. 🗃️ <b>Import/Eksport</b>: Importer og eksporter dine flashcards til andre apps.
+2. 📈 <b>Spore dine fremskridt</b>: Spor dine læringsfremskridt for at vide, hvor god du er.
+3. 🎵 <b>Læs højt-funktion</b>: Lær udtalen, og få dine flashcards læst op for dig.
+4. 🛑 <b>Deaktiver dæk</b>: Deaktivér kortspil, når du ikke ønsker at lære dem.
+
+Det er, hvad vores brugere siger:
+
+"<i>Dette er en af de apps, som jeg husker at installere, når jeg køber en ny telefon eller en fabriksnulstilling. Også, smuk app.</i>" - Ricardo Passos
+
+"<i>Enestående Spaced Repetition-app! 1000 × bedre end din gamle ven Anki. Brugerfladen er så intuitiv & du behøver ikke at bekymre dig om begreber som Spaced repetition & dens optimale indstillinger, som du gør på Anki. Alt, hvad du har brug for at vide, er forklaret så klart og tydeligt uden at give ekstra info, som ikke engang er nødvendig. Disse ting giver bare for meget hovedpine. Download Space & glem alle disse bekymringer & det vil sørge for, at du ikke glemmer det, der er værd at huske.🔥</i>" - Rahul Ranjan
+
+Space's mission er at gøre læring effektiv og glædelig. Vi håber, at du vil være med os! 🚀

@@ -1,0 +1,14 @@
+# import '../fragments/offer_fragment.graphql'
+
+query SearchOffers($searchTerm: String!, $first: Int!, $after: String) {
+  searchOffers(searchTerm: $searchTerm, first: $first, after: $after) {
+    totalCount
+    nodes {
+      ...OfferFragment
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

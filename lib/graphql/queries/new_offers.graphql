@@ -1,0 +1,22 @@
+query NewOffers($first: Int!, $after: String) {
+  newOffers(first: $first, after: $after) {
+    nodes {
+      id
+      reviewSummary {
+        averageRating
+        totalCount
+      }
+      deck {
+        id
+        name
+        coverImage {
+          regularUrl
+        }
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

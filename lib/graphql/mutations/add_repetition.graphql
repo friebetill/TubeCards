@@ -1,0 +1,15 @@
+# import '../fragments/card_fragment.graphql'
+
+mutation AddRepetition(
+  $cardId: ID!
+  $confidence: Confidence
+  $repetitionDate: DateTime
+) {
+  addRepetition(
+    cardId: $cardId
+    confidence: $confidence
+    repetitionDate: $repetitionDate
+  ) {
+    ...CardFragment
+  }
+}

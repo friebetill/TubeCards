@@ -1,0 +1,28 @@
+Space is een gemakkelijk te gebruiken Spaced Repetition System (SRS) app. Maak en leer flashcards waar je ook bent op de meest effectieve manier.
+
+In tegenstelling tot andere flashcards apps is Space eenvoudig te gebruiken en toch uitgerust met veel functies.
+
+<big>Functies</big>
+
+1. 🤩 <b>Gratis</b>: Alles is gratis en er is geen reclame, maar je kunt ons steunen via donaties.
+2. 🏬 <b>Marktplaats</b>: Deel gratis je flashcards en leer kant-en-klare flashcards van anderen.
+3. 🤓 <b>AI-gebaseerd leren</b>: Intelligent leeralgoritme dat zich aanpast aan je leergedrag.
+4. 🎨 <b>Creëer je flashcards</b>: Ontwerp je flashcards met opmaak en afbeeldingen.
+
+1. 🤝 <b>Samenwerken</b>: Deel je flashcards privé en werk er samen aan.
+2. 🕵️ <b>Leer zonder registratie</b>: Test de app zonder te registreren.
+3. 🖥️ <b>Op al je apparaten</b>: Android, iOS, Windows, macOS, Linux en Web (zie <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Zet herinnering</b>: Laat je eraan herinneren om je flashcards te leren.
+
+1. 🗃️ <b>Import/Export</b>: Importeer en exporteer je flashcards naar andere apps.
+2. 📈 <b>Volg je vorderingen</b>: Volg je leervorderingen om te weten hoe goed je bent.
+3. 🎵 <b>Voorleesfunctie</b>: Leer de uitspraak en laat je flashcards aan je voorlezen.
+4. 🛑 <b>Deactiveer toonladders</b>: Deactiveer toonreeksen als je ze niet wilt leren.
+
+Dat is wat onze gebruikers zeggen:
+
+"<i>Dit is een van die apps die ik me herinner te installeren als ik een nieuwe telefoon koop of een fabrieksreset doe. Ook een prachtige app.</i>" - Ricardo Passos
+
+"<i>Uitzonderlijke Spaced Repetition app! 1000 × beter dan je oude vriend Anki. De interface is zo intuïtief & je hoeft je geen zorgen te maken over begrippen als Spaced repetition & de optimale instellingen ervan zoals je bij Anki doet. Alles wat je moet weten wordt zo nuch duidelijk uitgelegd zonder extra info te geven die niet eens nodig is. Deze dingen geven gewoon te veel hoofdbrekens. Download Space & vergeet al die zorgen & het zal ervoor zorgen dat je niet vergeet wat de moeite waard is om te onthouden.🔥</i>" - Rahul Ranjan
+
+De missie van Space is om leren effectief en vreugdevol te maken. We hopen dat je je bij ons zult aansluiten! 🚀

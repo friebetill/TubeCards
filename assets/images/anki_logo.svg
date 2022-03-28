@@ -1,0 +1,25 @@
+<svg width="200" height="201" viewBox="0 0 200 201" xmlns="http://www.w3.org/2000/svg" xmlns:usvg="https://github.com/RazrFalcon/resvg" usvg:version="0.9.1">
+    <defs>
+        <linearGradient id="paint0_linear" x1="99.4999" y1="31.6876" x2="20.6229" y2="204.949" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3c3c3c"/>
+            <stop offset="1" stop-color="#9e9e9e"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear" x1="127.655" y1="37.8116" x2="136.297" y2="78.6165" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0084dd"/>
+            <stop offset="1" stop-color="#ffffff"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear" x1="100.861" y1="114.578" x2="65.1573" y2="183.762" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0084dd"/>
+            <stop offset="1" stop-color="#ffffff"/>
+        </linearGradient>
+        <linearGradient id="paint3_linear" x1="102.767" y1="95.9829" x2="132.921" y2="-10.0295" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ffffff" stop-opacity="0.494118"/>
+            <stop offset="1" stop-color="#ffffff" stop-opacity="0.25098"/>
+        </linearGradient>
+    </defs>
+    <path fill="url(#paint0_linear)" stroke="none" d="M 54 1.00001 L 143 1.00001 C 165.5 0.00000382215 176.5 18.0001 176.175 31 L 176.175 170.5 C 176.5 187.5 161.5 201 146 201 L 54 201 C 37 201 23 187 23 171 L 23 31 C 23 15.5 36 1.00001 54 1.00001 Z"/>
+    <path fill="#000000" fill-rule="evenodd" stroke="none" d="M 143 1.00001 L 54 1.00001 C 36 1.00001 23 15.5 23 31 L 23 171 C 23 187 37 201 54 201 L 146 201 C 161.5 201 176.5 187.5 176.175 170.5 L 176.175 31 C 176.5 18.0001 165.5 0.0000038147 143 1.00001 Z M 142.5 7.49995 L 58 7.49995 C 40 7.49995 28.9998 21 29.5 35 L 29.5 166.806 C 29.5 182.806 42 194.25 56 194.25 L 141.5 194.25 C 159 194.5 170 181.5 169.5 166 L 169.5 32.9999 C 169.5 21.0001 158.5 7.49986 142.5 7.49995 Z"/>
+    <path fill="url(#paint1_linear)" stroke="#ffffff" stroke-width="6.5" d="M 154.5 55.5 C 154.058 59.1073 141.974 59.3421 139.5 62 C 137.026 64.6579 138.061 76.3067 134.5 77 C 130.939 77.6932 126.787 66.5361 123.5 65 C 120.212 63.4638 109.259 67.6787 107.5 64.4999 C 105.742 61.3211 115.058 54.1072 115.5 50.4999 C 115.943 46.8926 108.526 37.6579 111 35 C 113.474 32.3421 123.439 39.1932 127 38.5 C 130.561 37.8067 136.712 27.9638 140 29.5 C 143.287 31.0361 139.741 42.3212 141.5 45.5 C 143.258 48.6788 154.942 51.8927 154.5 55.5 Z"/>
+    <path fill="url(#paint2_linear)" stroke="#ffffff" stroke-miterlimit="16" stroke-width="8" stroke-linejoin="round" d="M 119.5 171 C 114.612 175.698 97.2105 162.078 90.5003 163 C 83.7901 163.922 70.9699 181.706 65.0003 178.5 C 59.0307 175.294 66.4492 154.109 63.5004 148 C 60.5516 141.891 39.8018 135.179 41.0002 128.5 C 42.1985 121.821 64.1123 123.198 69 118.5 C 73.8878 113.802 74.2901 91.4222 81.0003 90.5001 C 87.7106 89.5781 93.5307 110.794 99.5003 114 C 105.47 117.206 126.551 110.391 129.5 116.5 C 132.449 122.609 113.699 134.821 112.5 141.5 C 111.302 148.179 124.388 166.302 119.5 171 Z"/>
+    <path fill="url(#paint3_linear)" fill-rule="evenodd" stroke="none" d="M 176 120.92 C 143.132 96.9023 77.4516 68.8125 23 64.539 L 23 32 C 23 14.8792 36.8792 1 54 1 L 145 1 C 162.121 1 176 14.8792 176 32 L 176 120.92 Z"/>
+</svg>

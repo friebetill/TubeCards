@@ -1,0 +1,27 @@
+# import '../fragments/card_fragment.graphql'
+
+query DeckCards(
+  $deckId: ID!
+  $first: Int!
+  $orderByField: CardsOrderField
+  $orderByDirection: OrderDirection
+  $after: String
+) {
+  deck(id: $deckId) {
+    id
+    cardConnection(
+      first: $first
+      after: $after
+      orderBy: { field: $orderByField, direction: $orderByDirection }
+    ) {
+      totalCount
+      nodes {
+        ...CardFragment
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+  }
+}

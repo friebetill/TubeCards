@@ -1,0 +1,18 @@
+# import '../fragments/card_fragment.graphql'
+
+query DueCards($first: Int!, $after: String) {
+  viewer {
+    # The id is important for ferry to normalize the data
+    id
+    dueCardConnection(first: $first, after: $after) {
+      nodes {
+        ...CardFragment
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+      totalCount
+    }
+  }
+}

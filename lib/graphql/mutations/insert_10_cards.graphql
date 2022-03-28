@@ -1,0 +1,56 @@
+# import '../fragments/card_fragment.graphql'
+
+mutation Insert10Cards(
+  $deckId: ID!
+  $front0: String!
+  $back0: String!
+  $front1: String!
+  $back1: String!
+  $front2: String!
+  $back2: String!
+  $front3: String!
+  $back3: String!
+  $front4: String!
+  $back4: String!
+  $front5: String!
+  $back5: String!
+  $front6: String!
+  $back6: String!
+  $front7: String!
+  $back7: String!
+  $front8: String!
+  $back8: String!
+  $front9: String!
+  $back9: String!
+) {
+  card0: upsertCard(id: "", deckId: $deckId, front: $front0, back: $back0) {
+    ...CardFragment
+  }
+  card1: upsertCard(id: "", deckId: $deckId, front: $front1, back: $back1) {
+    ...CardFragment
+  }
+  card2: upsertCard(id: "", deckId: $deckId, front: $front2, back: $back2) {
+    ...CardFragment
+  }
+  card3: upsertCard(id: "", deckId: $deckId, front: $front3, back: $back3) {
+    ...CardFragment
+  }
+  card4: upsertCard(id: "", deckId: $deckId, front: $front4, back: $back4) {
+    ...CardFragment
+  }
+  card5: upsertCard(id: "", deckId: $deckId, front: $front5, back: $back5) {
+    ...CardFragment
+  }
+  card6: upsertCard(id: "", deckId: $deckId, front: $front6, back: $back6) {
+    ...CardFragment
+  }
+  card7: upsertCard(id: "", deckId: $deckId, front: $front7, back: $back7) {
+    ...CardFragment
+  }
+  card8: upsertCard(id: "", deckId: $deckId, front: $front8, back: $back8) {
+    ...CardFragment
+  }
+  card9: upsertCard(id: "", deckId: $deckId, front: $front9, back: $back9) {
+    ...CardFragment
+  }
+}

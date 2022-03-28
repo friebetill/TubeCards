@@ -1,0 +1,28 @@
+Space är en lättanvänd app för SRS (Spaced Repetition System). Skapa och lär dig flashcards var du än är på det mest effektiva sättet.
+
+Till skillnad från andra flashcard-appar är Space lätt att använda och ändå utrustad med många funktioner.
+
+<big>Funktioner</big>
+
+1. 🤩 <b>Gratis</b>: Allt är gratis och ingen reklam, men du kan stödja oss genom donationer.
+2. 🏬 <b>Marknadsplats</b>: Dela dina flashcards gratis och lär dig färdiga flashcards från andra.
+3. 🤓 <b>AI-baserad inlärning</b>: Intelligent inlärningsalgoritm som anpassar sig till ditt inlärningsbeteende.
+4. 🎨 <b>Skapa dina flashcards</b>: Utforma dina flashcards med formatering och bilder.
+
+1. 🤝 <b>Arbeta tillsammans</b>: Dela dina flashcards privat och arbeta med dem tillsammans.
+2. 🕵️ <b>Lär dig utan registrering</b>: Testa appen utan att registrera dig.
+3. 🖥️ <b>På alla dina enheter</b>: Android, iOS, Windows, macOS, Linux och webb (se <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Sätt en påminnelse</b>: Få påminnelse om att lära dig dina flashcards.
+
+1. 🗃️ <b>Import/Export</b>: Importera och exportera dina flashcards till andra appar.
+2. 📈 <b>Spåra dina framsteg</b>: Spåra dina inlärningsframsteg för att veta hur bra du är.
+3. 🎵 <b>Läs högt-funktion</b>: Lär dig uttalet och få dina flashcards upplästa för dig.
+4. 🛑 <b>Deaktivera kortlekar</b>: Deaktivera kortlekar när du inte vill lära dig dem.
+
+Det är vad våra användare säger:
+
+"<i>Det här är en av de appar som jag kommer ihåg att jag installerar när jag köper en ny telefon eller en fabriksåterställning. Dessutom är det en vacker app.</i>" - Ricardo Passos
+
+"<i>Exceptionell Spaced Repetition-app! 1000 × bättre än din gamla vän Anki. Gränssnittet är så intuitivt & du behöver inte oroa dig för begrepp som Spaced repetition & dess optimala inställningar som du gör på Anki. Allt du behöver veta förklaras så klart och tydligt utan att ge extra information som inte ens behövs. Detta ger bara för mycket huvudvärk. Ladda ner Space & glöm alla dessa bekymmer & det kommer att se till att du inte glömmer det som är värt att komma ihåg.🔥</i>" - Rahul Ranjan
+
+Space har som uppdrag att göra inlärningen effektiv och glädjefylld. Vi hoppas att du kommer att ansluta dig till oss! 🚀

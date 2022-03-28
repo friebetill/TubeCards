@@ -1,0 +1,28 @@
+# import '../fragments/card_fragment.graphql'
+# import '../fragments/deck_fragment.graphql'
+# import '../fragments/offer_fragment.graphql'
+
+mutation Subscribe($offerId: ID!, $first: Int!) {
+  subscribe(offerId: $offerId) {
+    offer {
+      ...OfferFragment
+      deck {
+        ...DeckFragment
+      }
+    }
+    viewer {
+      # The id is important for ferry to normalize the data
+      id
+      dueCardConnection(first: $first) {
+        nodes {
+          ...CardFragment
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+        totalCount
+      }
+    }
+  }
+}

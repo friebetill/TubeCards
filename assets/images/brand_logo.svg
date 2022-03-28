@@ -1,0 +1,26 @@
+<svg width="768" height="768" viewBox="0 0 768 768" xmlns="http://www.w3.org/2000/svg" xmlns:usvg="https://github.com/RazrFalcon/resvg" usvg:version="0.9.1">
+    <defs>
+        <clipPath id="clip0">
+            <path fill="#000000" stroke="none" d="M 0 0 L 768 0 L 768 768 L 0 768 Z"/>
+        </clipPath>
+        <radialGradient id="paint0_radial" cx="0" cy="0" r="1" fx="0" fy="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(767.9957461145211 767.995746114521 -767.995746114521 767.9957461145211 0 0)">
+            <stop offset="0" stop-color="#ff7b72"/>
+            <stop offset="0.723958" stop-color="#c62828"/>
+        </radialGradient>
+        <linearGradient id="paint1_linear" x1="430.499" y1="433.499" x2="766.498" y2="769.498" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#000000" stop-opacity="0.1"/>
+            <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear" x1="274.498" y1="230.999" x2="448.123" y2="404.624" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#000000" stop-opacity="0.15"/>
+            <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g clip-path="url(#clip0)">
+        <path fill="url(#paint0_radial)" stroke="none" d="M 383.999 0 L 383.999 0 C 485.8418668819 0 583.51351508119 40.45692134348 655.52729686885 112.47070313115 C 727.54107865652 184.48448491881 767.998 282.15613311811 767.998 383.999 L 767.998 383.999 C 767.998 485.8418668819 727.54107865652 583.51351508119 655.52729686885 655.52729686885 C 583.51351508119 727.54107865652 485.8418668819 767.998 383.999 767.998 L 383.999 767.998 C 282.15613311811 767.998 184.48448491881 727.54107865652 112.47070313115 655.52729686885 C 40.45692134348 583.51351508119 0 485.8418668819 0 383.999 L 0 383.999 C 0 282.15613311811 40.45692134348 184.48448491881 112.47070313115 112.47070313115 C 184.48448491881 40.45692134348 282.1561331181 0 383.999 0 Z"/>
+        <path fill="url(#paint1_linear)" fill-rule="evenodd" stroke="none" d="M 320.249 543.717 L 320.249 636.157 L 617.392 933.299 L 923.896 626.795 L 580.534 283.432 L 320.249 543.717 Z"/>
+        <path fill="url(#paint2_linear)" fill-rule="evenodd" stroke="none" d="M 376.284 131.25 L 186.749 320.785 L 186.749 484.162 L 277.695 575.108 L 584.221 268.583 L 446.888 131.25 L 376.284 131.25 Z"/>
+        <path fill="#ffffff" stroke="none" d="M 331.75 279.249 L 567.999 279.249 C 576.28327124746 279.249 582.999 285.96472875254 582.999 294.249 L 582.999 624.248 C 582.999 632.53227124746 576.28327124746 639.248 567.999 639.248 L 331.75 639.248 C 323.46572875254 639.248 316.75 632.53227124746 316.75 624.248 L 316.75 294.249 C 316.75 285.96472875254 323.46572875254 279.249 331.75 279.249 Z"/>
+        <path fill="#ffffff" fill-rule="evenodd" stroke="none" d="M 199 128 C 190.716 128 184 134.715 184 143 L 184 472.998 C 184 481.283 190.716 487.998 199.001 487.998 L 270 487.998 L 270 246.749 C 270 238.465 276.716 231.749 285 231.749 L 450.25 231.749 L 450.25 143 C 450.25 134.715 443.534 128 435.25 128 L 199 128 Z"/>
+    </g>
+</svg>

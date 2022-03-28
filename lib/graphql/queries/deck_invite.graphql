@@ -1,0 +1,25 @@
+query DeckInvite($inviteLink: String!) {
+  deckInvite(inviteLink: $inviteLink) {
+    id
+    link
+    inviteeRole {
+      id
+    }
+    deck {
+      id
+      name
+      creator {
+        firstName
+        lastName
+      }
+      coverImage {
+        unsplashId
+        authorName
+        authorUrl
+        smallUrl
+        regularUrl
+        fullUrl
+      }
+    }
+  }
+}

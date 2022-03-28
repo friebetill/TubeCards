@@ -1,0 +1,28 @@
+Space là một ứng dụng Hệ thống lặp lại có khoảng cách (SRS) dễ sử dụng. Tạo và học Flashcards mọi lúc mọi nơi theo cách hiệu quả nhất có thể.
+
+Không giống như các ứng dụng flashcard khác, Space rất dễ sử dụng và được trang bị nhiều tính năng.
+
+<big> Tính năng </big>
+
+1. 🤩 <b> Miễn phí </b>: Mọi thứ đều miễn phí và không có quảng cáo, nhưng bạn có thể hỗ trợ chúng tôi thông qua các khoản đóng góp.
+2. 🏬 <b> Thị trường </b>: Chia sẻ các flashcard của bạn miễn phí và học các flashcard làm sẵn từ những người khác.
+3. 🤓 <b> Học tập dựa trên AI </b>: Thuật toán học tập thông minh điều chỉnh hành vi học tập của bạn.
+4. 🎨 <b> Tạo thẻ ghi chú của bạn </b>: Thiết kế thẻ ghi chú của bạn với định dạng và hình ảnh.
+
+1. 🤝 <b> Làm việc cùng nhau </b>: Chia sẻ riêng tư các thẻ flashcard của bạn và cùng nhau thực hiện chúng.
+2. 🕵️ <b> Học mà không cần đăng ký: Thử nghiệm ứng dụng mà không cần đăng ký.
+3. 🖥️ <b> Trên tất cả các thiết bị của bạn </b>: Android, iOS, Windows, macOS, Linux và Web (xem <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b> Đặt lời nhắc </b>: Nhận lời nhắc để học các thẻ nhớ của bạn.
+
+1. 🗃️ <b> Nhập / Xuất </b>: Nhập và xuất thẻ nhớ của bạn sang các ứng dụng khác.
+2. 📈 <b> Theo dõi sự tiến bộ của bạn </b>: Theo dõi tiến độ học tập của bạn để biết bạn giỏi như thế nào.
+3. 🎵 <b> Chức năng đọc to </b>: Học cách phát âm và để thẻ nhớ đọc cho bạn nghe.
+4. 🛑 <b> Hủy kích hoạt bộ bài </b>: Hủy kích hoạt bộ bài khi bạn không muốn học chúng.
+
+Đó là những gì người dùng của chúng tôi nói:
+
+"<i> Đây là một trong những ứng dụng mà tôi nhớ đã cài đặt khi mua điện thoại mới hoặc khi khôi phục cài đặt gốc. Ngoài ra, ứng dụng tuyệt đẹp. </i>" - Ricardo Passos
+
+"<i> Ứng dụng lặp lại có khoảng cách đặc biệt! Tốt hơn 1000 lần so với người bạn cũ Anki của bạn. Giao diện rất trực quan và bạn không phải lo lắng về các khái niệm như lặp lại Khoảng cách và đó là cài đặt tối ưu như bạn làm trên Anki. Mọi thứ bạn cần để biết được giải thích rõ ràng mà không cần cung cấp thêm thông tin thậm chí không cần thiết. Những thứ này chỉ khiến quá nhiều người đau đầu. Tải xuống Space & quên tất cả những lo lắng đó và nó sẽ đảm bảo bạn không quên những gì đáng nhớ.🔥 </ i > "- Rahul Ranjan
+
+Sứ mệnh của Space là làm cho việc học tập hiệu quả và vui vẻ. Chúng tôi hy vọng bạn sẽ tham gia với chúng tôi! 🚀

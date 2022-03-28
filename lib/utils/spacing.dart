@@ -1,0 +1,16 @@
+const double spacing4Pixels = 4;
+const double spacing8Pixels = 8;
+const double spacing12Pixels = 12;
+const double spacing16Pixels = 16;
+const double spacing24Pixels = 24;
+const double spacing32Pixels = 32;
+const double spacing48Pixels = 48;
+const double spacing64Pixels = 64;
+const double spacing96Pixels = 96;
+const double spacing128Pixels = 128;
+const double spacing192Pixels = 192;
+const double spacing256Pixels = 256;
+const double spacing384Pixels = 384;
+const double spacing512Pixels = 512;
+const double spacing640Pixels = 640;
+const double spacing768Pixels = 768;

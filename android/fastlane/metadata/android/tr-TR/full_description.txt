@@ -1,0 +1,28 @@
+Space, kullanımı kolay bir Aralıklı Tekrar Sistemi (SRS) uygulamasıdır. Nerede olursanız olun mümkün olan en etkili şekilde bilgi kartları oluşturun ve öğrenin.
+
+Diğer bilgi kartları uygulamalarının aksine, Space'in kullanımı kolaydır ve buna rağmen birçok özellikle donatılmıştır.
+
+<big>Özellikler</big>
+
+1. 🤩 <b>Ücretsiz</b>: Her şey ücretsizdir ve reklam yoktur, ancak bağışlarla bize destek olabilirsiniz.
+2. 🏬 <b>Marketplace</b>: Bilgi kartlarınızı ücretsiz olarak paylaşın ve başkalarından hazır bilgi kartları öğrenin.
+3. 🤓 <b>AI tabanlı öğrenme</b>: Öğrenme davranışınıza göre ayarlanan akıllı öğrenme algoritması.
+4. 🎨 <b>Bilgi kartlarınızı oluşturun</b>: Biçimlendirme ve resimlerle bilgi kartlarınızı tasarlayın.
+
+1. 🤝 <b>Birlikte çalışın</b>: Bilgi kartlarınızı özel olarak paylaşın ve üzerinde birlikte çalışın.
+2. 🕵️ <b>Kayıt olmadan öğrenin</b>: Uygulamayı kayıt olmadan test edin.
+3. 🖥️ <b>Tüm cihazlarınızda</b>: Android, iOS, Windows, macOS, Linux ve Web (bkz. <a href="https://getspace.app">https://getspace.app< /a>).
+4. ⏰ <b>Hatırlatıcı ayarla</b>: Bilgi kartlarınızı öğrenmek için hatırlatıcı alın.
+
+1. 🗃️ <b>İçe/Dışa Aktar</b>: Bilgi kartlarınızı diğer uygulamalara içe ve dışa aktarın.
+2. 📈 <b>İlerlemenizi takip edin</b>: Ne kadar iyi olduğunuzu öğrenmek için öğrenme ilerlemenizi takip edin.
+3. 🎵 <b>Sesli okuma işlevi</b>: Telaffuzu öğrenin ve bilgi kartlarınızın size okumasını sağlayın.
+4. 🛑 <b>Desteleri Devre Dışı Bırak</b>: Desteleri öğrenmek istemediğinizde devre dışı bırakın.
+
+Kullanıcılarımız şöyle diyor:
+
+"<i>Bu, yeni bir telefon aldığımda veya fabrika ayarlarına sıfırladığımda yüklediğimi hatırladığım uygulamalardan biri. Ayrıca güzel bir uygulama.</i>" - Ricardo Passos
+
+"<i>Olağanüstü Aralıklı Tekrar uygulaması! Eski dostunuz Anki'den 1000 kat daha iyi. Arayüz çok sezgisel ve Anki'de yaptığınız gibi Aralıklı tekrar ve optimum ayarlar gibi kavramlar hakkında endişelenmenize gerek yok. İhtiyacınız olan her şey bilmek, gerekmeyen ekstra bilgi vermeden çok net bir şekilde açıklanıyor. Bu şeyler çok fazla baş ağrısına neden oluyor. Alanı İndirin ve tüm bu endişeleri unutun; hatırlamaya değer şeyleri unutmadığınızdan emin olun.🔥</i >" - Rahul Ranjan
+
+Space'in misyonu, öğrenmeyi etkili ve eğlenceli hale getirmektir. Bize katılacağınızı umuyoruz! 🚀

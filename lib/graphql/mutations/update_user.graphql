@@ -1,0 +1,21 @@
+# import '../fragments/user_fragment.graphql'
+
+mutation UpdateUser(
+  $email: String
+  $password: String
+  $firstName: String
+  $lastName: String
+  $isAnonymous: Boolean
+) {
+  updateUser(
+    data: {
+      email: $email
+      password: $password
+      firstName: $firstName
+      lastName: $lastName
+      isAnonymous: $isAnonymous
+    }
+  ) {
+    ...UserFragment
+  }
+}

@@ -1,0 +1,17 @@
+# import '../fragments/deck_member_fragment.graphql'
+
+query DeckMembers($deckId: ID!, $first: Int!, $after: String) {
+  deck(id: $deckId) {
+    id
+    deckMemberConnection(first: $first, after: $after) {
+      totalCount
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        ...DeckMemberFragment
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# import '../fragments/user_fragment.graphql'
+
+mutation CreateAnonymousUser {
+  createAnonymousUser {
+    token
+    user {
+      ...UserFragment
+    }
+  }
+}

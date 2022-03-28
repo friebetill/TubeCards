@@ -1,0 +1,9 @@
+query UserLearningState {
+  viewer {
+    id
+    learningState {
+      strength
+      stability
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# import '../fragments/deck_fragment.graphql'
+# import '../fragments/offer_fragment.graphql'
+
+query Offer($id: ID!) {
+  offer(id: $id) {
+    ...OfferFragment
+    deck {
+      ...DeckFragment
+    }
+  }
+}

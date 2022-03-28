@@ -1,0 +1,17 @@
+# import '../fragments/card_fragment.graphql'
+
+query DueCardsOfDeck($id: ID!, $first: Int!, $after: String) {
+  deck(id: $id) {
+    id
+    dueCardConnection(first: $first, after: $after) {
+      totalCount
+      nodes {
+        ...CardFragment
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+  }
+}

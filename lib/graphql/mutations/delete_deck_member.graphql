@@ -1,0 +1,12 @@
+mutation DeleteDeckMember($userId: ID!, $deckId: ID!) {
+  deleteDeckMember(userId: $userId, deckId: $deckId) {
+    deckMember {
+      user {
+        id
+      }
+      deck {
+        id
+      }
+    }
+  }
+}

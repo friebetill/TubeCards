@@ -1,0 +1,5 @@
+mutation DeleteDeckInvite($id: ID!) {
+  deleteDeckInvite(id: $id) {
+    id
+  }
+}

@@ -1,0 +1,41 @@
+# import './deck_invite_fragment.graphql'
+
+fragment DeckFragment on Deck {
+  id
+  name
+  description
+  frontLanguage
+  backLanguage
+  createMirrorCard
+  createdAt
+  updatedAt
+  coverImage {
+    unsplashId
+    authorName
+    authorUrl
+    smallUrl
+    regularUrl
+    fullUrl
+  }
+  cardConnection {
+    totalCount
+  }
+  dueCardConnection {
+    totalCount
+  }
+  viewerDeckMember {
+    role {
+      id
+    }
+    isActive
+  }
+  deckMemberConnection {
+    totalCount
+  }
+  deckInvites {
+    ...DeckInviteFragment
+  }
+  offer {
+    id
+  }
+}

@@ -1,0 +1,17 @@
+# import '../fragments/offer_fragment.graphql'
+
+query ViewerOffers($first: Int!, $after: String) {
+  viewer {
+    id
+    offerConnection(first: $first, after: $after) {
+      totalCount
+      nodes {
+        ...OfferFragment
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+  }
+}

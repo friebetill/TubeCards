@@ -1,0 +1,24 @@
+# import '../fragments/card_fragment.graphql'
+# import '../fragments/deck_fragment.graphql'
+
+mutation JoinDeck($deckInviteId: ID!, $firstOfDueCardConnection: Int!) {
+  joinDeck(deckInviteId: $deckInviteId) {
+    deck {
+      ...DeckFragment
+      # We need the nodes to populate the DueCardConnection in case the user
+      # wants to learn these cards directly.
+      completeDueCardConnection: dueCardConnection(
+        first: $firstOfDueCardConnection
+      ) {
+        nodes {
+          ...CardFragment
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+        totalCount
+      }
+    }
+  }
+}

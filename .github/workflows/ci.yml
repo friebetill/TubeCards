@@ -1,0 +1,186 @@
+name: Continuous Integration
+
+on:
+  push:
+    tags:
+      - "*.*.*"
+
+jobs:
+  build_space_for_android_and_linux:
+    name: Build Flutter (Android, Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: olegtarasov/get-tag@v2.1
+        id: tagName
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Java JDK 11
+        uses: actions/setup-java@v2
+        with:
+          distribution: "zulu"
+          java-version: "11"
+      - name: Android NDK toolchain Setup
+        uses: ravinderjangra/android-ndk-toolchain-setup@0.2
+        with:
+          api: "22"
+          arch: "x86"
+          install-location: "toolchains"
+      - name: Get Flutter version
+        id: get-flutter-version
+        uses: zgosalvez/github-actions-get-flutter-version-env@v1
+        with:
+          pubspec-file-path: pubspec.yaml
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v1
+        with:
+          flutter-version: ${{ steps.get-flutter-version.outputs.version }}
+
+      - run: flutter pub get
+      - run: ./scripts/update_generated_files.sh
+
+      - name: Decoding android/key.properties
+        run: echo "${{ secrets.ANDROID_PROPERTIES_KEY }}" | base64 --decode > android/key.properties
+      - name: Decoding android/key.jks
+        run: echo "${{ secrets.ANDROID_JKS_KEY }}" | base64 --decode > android/app/key.jks
+
+      - name: Build Android release (App Bundle)
+        run: flutter build appbundle --release --flavor prod --no-pub --verbose
+      - name: Rename release
+        run: mv build/app/outputs/bundle/prodRelease/app-prod-release.aab space_android_${{ steps.tagName.outputs.tag }}.aab
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: space_android_${{ steps.tagName.outputs.tag }}.aab
+      - name: Upload to Google Play Console
+        uses: r0adkll/upload-google-play@v1.0.15
+        with:
+          serviceAccountJsonPlainText: ${{ secrets.SERVICE_ACCOUNT_JSON_PLAIN_TEXT }}
+          packageName: com.space.space
+          releaseFiles: space_android_${{ steps.tagName.outputs.tag }}.aab
+          track: internal
+          whatsNewDirectory: android/whats_new
+
+      - name: Activate Linux builds
+        run: flutter config --enable-linux-desktop
+      - name: Install Linux dependencies
+        run: sudo apt install clang ninja-build libgtk-3-dev -y
+      - name: Build Linux release (tar.xz)
+        run: flutter build linux --release --dart-define app.flavor=prod
+      - name: Set environment variables
+        run: |
+          echo "OUTFILE=space_${{ steps.tagName.outputs.tag }}.tar.xz" >> $GITHUB_ENV
+          echo "DIR=build/linux/x64/release/bundle" >> $GITHUB_ENV
+      - name: Copy metadata to release
+        run: |
+          cp linux/flathub/app.getspace.Space.desktop ${{ env.DIR }}
+          cp linux/flathub/app.getspace.Space.metainfo.xml ${{ env.DIR }}
+      - name: Compress release
+        run: tar -cJf "${{ env.OUTFILE }}" -C "${{ env.DIR }}" .
+
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ env.OUTFILE }}
+
+      # It's necessary to move the release to its own folder, https://bit.ly/3nifa65.
+      - name: Create extra folder for release
+        run: |
+          mkdir tmp_release
+          mv ${{ env.OUTFILE }} tmp_release/${{ env.OUTFILE }}
+      - name: Upload release to AWS S3
+        uses: shallwefootball/s3-upload-action@master
+        with:
+          aws_key_id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          aws_bucket: space-linux
+          source_dir: tmp_release
+          destination_dir: releases
+
+  # build_space_for_iOS:
+  #   name: Build Flutter (iOS)
+  #   runs-on: macos-latest
+  #   steps:
+  #     - uses: olegtarasov/get-tag@v2.1
+  #       id: tagName
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v2
+  #     - name: Setup Java JDK 11
+  #       uses: actions/setup-java@v2
+  #       with:
+  #         distribution: 'zulu'
+  #         java-version: '11'
+  #     - name: Get Flutter version
+  #       id: get-flutter-version
+  #       uses: zgosalvez/github-actions-get-flutter-version-env@v1
+  #       with:
+  #         pubspec-file-path: pubspec.yaml
+  #     - name: Setup Flutter
+  #       uses: subosito/flutter-action@v1
+  #       with:
+  #         flutter-version: ${{ steps.get-flutter-version.outputs.version }}
+
+  #     - run: flutter pub get
+  #     - run: ./scripts/update_generated_files.sh
+
+  #     - name: Build iOS release
+  #       run: flutter build ipa --release --flavor prod
+  #     - name: Rename archive
+  #       run: mv build/ios/archive/Runner.xcarchive build/ios/archive/space_iOS_${{ steps.tagName.outputs.tag }}.xcarchive
+  #     - name: Upload to GitHub Release
+  #       uses: softprops/action-gh-release@v1
+  #       with:
+  #         files: build/ios/archive/space_iOS_${{ steps.tagName.outputs.tag }}.xcarchive
+
+  build_space_for_windows:
+    name: Build Flutter (Windows)
+    runs-on: windows-latest
+    steps:
+      - uses: olegtarasov/get-tag@v2.1
+        id: tagName
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Java JDK 11
+        uses: actions/setup-java@v2
+        with:
+          distribution: "zulu"
+          java-version: "11"
+      - name: Get Flutter version
+        id: get-flutter-version
+        uses: zgosalvez/github-actions-get-flutter-version-env@v1
+        with:
+          pubspec-file-path: pubspec.yaml
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v1
+        with:
+          flutter-version: ${{ steps.get-flutter-version.outputs.version }}
+
+      - name: Allow long paths for git
+        # This fixes a problem with `flutter pub get`, where the file names are
+        # too long.
+        run: git config --system core.longpaths true
+
+      - run: flutter pub get
+      - name: Generate Flutter files
+        run: |
+          flutter pub run lang_table:generate --platform=airTable --target=Flutter --input=https://api.airtable.com/v0/app6dkbYXMccUCZb1/i18n --api-key=${{ secrets.AIRTABLE_KEY}}
+          flutter pub run build_runner build --delete-conflicting-outputs
+          flutter packages pub run gen_lang:generate --output-dir lib/i18n
+
+      - name: Activate Windows builds
+        run: flutter config --enable-windows-desktop
+      - name: Build Windows release
+        run: flutter build windows --dart-define app.flavor=prod
+      - name: Download sqlite3.dll to build folder
+        uses: carlosperate/download-file-action@v1.0.3
+        with:
+          file-url: "https://github.com/tekartik/sqflite/raw/master/sqflite_common_ffi/lib/src/windows/sqlite3.dll"
+          file-name: "sqlite3.dll"
+          location: "build/windows/runner/Release"
+      - name: Build msix installer
+        run: flutter pub run msix:create
+      - name: Rename msix installer
+        run: mv build\windows\runner\Release\client_mobile.msix build\windows\runner\Release\space_${{ steps.tagName.outputs.tag }}.msix
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: build\windows\runner\Release\space_${{ steps.tagName.outputs.tag }}.msix

@@ -1,0 +1,63 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Update generated flutter files",
+      "type": "shell",
+      "dependsOrder": "sequence",
+      "command": "sh scripts/update_generated_files.sh",
+      "windows": {
+        "command": ".\\scripts\\update_generated_files.sh"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Update only language files",
+      "type": "shell",
+      "dependsOrder": "sequence",
+      "command": "sh scripts/update_only_language_files.sh",
+      "windows": {
+        "command": ".\\scripts\\update_only_language_files.sh"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build android app in release mode (dev flavor)",
+      "type": "shell",
+      "command": "flutter build apk --flavor dev --dart-define app.flavor=dev",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build android app in release mode (prod flavor)",
+      "type": "shell",
+      "command": "flutter build apk --flavor prod",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build macOS app in release mode (dev flavor)",
+      "type": "shell",
+      "command": "flutter build macos --dart-define app.flavor=dev",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build macOS app in release mode (prod flavor)",
+      "type": "shell",
+      "command": "flutter build macos --dart-define app.flavor=prod",
+      "problemMatcher": []
+    },
+    {
+      "label": "Install latest build",
+      "type": "shell",
+      "command": "flutter install",
+      "problemMatcher": []
+    },
+    {
+      "label": "Format project",
+      "type": "shell",
+      "command": "flutter format lib test",
+      "problemMatcher": []
+    }
+  ]
+}

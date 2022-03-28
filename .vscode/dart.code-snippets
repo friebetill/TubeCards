@@ -1,0 +1,125 @@
+{
+  // Place your snippets for dart here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  "Component": {
+    "prefix": "component",
+    "description": "Create boilerplate component",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class $1Component extends StatelessWidget {",
+      "  const $1Component({Key? key}) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "  return Component<$1Bloc>(",
+      "      createViewModel: (bloc) => bloc.createViewModel(),",
+      "      builder: (context, bloc) {",
+      "        return StreamBuilder<$1ViewModel>(",
+      "          stream: bloc.viewModel,",
+      "          builder: (context, snapshot) {",
+      "          if (!snapshot.hasData) {",
+      "            return Container();",
+      "            }",
+      "",
+      "            return _$1View(snapshot.data!);",
+      "          },",
+      "        );",
+      "      },",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "class _$1View extends StatelessWidget {",
+      "  const _$1View(this.viewModel);",
+      "",
+      "  final $1ViewModel viewModel;",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Container();",
+      "  }",
+      "}",
+      ""
+    ]
+  },
+  "Bloc": {
+    "prefix": "bloc",
+    "description": "Create boilerplate bloc",
+    "body": [
+      "import 'package:injectable/injectable.dart';",
+      "import 'package:logging/logging.dart';",
+      "",
+      "/// BLoC for the [$1Component].",
+      "///",
+      "/// Exposes a [$1ViewModel] for that component to use.",
+      "@injectable",
+      "class $1Bloc {",
+      "  final _log = Logger(($1Bloc).toString());",
+      "",
+      "  Stream<$1ViewModel>? _viewModel;",
+      "  Stream<$1ViewModel>? get viewModel => _viewModel;",
+      "",
+      "  Stream<$1ViewModel> createViewModel() {",
+      "    if (_viewModel != null) {",
+      "      return _viewModel!;",
+      "    }",
+      "",
+      "    return _viewModel = Stream.value(true).map(_createViewModel);",
+      "  }",
+      "",
+      "  $1ViewModel _createViewModel(bool placeHolder) {",
+      "    return $1ViewModel();",
+      "  }",
+      "}"
+    ]
+  },
+  "ViewModel": {
+    "prefix": "viewmodel",
+    "description": "Create boilerplate viewmodel",
+    "body": [
+      "class $1ViewModel {",
+      "  $1ViewModel({",
+      "    required this.value,",
+      "  });",
+      "",
+      "  final bool value;",
+      "}"
+    ]
+  },
+  "Page": {
+    "prefix": "page",
+    "description": "Create boilerplate page",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class $1Page extends StatelessWidget {",
+      "  const $1Page({Key? key}) : super(key: key);",
+      "",
+      "  /// The name of the route to the [$1Page] screen.",
+      "  static const String routeName = '/$2';",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) => const $1Component();",
+      "}"
+    ]
+  },
+  "VisualElement": {
+    "prefix": "ve",
+    "description": "Create a visual element",
+    "body": [
+      "VisualElement(",
+      "  id: VEs.,",
+      "  childBuilder: (controller) {",
+      "    return Button(",
+      "      onTap: () {",
+      "        controller.logTap();",
+      "      },",
+      "    );",
+      "  },",
+      "),"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+# import '../fragments/card_fragment.graphql'
+
+query SearchCards(
+  $searchTerm: String!
+  $deckId: ID
+  $first: Int!
+  $after: String
+) {
+  searchCards(
+    searchTerm: $searchTerm
+    deckId: $deckId
+    first: $first
+    after: $after
+  ) {
+    totalCount
+    nodes {
+      ...CardFragment
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

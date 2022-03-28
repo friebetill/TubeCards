@@ -1,0 +1,22 @@
+fragment CardFragment on Card {
+  id
+  front
+  back
+  createdAt
+  updatedAt
+  deck {
+    id
+    name
+  }
+  mirrorCard {
+    id
+  }
+  learningState {
+    nextDueDate
+    streakKnown
+    ease
+    strength
+    stability
+    createdAt
+  }
+}

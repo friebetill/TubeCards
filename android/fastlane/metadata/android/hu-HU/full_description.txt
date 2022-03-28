@@ -1,0 +1,28 @@
+A Space egy könnyen használható Spaced Repetition System (SRS) alkalmazás. Készítsen és tanuljon tanulókártyákat bárhol, a lehető leghatékonyabb módon.
+
+Más tanulókártya-alkalmazásokkal ellentétben a Space könnyen használható, mégis számos funkcióval rendelkezik.
+
+<big>Tulajdonságok</big>
+
+1. 🤩 <b>Ingyenes</b>: Minden ingyenes és nincs reklám, de adományokkal támogathatsz minket.
+2. 🏬 <b>Piac</b>: Oszd meg a tanulókártyáidat ingyen, és tanulj kész tanulókártyákat másoktól.
+3. 🤓 <b>AI-alapú tanulás</b>: Intelligens tanulási algoritmus, amely alkalmazkodik a tanulási viselkedésedhez.
+4. 🎨 <b>Készítsd el a tanulókártyáidat</b>: Tervezd meg a tanulókártyáidat formázással és képekkel.
+
+1. 🤝 <b>Munkálkodjatok együtt</b>: Oszd meg a tanulókártyáidat privátban és dolgozzatok rajtuk együtt.
+2. 🕵️ <b>Tanulás regisztráció nélkül</b>: Teszteld az alkalmazást regisztráció nélkül.
+3. 🖥️ <b>Minden eszközödön</b>: Android, iOS, Windows, macOS, Linux és web (lásd <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Emlékeztető beállítása</b>: Kapjon emlékeztetőt a tanulókártyák megtanulásához.
+
+1. 🗃️ <b>Import/Export</b>: Importálja és exportálja a tanulókártyáit más alkalmazásokba.
+2. 📈 <b>Track your progress</b>: Kövesd nyomon a tanulási előrehaladásodat, hogy tudd, mennyire vagy jó.
+3. 🎵 <b>Felolvasás funkció</b>: Tanuld meg a kiejtést, és olvasd fel magadnak a tanulókártyáidat.
+4. 🛑 <b>Deaktiválja a paklikat</b>: Deaktiválja a paklikat, ha nem akarja megtanulni őket.
+
+Ezt mondják a felhasználóink:
+
+"<i>Ez az egyik olyan alkalmazás, amit emlékszem, hogy telepítek, amikor új telefont veszek vagy a gyári visszaállítás. Emellett gyönyörű alkalmazás.</i>" - Ricardo Passos
+
+"<i>Kivételes Spaced Repetition alkalmazás! 1000 × jobb, mint a régi barátod Anki. A felület annyira intuitív & nem kell aggódnod az olyan fogalmak miatt, mint a Spaced repetition & annak optimális beállításai, mint az Anki esetében. Minden, amit tudnod kell, olyan világosan meg van magyarázva, anélkül, hogy extra információt adna, amire nincs is szükség. Ez a dolog csak túl sok fejfájást okoz. Töltsd le a Space-t & felejtsd el ezeket az aggodalmakat & ez gondoskodik arról, hogy ne felejtsd el azt, amire érdemes emlékezni.🔥</i>" - Rahul Ranjan Ranjan
+
+A Space küldetése, hogy a tanulást hatékonnyá és örömtelivé tegye. Reméljük, hogy csatlakozol hozzánk! 🚀

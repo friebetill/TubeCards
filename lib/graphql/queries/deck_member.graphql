@@ -1,0 +1,7 @@
+# import '../fragments/deck_member_fragment.graphql'
+
+query DeckMember($deckId: ID!, $userId: ID!) {
+  deckMember(deckId: $deckId, userId: $userId) {
+    ...DeckMemberFragment
+  }
+}

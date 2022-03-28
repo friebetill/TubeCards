@@ -1,0 +1,28 @@
+Space ir viegli lietojama Spaced Repetition System (SRS) lietotne. Veidojiet un apgūstiet zibatmiņas kartes, lai kur jūs atrastos, visefektīvākajā iespējamajā veidā.
+
+Atšķirībā no citām zibatmiņu kartīšu lietotnēm Space ir viegli lietojama un vienlaikus aprīkota ar daudzām funkcijām.
+
+<big>Iezīmes</big>
+
+1. 🤩 <b>Bez maksas</b>: viss ir bez maksas un bez reklāmām, bet jūs varat mūs atbalstīt, ziedojot.
+2. 🏬 <b>Marketplace</b>: dalies ar savām flashkartēm bez maksas un apgūsti jau gatavas flashkartes no citiem.
+3. 🤓 <b>Mācīšanās uz AI bāzes</b>: inteliģents mācīšanās algoritms, kas pielāgojas jūsu mācīšanās paradumiem.
+4. 🎨 <b>Sagatavo savas flashcards</b>: Izveidojiet savas zibatmiņas kartes ar formatējumu un attēliem.
+
+1. 🤝 <b>Darbojieties kopā</b>: dalieties ar savām flashkartēm privāti un strādājiet pie tām kopā.
+2. 🕵️ <b>Mācies bez reģistrācijas</b>: izmēģini lietotni bez reģistrācijas.
+3. 🖥️ <b>Visās ierīcēs</b>: Android, iOS, Windows, macOS, Linux un tīmeklī (skatīt <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Izveidojiet atgādinājumu</b>: Atgādini, lai iemācītos savas zibatmiņas kartes.
+
+1. 🗃️ <b>Importēšana/eksportēšana</b>: importējiet un eksportējiet savas flashkartes uz citām lietotnēm.
+2. 📈 <b>Sekot saviem panākumiem</b>: Sekojiet saviem mācību sasniegumiem, lai zinātu, cik labi jums veicas.
+3. 🎵 <b>Lasīšanas skaļi funkcija</b>: Mācieties izrunu un ļaujiet sev nolasīt savas flashkartes.
+4. 🛑 <b>Deaktivizēt decks</b>: Deaktivizējiet dekorācijas, kad nevēlaties tās mācīties.
+
+Tā saka mūsu lietotāji:
+
+"<i>Šī ir viena no tām lietotnēm, ko es atceros instalēt, kad pērku jaunu tālruni vai rūpnīcas atiestatīšanu. Turklāt skaista lietotne.</i>" - Ricardo Passos
+
+"<i>"Izcila izkliedētas atkārtošanas lietotne! 1000 × labāka nekā jūsu vecais draugs Anki. Interfeiss ir tik intuitīvs & jums nav jāuztraucas par tādiem jēdzieniem kā izkliedēta atkārtošana & tās optimālie iestatījumi, kā tas ir Anki. Viss, kas jums jāzina, ir izskaidrots tik skaidri, nesniedzot papildu informāciju, kas pat nav nepieciešama. Tas vienkārši sagādā pārāk daudz galvassāpju. Lejupielādējiet Space & aizmirst visas šīs raizes & tas nodrošinās, ka jūs neaizmirsīsiet to, ko ir vērts atcerēties.🔥</i>" - Rahul Ranjan
+
+Space misija ir padarīt mācīšanos efektīvu un priecīgu. Mēs ceram, ka tu mums pievienosies! 🚀

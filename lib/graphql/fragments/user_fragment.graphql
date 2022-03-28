@@ -1,0 +1,10 @@
+fragment UserFragment on User {
+  id
+  email
+  firstName
+  lastName
+  isAnonymous
+  offerConnection {
+    totalCount
+  }
+}

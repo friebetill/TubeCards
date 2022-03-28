@@ -1,0 +1,28 @@
+Space is an easy-to-use Spaced Repetition System (SRS) app. Create and learn flashcards wherever you are in the most effective way possible.
+
+Unlike other flashcards apps, Space is easy to use and yet equipped with many features.
+
+<big>Features</big>
+
+1. 🤩 <b>Free</b>: Everything is free and no advertising, but you can support us through donations.
+2. 🏬 <b>Marketplace</b>: Share your flashcards for free and learn ready-made flashcards from others.
+3. 🤓 <b>AI-based learning</b>: Intelligent learning algorithm that adjust to your learn behavior.
+4. 🎨 <b>Create your flashcards</b>: Design your flashcards with formatting and images.
+
+1. 🤝 <b>Work together</b>: Share your flashcards privatly and work on them together.
+2. 🕵️ <b>Learn without registration</b>: Test the app without registering.
+3. 🖥️ <b>On all your devices</b>: Android, iOS, Windows, macOS, Linux and Web (see <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Set reminder</b>: Get reminding to learn your flashcards.
+
+1. 🗃️ <b>Import/Export</b>: Import and export your flashcards to other apps.
+2. 📈 <b>Track your progress</b>: Track your learning progress to know how good you are.
+3. 🎵 <b>Read aloud function</b>: Learn the pronunciation and have your flashcards read to you.
+4. 🛑 <b>Deactivate Decks</b>: Deactivate decks when you don't want to learn them.
+
+That's what our users say:
+
+"<i>This is one of those apps that I remember installing when I buy a new phone or a the factory reset. Also, beautiful app.</i>" - Ricardo Passos
+
+"<i>Exceptional Spaced Repetition app! 1000 × better than your old friend Anki. The interface is so intuitive & you don't have to worry about concepts like Spaced repetition & it's optimal settings as you do on Anki. Everything that you need to know is explained so nuch clearly without giving extra info that's not even needed. This things just gives too much headaches. Download Space & forget all those worries & it'll make sure you don't forget what's worth remembering.🔥</i>" - Rahul Ranjan
+
+The mission of Space is to make learning effective and joyful. We hope you'll join us! 🚀

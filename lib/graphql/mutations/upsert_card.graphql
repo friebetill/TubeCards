@@ -1,0 +1,17 @@
+# import '../fragments/card_fragment.graphql'
+
+mutation UpsertCard(
+  $id: ID
+  $deckId: ID!
+  $front: String!
+  $back: String!
+) {
+  upsertCard(
+    id: $id,
+    deckId: $deckId,
+    front: $front,
+    back: $back,
+  ) {
+    ...CardFragment
+  }
+}

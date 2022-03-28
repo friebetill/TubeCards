@@ -1,0 +1,55 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter dev",
+      "type": "dart",
+      "request": "launch",
+      "args": ["--flavor", "dev", "--dart-define", "app.flavor=dev"]
+    },
+    {
+      "name": "Flutter dev (no flavor)",
+      "type": "dart",
+      "request": "launch",
+      "args": ["--dart-define", "app.flavor=dev"]
+    },
+    {
+      "name": "Flutter profile dev",
+      "type": "dart",
+      "request": "launch",
+      "flutterMode": "profile",
+      "args": ["--flavor", "dev", "--dart-define", "app.flavor=dev"]
+    },
+    {
+      "name": "Flutter prod",
+      "type": "dart",
+      "request": "launch",
+      "flutterMode": "release",
+      "args": ["--flavor", "prod", "--dart-define", "app.flavor=prod"]
+    },
+    {
+      "name": "Flutter: Test all files",
+      "type": "dart",
+      "request": "launch",
+      "program": "./test/"
+    },
+    {
+      "name": "Flutter: Test current file",
+      "type": "dart",
+      "request": "launch",
+      "program": "${file}"
+    },
+    {
+      "name": "Update goldens",
+      "request": "launch",
+      "type": "dart",
+      "codeLens": {
+        "for": ["run-test", "run-test-file"]
+      },
+      "args": ["--update-goldens"]
+    }
+  ]
+}

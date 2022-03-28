@@ -1,0 +1,10 @@
+fragment DeckInviteFragment on DeckInvite {
+  id
+  link
+  inviteeRole {
+    id
+  }
+  deck {
+    id
+  }
+}

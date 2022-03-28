@@ -1,0 +1,42 @@
+# import '../fragments/deck_fragment.graphql'
+
+mutation UpsertDeck(
+  $id: ID
+  $name: String!
+  $description: String!
+  $createMirrorCard: Boolean!
+  $unsplashId: String!
+  $authorName: String!
+  $authorUrl: String!
+  $regularUrl: String!
+  $smallUrl: String!
+  $fullUrl: String!
+  $frontLanguage: String
+  $backLanguage: String
+) {
+  upsertUnsplashImage(
+    where: { unsplashId: $unsplashId }
+    create: {
+      unsplashId: $unsplashId
+      authorName: $authorName
+      authorUrl: $authorUrl
+      regularUrl: $regularUrl
+      smallUrl: $smallUrl
+      fullUrl: $fullUrl
+    }
+    update: {}
+  ) {
+    id
+  }
+  upsertDeck(
+    id: $id
+    name: $name
+    description: $description
+    createMirrorCard: $createMirrorCard
+    unsplashImageId: $unsplashId
+    frontLanguage: $frontLanguage
+    backLanguage: $backLanguage
+  ) {
+    ...DeckFragment
+  }
+}

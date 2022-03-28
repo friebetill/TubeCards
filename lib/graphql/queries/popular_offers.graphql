@@ -1,0 +1,23 @@
+query PopularOffers($first: Int!, $after: String) {
+  popularOffers(first: $first, after: $after) {
+    totalCount
+    nodes {
+      id
+      reviewSummary {
+        averageRating
+        totalCount
+      }
+      deck {
+        id
+        name
+        coverImage {
+          regularUrl
+        }
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

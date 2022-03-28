@@ -1,0 +1,69 @@
+name: flutter
+on:
+  push:
+
+jobs:
+  format:
+    name: format
+    runs-on: ubuntu-20.04
+    steps:
+      # Set up Flutter.
+      - name: Clone the repository.
+        uses: actions/checkout@v2
+      - name: Setup Java.
+        uses: actions/setup-java@v1
+        with:
+          java-version: "12.x"
+      - name: Get the Flutter version.
+        id: get-flutter-version
+        uses: zgosalvez/github-actions-get-flutter-version-env@v1
+        with:
+          pubspec-file-path: pubspec.yaml
+      - name: Install Flutter.
+        uses: subosito/flutter-action@v1
+        with:
+          flutter-version: ${{ steps.get-flutter-version.outputs.version }}
+
+      # Run the tests for the repository.
+      - name: Test the formatting.
+        run: flutter format --dry-run --set-exit-if-changed lib test
+
+  lint:
+    name: lint & test
+    runs-on: ubuntu-20.04
+    steps:
+      # Set up Flutter.
+      - name: Clone the repository.
+        uses: actions/checkout@v2
+      - name: Setup Java.
+        uses: actions/setup-java@v1
+        with:
+          java-version: "12.x"
+      - name: Get the Flutter version.
+        id: get-flutter-version
+        uses: zgosalvez/github-actions-get-flutter-version-env@v1
+        with:
+          pubspec-file-path: pubspec.yaml
+      - name: Install Flutter.
+        uses: subosito/flutter-action@v1
+        with:
+          flutter-version: ${{ steps.get-flutter-version.outputs.version }}
+      - name: Install SQLite dependency.
+        run: sudo apt-get install libsqlite3-dev
+      - name: Get packages for the Flutter project.
+        run: flutter pub get
+      - name: Update generated files.
+        run: ./scripts/update_generated_files.sh
+
+      # Run the tests for the repository.
+      - name: Analyze the project's Dart code.
+        run: flutter analyze
+      - name: Run Flutter tests.
+        run: flutter test
+      - name: Upload goldens if tests fail.
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: goldens
+          path: test/**/failures
+          if-no-files-found: ignore

@@ -1,0 +1,13 @@
+# import '../fragments/offer_fragment.graphql'
+
+mutation UpsertOfferReview($offerId: ID!, $rating: Int!, $description: String) {
+  upsertOfferReview(
+    offerId: $offerId
+    rating: $rating
+    description: $description
+  ) {
+    offer {
+      ...OfferFragment
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# import '../fragments/offer_fragment.graphql'
+
+mutation DeleteOfferReview($offerID: ID!) {
+  deleteOfferReview(offerId: $offerID) {
+    offer {
+      ...OfferFragment
+    }
+  }
+}

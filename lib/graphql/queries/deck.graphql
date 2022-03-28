@@ -1,0 +1,7 @@
+# import '../fragments/deck_fragment.graphql'
+
+query Deck($id: ID!) {
+  deck(id: $id) {
+    ...DeckFragment
+  }
+}

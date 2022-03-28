@@ -1,0 +1,14 @@
+# import '../fragments/deck_fragment.graphql'
+
+query SearchDecks($searchTerm: String!, $first: Int!, $after: String) {
+  searchDecks(searchTerm: $searchTerm, first: $first, after: $after) {
+    totalCount
+    nodes {
+      ...DeckFragment
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

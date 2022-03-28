@@ -1,0 +1,28 @@
+Space é uma aplicação do Sistema de Repetição Espaçada (SRS) fácil de usar. Cria e aprende flashcards onde quer que estejas, da forma mais eficaz possível.
+
+Ao contrário de outras aplicações Flashcards, o espaço é fácil de usar e, no entanto, equipado com muitas funcionalidades.
+
+<big>Faatures</big>
+
+1. 🤩 <b>Free</b>: Tudo é gratuito e sem publicidade, mas podes apoiar-nos através de donativos.
+2. 🏬 <b>Marketplace</b>: Partilha os teus flashcards de graça e aprende com outros flashcards já feitos.
+3. 🤓 <b>AI-based learning</b>: Algoritmo inteligente de aprendizagem que se ajusta ao teu comportamento de aprendizagem.
+4. 🎨 <b>: Cria os teus flashcards</b>: Desenha os teus flashcards com formatação e imagens.
+
+1. 🤝 <b>Trabalhar em conjunto</b>: Partilha os teus flashcards em privado e trabalha neles em conjunto.
+2. 🕵️ <b>Aprende sem registo</b>: Testa a aplicação sem te registares.
+3. 🖥️ <b>Em todos os teus dispositivos</b>: Android, iOS, Windows, MacOS, Linux e Web (ver <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Set lembrete</b>: Lembra-te de aprender os teus flashcards.
+
+1. 🗃️ <b>Import/Exportar</b>: Importa e exporta os teus flashcards para outras aplicações.
+2. 📈 <b>Track your progress</b>: Segue o teu progresso de aprendizagem para saberes o quão bom tu és.
+3. 🎵 <b>Lê em voz alta a função</b>: Aprende a pronúncia e pede aos teus flashcards para te lerem.
+4. 🛑 <b>Deactivate Decks</b>: Desactiva os baralhos quando não os queres aprender.
+
+Isso é o que os nossos utilizadores dizem:
+
+"<i>Esta é uma daquelas aplicações que me lembro de instalar quando compro um telemóvel novo ou um reset de fábrica. Também, bela aplicação.</i>" - Ricardo Passos
+
+"<i>Aplicação de Repetição Espaçada Excepcional! 1000 × melhor do que o teu velho amigo Anki. A interface é tão intuitiva & não tens de te preocupar com conceitos como Repetição Espaçada & é a melhor configuração que tens em Anki. Tudo o que precisas de saber é explicado de forma tão clara sem dar informação extra que nem sequer é necessária. Estas coisas só te dão demasiadas dores de cabeça. Descarrega o Espaço & esquece todas essas preocupações & vai garantir que não te esqueces do que vale a pena recordar.🔥</i>" - Rahul Ranjan
+
+A missão do Espaço é tornar a aprendizagem eficaz e alegre. Esperamos que te juntes a nós! 🚀

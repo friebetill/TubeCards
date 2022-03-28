@@ -1,0 +1,5 @@
+mutation TransferDecksOwnership($recipientAuthToken: String!) {
+  transferDecksOwnership(recipientAuthToken: $recipientAuthToken) {
+    count
+  }
+}

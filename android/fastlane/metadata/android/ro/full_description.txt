@@ -1,0 +1,28 @@
+Space este o aplicație ușor de utilizat a Sistemului de repetiție spațioasă (SRS). Creați și învățați flashcards oriunde vă aflați, în cel mai eficient mod posibil.
+
+Spre deosebire de alte aplicații de cartonașe flash, Space este ușor de utilizat și totuși dotată cu multe funcții.
+
+<big>Caracteristici</big>.
+
+1. 🤩 <b>Gratuit</b>: Totul este gratuit și fără publicitate, dar ne puteți susține prin donații.
+2. 🏬 <b>Marketplace</b>: Împărtășește-ți gratuit cartonașele și învață cartonașe gata făcute de la alții.
+3. 🤓 <b>Învățare bazată pe AI</b>: Algoritm inteligent de învățare care se adaptează la comportamentul dvs. de învățare.
+4. 🎨 <b>Creați-vă flashcards</b>: Proiectați-vă cardurile flash cu formatare și imagini.
+
+1. 🤝 <b>Lucrați împreună</b>: Împărtășiți flashcards în privat și lucrați la ele împreună.
+2. 🕵️ <b>Învățați fără înregistrare</b>: Testați aplicația fără să vă înregistrați.
+3. 🖥️ <b>Pe toate dispozitivele tale</b>: Android, iOS, Windows, macOS, Linux și Web (vezi <a href="https://getspace.app">https://getspace.app</a>).
+4. ⏰ <b>Setați un memento</b>: Primiți memento-uri pentru a vă învăța cartonașele flash.
+
+1. 🗃️ <b>Import/Export</b>: Importați și exportați cardurile flash în alte aplicații.
+2. 📈 <b>Să-ți urmărești progresul</b>: Urmărește-ți progresul învățării pentru a ști cât de bun ești.
+3. 🎵 <b>Funcția de citire cu voce tare</b>: Învățați pronunția și faceți să vi se citească flashcards.
+4. 🛑 <b>Dezactivare punți</b>: Dezactivați punțile atunci când nu doriți să le învățați.
+
+Iată ce spun utilizatorii noștri:
+
+"<i>Aceasta este una dintre acele aplicații pe care îmi amintesc că le instalez atunci când cumpăr un telefon nou sau la resetarea din fabrică. De asemenea, o aplicație frumoasă.</i>" - Ricardo Passos
+
+"<i>Aplicație excepțională Spaced Repetition! 1000 × mai bună decât vechiul tău prieten Anki. Interfața este atât de intuitivă & nu trebuie să vă faceți griji cu privire la concepte precum Spaced repetition & it's optimal settings, așa cum faceți pe Anki. Tot ceea ce trebuie să știți este explicat atât de clar, fără a da informații suplimentare care nu sunt necesare. Aceste lucruri dau prea multe dureri de cap. Descărcați Space & uitați toate aceste griji & se va asigura că nu uitați ceea ce merită să vă amintiți. 🔥</i>" - Rahul Ranjan
+
+Misiunea Space este de a face învățarea eficientă și plină de bucurie. Sperăm că ni te vei alătura! 🚀

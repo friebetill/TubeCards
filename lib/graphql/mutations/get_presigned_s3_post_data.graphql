@@ -1,0 +1,3 @@
+mutation GetPreSignedS3PostData($fileName: String!) {
+  getPreSignedS3PostData(key: $fileName)
+}

@@ -1,0 +1,64 @@
+fragment OfferFragment on Offer {
+  id
+  hasViewerBought
+  subscriberCount
+  reviewSummary {
+    averageRating
+    totalCount
+    oneStarRatingCount
+    twoStarRatingCount
+    threeStarRatingCount
+    fourStarRatingCount
+    fiveStarRatingCount
+  }
+  deck {
+    id
+    name
+    description
+    createdAt
+    updatedAt
+    coverImage {
+      unsplashId
+      authorName
+      authorUrl
+      smallUrl
+      regularUrl
+      fullUrl
+    }
+    cardConnection {
+      totalCount
+    }
+    viewerDeckMember {
+      role {
+        id
+      }
+    }
+  }
+  creator {
+    firstName
+    lastName
+    offerConnection {
+      totalCount
+    }
+  }
+  viewerReview {
+    rating
+    description
+  }
+  reviewConnection(first: 10) {
+    nodes {
+      rating
+      description
+      createdAt
+      user {
+        firstName
+        lastName
+      }
+    }
+    totalCount
+  }
+  cardSamples {
+    front
+    back
+  }
+}

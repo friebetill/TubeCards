@@ -1,0 +1,13 @@
+# import '../fragments/deck_fragment.graphql'
+# import '../fragments/offer_fragment.graphql'
+
+mutation Unsubscribe($offerId: ID!) {
+  unsubscribe(offerId: $offerId) {
+    offer {
+      ...OfferFragment
+      deck {
+        ...DeckFragment
+      }
+    }
+  }
+}
