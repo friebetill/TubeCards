@@ -6,7 +6,7 @@ publish_to: none
 
 environment:
   sdk: ">=2.13.0 <3.0.0"
-  flutter: 2.8.1
+  flutter: 2.10.4
 
 dependencies:
   adaptive_theme: ^2.2.0
