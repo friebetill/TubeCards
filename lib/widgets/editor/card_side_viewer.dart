@@ -2,10 +2,7 @@ import 'dart:convert';
 
 import 'package:delta_markdown/delta_markdown.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_quill/models/documents/document.dart';
-import 'package:flutter_quill/models/quill_delta.dart';
-import 'package:flutter_quill/widgets/controller.dart';
-import 'package:flutter_quill/widgets/editor.dart';
+import 'package:flutter_quill/flutter_quill.dart';
 
 import 'editor_style.dart';
 import 'embed_builder.dart';
@@ -49,7 +46,7 @@ class CardSideViewer extends StatelessWidget {
       enableInteractiveSelection: false,
       expands: false,
       padding: padding,
-      embedBuilder: (context, embed, _) => embedBuilder(
+      embedBuilder: (context, controller, embed, readOnly) => embedBuilder(
         context,
         embed,
         _controller,

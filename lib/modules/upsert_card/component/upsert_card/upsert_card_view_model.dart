@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_quill/widgets/controller.dart';
+import 'package:flutter_quill/flutter_quill.dart';
 import 'package:quiver/core.dart';
 
 class UpsertCardViewModel {

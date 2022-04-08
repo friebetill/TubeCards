@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quill/widgets/controller.dart';
-import 'package:flutter_quill/widgets/editor.dart';
+import 'package:flutter_quill/flutter_quill.dart';
 
 import 'editor_style.dart';
 import 'embed_builder.dart';
@@ -42,7 +41,7 @@ class CardSideEditor extends StatelessWidget {
       placeholder: placeholder,
       expands: false,
       padding: contentPadding,
-      embedBuilder: (context, embed, _) =>
+      embedBuilder: (context, controller, embed, readonly) =>
           embedBuilder(context, embed, controller, readOnly: readOnly),
       customStyles: buildEditorStyle(context),
     );

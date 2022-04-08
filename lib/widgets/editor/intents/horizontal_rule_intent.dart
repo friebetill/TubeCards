@@ -34,7 +34,7 @@ class HorizontalRuleIntent extends Intent {
     controller.replaceText(
       index,
       length,
-      BlockEmbed.horizontalRule,
+      const BlockEmbed('divider', 'hr'),
       null,
     );
   }

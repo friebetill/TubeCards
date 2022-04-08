@@ -29,7 +29,7 @@ Widget embedBuilder(
   switch (embed.value.type) {
     case BlockEmbed.imageType:
       return _buildImage(context, embed, controller, readOnly: readOnly);
-    case BlockEmbed.horizontalRuleType:
+    case 'divider':
       return const Divider();
     default:
       throw UnimplementedError('Embed "${embed.value.type}" is not supported.');

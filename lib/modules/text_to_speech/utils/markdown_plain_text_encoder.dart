@@ -1,8 +1,7 @@
 import 'dart:convert';
 
 import 'package:delta_markdown/delta_markdown.dart';
-import 'package:flutter_quill/models/documents/document.dart';
-import 'package:flutter_quill/models/quill_delta.dart';
+import 'package:flutter_quill/flutter_quill.dart';
 import 'package:meta/meta.dart';
 
 /// Encodes a given Markdown formatted string into plain text.

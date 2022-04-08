@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quill/widgets/default_styles.dart';
+import 'package:flutter_quill/flutter_quill.dart';
 import 'package:tuple/tuple.dart';
 
 DefaultStyles buildEditorStyle(BuildContext context) {

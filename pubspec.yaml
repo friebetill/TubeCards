@@ -25,14 +25,14 @@ dependencies:
   copy_with_extension: ^2.0.0
   crypto: ^3.0.0
   csv: ^5.0.0
-  delta_markdown: 0.4.0
+  delta_markdown: 0.6.0
   devicelocale: ^0.5.0
   dio: ^4.0.0-prev3
   email_validator: ^2.0.1
   equatable: ^2.0.0
   extended_image: ^6.0.1
   ferry: ^0.10.4
-  ferry_generator: ^0.4.2
+  ferry_generator: ^0.5.0-dev.10
   ferry_hive_store: ^0.4.4
   file_picker: ^4.0.0
   file_selector: ^0.8.2
@@ -57,14 +57,14 @@ dependencies:
       ref: 716525c
   # Updating to 2.0.11 leads to bugs when adding cards
   flutter_phosphor_icons: ^0.0.1+5
-  flutter_quill: 3.2.0
+  flutter_quill: ^4.0.0
   flutter_rating_bar: ^4.0.0
   flutter_svg: ^1.0.0
   flutter_tts: ^3.0.0
   font_awesome_flutter: ^9.1.0
   get_it: ^7.0.0
   gql_error_link: ^0.2.0-nullsafety.1
-  gql_exec: ^0.3.0-nullsafety.2
+  gql_exec: ^0.4.0
   gql_http_link: ^0.4.0-nullsafety.1
   gql_transform_link: ^0.2.0-nullsafety.1
   hive: ^2.0.0
@@ -131,14 +131,14 @@ dev_dependencies:
       ref: 7ba7548
   golden_toolkit: ^0.12.0
   injectable_generator: ^1.2.2
-  json_serializable: ^4.1.0
-  json_serializable_immutable_collections: ^0.8.0
+  json_serializable: ^6.0.0
+  json_serializable_immutable_collections: ^0.10.0
   # Waiting for this PR https://bit.ly/31jtfUJ
   lang_table:
     git:
       url: https://github.com/KingWu/lang_table
       ref: 9f127d6
-  test: ^1.16.5
+  test: ^1.19.5
 
 flutter_icons:
   android: true

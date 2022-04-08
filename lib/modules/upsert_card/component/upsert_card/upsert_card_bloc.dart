@@ -3,9 +3,7 @@ import 'dart:convert';
 
 import 'package:delta_markdown/delta_markdown.dart';
 import 'package:flutter/material.dart' hide Card;
-import 'package:flutter_quill/models/documents/document.dart';
-import 'package:flutter_quill/models/quill_delta.dart';
-import 'package:flutter_quill/widgets/controller.dart';
+import 'package:flutter_quill/flutter_quill.dart';
 import 'package:injectable/injectable.dart';
 import 'package:logging/logging.dart';
 import 'package:quiver/core.dart';
