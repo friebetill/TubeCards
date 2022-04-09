@@ -27,7 +27,6 @@
 		33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F42044A3C60003C045 /* MainMenu.xib */; };
 		33CC11132044BFA00003C045 /* MainFlutterWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC11122044BFA00003C045 /* MainFlutterWindow.swift */; };
 		47258367D9D6C5D0501A70E2 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15E703441838A45A0967CC9 /* Pods_Runner.framework */; };
-		F30047202626BE9000B489E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F300471F2626BE9000B489E7 /* GoogleService-Info.plist */; };
 		F317F647265F909A000A4FBB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F317F646265F909A000A4FBB /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -255,7 +254,6 @@
 			files = (
 				33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */,
 				33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */,
-				F30047202626BE9000B489E7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
