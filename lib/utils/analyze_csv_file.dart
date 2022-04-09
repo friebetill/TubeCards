@@ -85,4 +85,6 @@ Future<CSVDeck?> catchCSVExceptions(
     );
     _logger.severe('Error during CSV import', e, s);
   }
+
+  return null;
 }
