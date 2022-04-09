@@ -1,12 +1,12 @@
 import 'package:ferry/typed_links.dart';
 
-import '../fragments/card_fragment.data.gql.dart';
-import '../fragments/deck_fragment.data.gql.dart';
-import '../fragments/deck_fragment.req.gql.dart';
-import '../mutations/join_deck.data.gql.dart';
-import '../mutations/join_deck.var.gql.dart';
-import '../queries/deck.data.gql.dart';
-import '../queries/deck.req.gql.dart';
+import '../fragments/__generated__/card_fragment.data.gql.dart';
+import '../fragments/__generated__/deck_fragment.data.gql.dart';
+import '../fragments/__generated__/deck_fragment.req.gql.dart';
+import '../mutations/__generated__/join_deck.data.gql.dart';
+import '../mutations/__generated__/join_deck.var.gql.dart';
+import '../queries/__generated__/deck.data.gql.dart';
+import '../queries/__generated__/deck.req.gql.dart';
 import 'helpers/decks_helper.dart';
 import 'helpers/due_cards_helper.dart';
 

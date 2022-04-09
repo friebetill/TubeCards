@@ -1,11 +1,11 @@
 import 'package:collection/collection.dart';
 import 'package:ferry/typed_links.dart';
 
-import '../fragments/card_fragment.data.gql.dart';
-import '../fragments/card_fragment.req.gql.dart';
-import '../fragments/deck_fragment.req.gql.dart';
-import '../mutations/upsert_mirror_card.data.gql.dart';
-import '../mutations/upsert_mirror_card.var.gql.dart';
+import '../fragments/__generated__/card_fragment.data.gql.dart';
+import '../fragments/__generated__/card_fragment.req.gql.dart';
+import '../fragments/__generated__/deck_fragment.req.gql.dart';
+import '../mutations/__generated__/upsert_mirror_card.data.gql.dart';
+import '../mutations/__generated__/upsert_mirror_card.var.gql.dart';
 import 'upsert_card_handler.dart';
 
 const String upsertMirrorCardHandlerKey = 'upsertMirrorCardHandler';

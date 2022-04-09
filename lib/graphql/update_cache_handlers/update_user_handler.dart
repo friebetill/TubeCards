@@ -1,9 +1,9 @@
 import 'package:ferry/typed_links.dart';
 
-import '../mutations/update_user.data.gql.dart';
-import '../mutations/update_user.var.gql.dart';
-import '../queries/viewer.data.gql.dart';
-import '../queries/viewer.req.gql.dart';
+import '../mutations/__generated__/update_user.data.gql.dart';
+import '../mutations/__generated__/update_user.var.gql.dart';
+import '../queries/__generated__/viewer.data.gql.dart';
+import '../queries/__generated__/viewer.req.gql.dart';
 
 const String updateUserHandlerKey = 'updateUserHandler';
 

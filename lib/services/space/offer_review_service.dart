@@ -2,8 +2,8 @@ import 'package:ferry/ferry.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../graphql/graph_ql_runner.dart';
-import '../../graphql/mutations/delete_offer_review.req.gql.dart';
-import '../../graphql/mutations/upsert_offer_review.req.gql.dart';
+import '../../graphql/mutations/__generated__/delete_offer_review.req.gql.dart';
+import '../../graphql/mutations/__generated__/upsert_offer_review.req.gql.dart';
 import '../../graphql/operation_exception.dart';
 import '../../graphql/update_cache_handlers/delete_offer_review_handler.dart';
 import '../../graphql/update_cache_handlers/upsert_offer_review_handler.dart';

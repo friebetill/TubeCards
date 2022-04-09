@@ -1,10 +1,10 @@
 import 'package:ferry/typed_links.dart';
 
 import '../../data/models/role.dart';
-import '../fragments/deck_fragment.data.gql.dart';
-import '../fragments/deck_fragment.req.gql.dart';
-import '../mutations/delete_deck.data.gql.dart';
-import '../mutations/delete_deck.var.gql.dart';
+import '../fragments/__generated__/deck_fragment.data.gql.dart';
+import '../fragments/__generated__/deck_fragment.req.gql.dart';
+import '../mutations/__generated__/delete_deck.data.gql.dart';
+import '../mutations/__generated__/delete_deck.var.gql.dart';
 import 'helpers/cards_helper.dart';
 import 'helpers/decks_helper.dart';
 import 'helpers/due_cards_helper.dart';

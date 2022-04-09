@@ -1,8 +1,8 @@
 import 'package:ferry/typed_links.dart';
 
-import '../fragments/deck_member_fragment.req.gql.dart';
-import '../mutations/delete_deck_member.data.gql.dart';
-import '../mutations/delete_deck_member.var.gql.dart';
+import '../fragments/__generated__/deck_member_fragment.req.gql.dart';
+import '../mutations/__generated__/delete_deck_member.data.gql.dart';
+import '../mutations/__generated__/delete_deck_member.var.gql.dart';
 import 'helpers/deck_members_helper.dart';
 
 const String deleteDeckMemberHandlerKey = 'deleteDeckMemberHandler';

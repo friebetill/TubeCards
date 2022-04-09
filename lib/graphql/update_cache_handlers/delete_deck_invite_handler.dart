@@ -1,8 +1,8 @@
 import 'package:ferry/typed_links.dart';
 
-import '../fragments/deck_invite_fragment.req.gql.dart';
-import '../mutations/delete_deck_invite.data.gql.dart';
-import '../mutations/delete_deck_invite.var.gql.dart';
+import '../fragments/__generated__/deck_invite_fragment.req.gql.dart';
+import '../mutations/__generated__/delete_deck_invite.data.gql.dart';
+import '../mutations/__generated__/delete_deck_invite.var.gql.dart';
 
 const String deleteDeckInviteHandlerKey = 'deleteDeckInviteHandler';
 

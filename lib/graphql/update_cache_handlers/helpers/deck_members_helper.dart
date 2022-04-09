@@ -3,8 +3,8 @@ import 'dart:math';
 import 'package:ferry/typed_links.dart';
 
 import '../../../services/space/deck_member_service.dart';
-import '../../queries/deck_members.data.gql.dart';
-import '../../queries/deck_members.req.gql.dart';
+import '../../queries/__generated__/deck_members.data.gql.dart';
+import '../../queries/__generated__/deck_members.req.gql.dart';
 import 'connection_utils.dart';
 
 class DeckMembersHelper {

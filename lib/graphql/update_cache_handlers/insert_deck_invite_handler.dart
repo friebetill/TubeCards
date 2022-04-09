@@ -1,9 +1,9 @@
 import 'package:ferry/typed_links.dart';
 
-import '../fragments/deck_fragment.data.gql.dart';
-import '../fragments/deck_fragment.req.gql.dart';
-import '../mutations/insert_deck_invite.data.gql.dart';
-import '../mutations/insert_deck_invite.var.gql.dart';
+import '../fragments/__generated__/deck_fragment.data.gql.dart';
+import '../fragments/__generated__/deck_fragment.req.gql.dart';
+import '../mutations/__generated__/insert_deck_invite.data.gql.dart';
+import '../mutations/__generated__/insert_deck_invite.var.gql.dart';
 
 const String insertDeckInviteHandlerKey = 'insertDeckInviteHandler';
 

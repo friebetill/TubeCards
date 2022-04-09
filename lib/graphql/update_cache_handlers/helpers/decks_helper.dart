@@ -3,9 +3,9 @@ import 'dart:math';
 import 'package:ferry/typed_links.dart';
 
 import '../../../services/space/deck_service.dart';
-import '../../queries/decks.data.gql.dart';
-import '../../queries/decks.req.gql.dart';
-import '../../queries/decks.var.gql.dart';
+import '../../queries/__generated__/decks.data.gql.dart';
+import '../../queries/__generated__/decks.req.gql.dart';
+import '../../queries/__generated__/decks.var.gql.dart';
 import 'connection_utils.dart';
 
 class DecksHelper {

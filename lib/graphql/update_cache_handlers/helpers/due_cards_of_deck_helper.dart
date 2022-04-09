@@ -3,10 +3,10 @@ import 'dart:math';
 import 'package:ferry/typed_links.dart';
 
 import '../../../services/space/card_service.dart';
-import '../../fragments/card_fragment.data.gql.dart';
-import '../../queries/due_cards_of_deck.data.gql.dart';
-import '../../queries/due_cards_of_deck.req.gql.dart';
-import '../../queries/due_cards_of_deck.var.gql.dart';
+import '../../fragments/__generated__/card_fragment.data.gql.dart';
+import '../../queries/__generated__/due_cards_of_deck.data.gql.dart';
+import '../../queries/__generated__/due_cards_of_deck.req.gql.dart';
+import '../../queries/__generated__/due_cards_of_deck.var.gql.dart';
 import 'connection_utils.dart';
 
 class DueCardsOfDeckHelper {

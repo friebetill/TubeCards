@@ -1,10 +1,10 @@
 import 'package:ferry/typed_links.dart';
 
 import '../../services/space/deck_service.dart';
-import '../queries/deck.data.gql.dart';
-import '../queries/deck.req.gql.dart';
-import '../queries/decks.data.gql.dart';
-import '../queries/decks.var.gql.dart';
+import '../queries/__generated__/deck.data.gql.dart';
+import '../queries/__generated__/deck.req.gql.dart';
+import '../queries/__generated__/decks.data.gql.dart';
+import '../queries/__generated__/decks.var.gql.dart';
 
 const String decksHandlerKey = 'decksHandler';
 

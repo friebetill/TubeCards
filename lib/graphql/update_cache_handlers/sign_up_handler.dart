@@ -1,9 +1,9 @@
 import 'package:ferry/typed_links.dart';
 
-import '../mutations/sign_up.data.gql.dart';
-import '../mutations/sign_up.var.gql.dart';
-import '../queries/viewer.data.gql.dart';
-import '../queries/viewer.req.gql.dart';
+import '../mutations/__generated__/sign_up.data.gql.dart';
+import '../mutations/__generated__/sign_up.var.gql.dart';
+import '../queries/__generated__/viewer.data.gql.dart';
+import '../queries/__generated__/viewer.req.gql.dart';
 
 const String signUpHandlerKey = 'signupHandler';
 

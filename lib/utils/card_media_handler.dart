@@ -7,7 +7,7 @@ import 'package:injectable/injectable.dart';
 import 'package:path/path.dart' show extension;
 
 import '../graphql/graph_ql_runner.dart';
-import '../graphql/mutations/get_presigned_s3_post_data.req.gql.dart';
+import '../graphql/mutations/__generated__/get_presigned_s3_post_data.req.gql.dart';
 import '../graphql/operation_exception.dart';
 import '../services/aws_client.dart';
 import 'progress.dart';

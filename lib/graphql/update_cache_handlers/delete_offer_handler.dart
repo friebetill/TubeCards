@@ -1,11 +1,11 @@
 import 'package:ferry/typed_links.dart';
 
 import '../../data/models/role.dart';
-import '../fragments/deck_fragment.req.gql.dart';
-import '../fragments/offer_fragment.data.gql.dart';
-import '../fragments/offer_fragment.req.gql.dart';
-import '../mutations/delete_offer.data.gql.dart';
-import '../mutations/delete_offer.var.gql.dart';
+import '../fragments/__generated__/deck_fragment.req.gql.dart';
+import '../fragments/__generated__/offer_fragment.data.gql.dart';
+import '../fragments/__generated__/offer_fragment.req.gql.dart';
+import '../mutations/__generated__/delete_offer.data.gql.dart';
+import '../mutations/__generated__/delete_offer.var.gql.dart';
 import 'helpers/decks_helper.dart';
 import 'helpers/new_offers_helper.dart';
 import 'helpers/viewer_offer_helper.dart';

@@ -3,11 +3,11 @@ import 'dart:math';
 import 'package:ferry/typed_links.dart';
 
 import '../../../services/space/card_service.dart';
-import '../../fragments/card_fragment.data.gql.dart';
-import '../../queries/deck_cards.data.gql.dart';
-import '../../queries/deck_cards.req.gql.dart';
-import '../../queries/deck_cards.var.gql.dart';
-import '../../schema.schema.gql.dart';
+import '../../__generated__/schema.schema.gql.dart';
+import '../../fragments/__generated__/card_fragment.data.gql.dart';
+import '../../queries/__generated__/deck_cards.data.gql.dart';
+import '../../queries/__generated__/deck_cards.req.gql.dart';
+import '../../queries/__generated__/deck_cards.var.gql.dart';
 import 'connection_utils.dart';
 
 class DeckCardsHelper {

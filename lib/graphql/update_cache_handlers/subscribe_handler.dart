@@ -1,16 +1,16 @@
 import 'package:ferry/typed_links.dart';
 
 import '../../services/space/card_service.dart';
-import '../fragments/offer_fragment.data.gql.dart';
-import '../fragments/offer_fragment.req.gql.dart';
-import '../mutations/subscribe.data.gql.dart';
-import '../mutations/subscribe.var.gql.dart';
-import '../queries/deck.data.gql.dart';
-import '../queries/deck.req.gql.dart';
-import '../queries/due_cards.data.gql.dart';
-import '../queries/due_cards.req.gql.dart';
-import '../queries/offer.data.gql.dart';
-import '../queries/offer.req.gql.dart';
+import '../fragments/__generated__/offer_fragment.data.gql.dart';
+import '../fragments/__generated__/offer_fragment.req.gql.dart';
+import '../mutations/__generated__/subscribe.data.gql.dart';
+import '../mutations/__generated__/subscribe.var.gql.dart';
+import '../queries/__generated__/deck.data.gql.dart';
+import '../queries/__generated__/deck.req.gql.dart';
+import '../queries/__generated__/due_cards.data.gql.dart';
+import '../queries/__generated__/due_cards.req.gql.dart';
+import '../queries/__generated__/offer.data.gql.dart';
+import '../queries/__generated__/offer.req.gql.dart';
 import 'helpers/cards_helper.dart';
 import 'helpers/decks_helper.dart';
 import 'helpers/subscribed_offers_helper.dart';

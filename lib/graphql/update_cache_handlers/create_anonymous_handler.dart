@@ -1,9 +1,9 @@
 import 'package:ferry/typed_links.dart';
 
-import '../mutations/create_anonymous_user.data.gql.dart';
-import '../mutations/create_anonymous_user.var.gql.dart';
-import '../queries/viewer.data.gql.dart';
-import '../queries/viewer.req.gql.dart';
+import '../mutations/__generated__/create_anonymous_user.data.gql.dart';
+import '../mutations/__generated__/create_anonymous_user.var.gql.dart';
+import '../queries/__generated__/viewer.data.gql.dart';
+import '../queries/__generated__/viewer.req.gql.dart';
 
 const String createAnonymousUserHandlerKey = 'createAnonymousUserHandler';
 

@@ -3,9 +3,9 @@ import 'dart:math';
 import 'package:ferry/typed_links.dart';
 
 import '../../../services/space/offer_service.dart';
-import '../../queries/viewer_offers.data.gql.dart';
-import '../../queries/viewer_offers.req.gql.dart';
-import '../../queries/viewer_offers.var.gql.dart';
+import '../../queries/__generated__/viewer_offers.data.gql.dart';
+import '../../queries/__generated__/viewer_offers.req.gql.dart';
+import '../../queries/__generated__/viewer_offers.var.gql.dart';
 import 'connection_utils.dart';
 
 class ViewerOffersHelper {

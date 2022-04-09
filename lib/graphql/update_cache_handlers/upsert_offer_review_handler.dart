@@ -1,9 +1,9 @@
 import 'package:ferry/typed_links.dart';
 
-import '../fragments/offer_fragment.data.gql.dart';
-import '../fragments/offer_fragment.req.gql.dart';
-import '../mutations/upsert_offer_review.data.gql.dart';
-import '../mutations/upsert_offer_review.var.gql.dart';
+import '../fragments/__generated__/offer_fragment.data.gql.dart';
+import '../fragments/__generated__/offer_fragment.req.gql.dart';
+import '../mutations/__generated__/upsert_offer_review.data.gql.dart';
+import '../mutations/__generated__/upsert_offer_review.var.gql.dart';
 
 const String upsertOfferReviewHandlerKey = 'upsertOfferReviewHandler';
 

@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:ferry/typed_links.dart';
 
-import '../../queries/cards.req.gql.dart';
+import '../../queries/__generated__/cards.req.gql.dart';
 import 'connection_utils.dart';
 
 class CardsHelper {
