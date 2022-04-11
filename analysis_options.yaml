@@ -6,6 +6,7 @@ analyzer:
     - lib/**/*.gql.g.dart
     - lib/i18n/*.dart
     - lib/main.config.dart
+    - lib/env.dart
     - ios/**/*.dart
     - macos/**/*.dart
     - linux/**/*.dart
