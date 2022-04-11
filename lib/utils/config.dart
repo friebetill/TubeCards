@@ -1,3 +1,5 @@
+import '../env.dart';
+
 /// True when the client is running in production.
 const bool isProduction = String.fromEnvironment('app.flavor') != 'dev';
 
@@ -6,29 +8,29 @@ const String spaceGraphQlUrl = isProduction
     ? 'https://api.getspace.app'
     :
     // Use this to develop on the stage server.
-    // 'https://stage.getspace.app/';
+    'https://stage.getspace.app/';
 // Use this to develop locally for a mobile platform.
 // 'http://192.168.0.1:3000/graphql';
 // Use this to develop locally for a desktop platform.
-    'http://localhost:3000/graphql';
+// 'http://localhost:3000/graphql';
 
 /// The support email of Space.
 const String supportEmail = 'space.flashcards.app@gmail.com';
 
 /// Access token to send API requests to the Azure Cognitive Service.
-const String azureSubscriptionKey = '';
+const String azureSubscriptionKey = Env.azureSubscriptionKey;
 
 /// Base url used to access the Azure Cognitive Service API.
-const String azureBaseURL = '';
+const String azureBaseURL = 'getspace.cognitiveservices.azure.com';
 
 /// Access token to send API requests to Unsplash.
-const String unplashAccessToken = '';
+const String unplashAccessToken = Env.unsplashAccessToken;
 
 /// API key to manage in-app purchases with RevenueCat.
-const String revenueCatApiKey = '';
+const String revenueCatApiKey = Env.revenueCatApiKey;
 
 /// Data source name for Sentry.
-const String sentryDSN = '';
+const String sentryDSN = Env.sentryDSN;
 
 const String privacyPolicyURL = 'https://getspace.app/privacy-policy';
 
@@ -50,4 +52,5 @@ const String voteNextFeaturesURL = 'https://forms.gle/DsFYWYUKZVDwdc2E9';
 const String payPalButtonId = '4JN8FL9G57NKU';
 
 /// API key to send events to Amplitude.
-const String amplitudeKey = isProduction ? '' : '';
+const String amplitudeKey =
+    isProduction ? Env.amplitudeKeyProd : Env.amplitudeKeyDev;
