@@ -765,6 +765,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "9.2.0"
+  freezed_annotation:
+    dependency: transitive
+    description:
+      name: freezed_annotation
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   frontend_server_client:
     dependency: transitive
     description:
@@ -1372,7 +1379,7 @@ packages:
       name: purchases_flutter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.4.5"
+    version: "3.9.5"
   quiver:
     dependency: "direct main"
     description:

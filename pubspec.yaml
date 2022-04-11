@@ -93,7 +93,7 @@ dependencies:
   path_provider: ^2.0.1
   percent_indicator: ^3.4.0
   #  Don't update until this issue is resolved, https://bit.ly/3q42eSD
-  purchases_flutter: 3.4.5
+  purchases_flutter: ^3.9.5
   quiver: ^3.0.0
   recase: ^4.0.0-nullsafety.0
   retry: ^3.1.0

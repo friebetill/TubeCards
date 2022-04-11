@@ -26,8 +26,8 @@ const String azureBaseURL = 'getspace.cognitiveservices.azure.com';
 /// Access token to send API requests to Unsplash.
 const String unplashAccessToken = Env.unsplashAccessToken;
 
-/// API key to manage in-app purchases with RevenueCat.
-const String revenueCatApiKey = Env.revenueCatApiKey;
+const String revenueCatGoogleApiKey = Env.revenueCatGoogleApiKey;
+const String revenueCatAppleApiKey = Env.revenueCatAppleApiKey;
 
 /// Data source name for Sentry.
 const String sentryDSN = Env.sentryDSN;

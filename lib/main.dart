@@ -61,7 +61,9 @@ void main() {
 
       await configureDependencies();
       if (Platform.isAndroid || Platform.isIOS || Platform.isMacOS) {
-        await Purchases.setup(revenueCatApiKey);
+        await Purchases.setup(Platform.isAndroid
+            ? revenueCatGoogleApiKey
+            : revenueCatAppleApiKey);
       }
 
       final graphQLRunner = getIt<GraphQLRunner>();

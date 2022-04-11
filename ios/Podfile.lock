@@ -77,14 +77,14 @@ PODS:
     - Flutter
   - path_provider_ios (0.0.1):
     - Flutter
-  - Purchases (3.12.3):
-    - PurchasesCoreSwift (= 3.12.3)
-  - purchases_flutter (3.4.5):
+  - Purchases (3.13.2):
+    - PurchasesCoreSwift (= 3.13.2)
+  - purchases_flutter (3.9.5):
     - Flutter
-    - PurchasesHybridCommon (= 1.9.1)
-  - PurchasesCoreSwift (3.12.3)
-  - PurchasesHybridCommon (1.9.1):
-    - Purchases (= 3.12.3)
+    - PurchasesHybridCommon (= 1.11.2)
+  - PurchasesCoreSwift (3.13.2)
+  - PurchasesHybridCommon (1.11.2):
+    - Purchases (= 3.13.2)
   - SDWebImage (5.12.5):
     - SDWebImage/Core (= 5.12.5)
   - SDWebImage/Core (5.12.5)
@@ -230,10 +230,10 @@ SPEC CHECKSUMS:
   OrderedSet: aaeb196f7fef5a9edf55d89760da9176ad40b93c
   package_info_plus: 6c92f08e1f853dc01228d6f553146438dafcd14e
   path_provider_ios: 7d7ce634493af4477d156294792024ec3485acd5
-  Purchases: e9839517aea4335136f3946ae228eecf5131cc25
-  purchases_flutter: ff55c9a04b918dd20d20030d5b5f5a5859c28cb9
-  PurchasesCoreSwift: dd3fd55a9895abd7906a3842bd36c7f7539a99d1
-  PurchasesHybridCommon: 1d98dd58935a4fa1009c6e17f8b740973147b899
+  Purchases: 03200de9288724e77de435000d1828601e6b8e00
+  purchases_flutter: cf2b742f12b7ffef6f618c7f1ba1961e652825b1
+  PurchasesCoreSwift: 2ea4b33e5cece5c8a0751594ef7c6cbfcbd747a9
+  PurchasesHybridCommon: 56ef42d85c3e930d49aff4ac5fa027373d2e1bb8
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   Sentry: 5c5dd4005f3b7b9765d5a8871232cddbd0d888b7
   sentry_flutter: 4cd99764f9fe01c9415790d1f3fb1c7fd3a5cbe9
