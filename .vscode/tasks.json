@@ -14,12 +14,12 @@
       "problemMatcher": []
     },
     {
-      "label": "Update only language files",
+      "label": "Update language files",
       "type": "shell",
       "dependsOrder": "sequence",
-      "command": "sh scripts/update_only_language_files.sh",
+      "command": "sh scripts/update_language_files.sh",
       "windows": {
-        "command": ".\\scripts\\update_only_language_files.sh"
+        "command": ".\\scripts\\update_language_files.sh"
       },
       "problemMatcher": []
     },
