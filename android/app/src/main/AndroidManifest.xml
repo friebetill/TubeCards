@@ -20,6 +20,7 @@
         <!-- requestLegacyExternalStorage is necessary for the ImagePicker library to support API 29+ -->
         <activity
             android:name="io.flutter.embedding.android.FlutterActivity"
+            android:exported="true"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
             android:hardwareAccelerated="true"
             android:theme="@style/LaunchTheme"
