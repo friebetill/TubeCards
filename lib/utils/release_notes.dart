@@ -4,8 +4,8 @@ import '../i18n/i18n.dart';
 
 final releaseNotes = [
   ReleaseNote(
-    buildNumber: 79,
-    date: DateTime(2022, 1, 10),
+    buildNumber: 81,
+    date: DateTime(2022, 4, 11),
     releaseNote: '''
 ✨ Simplify UI by removing strength and stability
 🐞 Fix bug when publishing decks
