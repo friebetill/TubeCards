@@ -1,0 +1,5 @@
+mutation SendFeedback($feedback: String!) {
+  sendFeedback(feedback: $feedback) {
+    success
+  }
+}

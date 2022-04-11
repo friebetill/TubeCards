@@ -297,6 +297,10 @@ type DeleteUserPayload {
   id: ID!
 }
 
+type SendFeedbackPayload {
+  success: Boolean!
+}
+
 type DeleteDeckMemberPayload {
   deckMember: DeckMember!
 }
@@ -457,15 +461,7 @@ type Mutation {
     confidence: Confidence
     repetitionDate: DateTime
   ): Card!
-  upsertCard(
-    id: ID
-    deckId: ID
-    front: String
-    back: String
-    where: CardWhereUniqueInput
-    create: CardCreateInput
-    update: CardUpdateInput
-  ): Card
+  upsertCard(id: ID, deckId: ID, front: String, back: String): Card
   upsertMirrorCard(
     where: CardWhereUniqueInput!
     create: CardCreateInput!
@@ -494,6 +490,7 @@ type Mutation {
   deleteDeckMember(userId: ID!, deckId: ID!): DeleteDeckMemberPayload!
   updateUser(data: UserUpdateInput!): User!
   deleteUser: DeleteUserPayload!
+  sendFeedback(feedback: String!): SendFeedbackPayload!
   upsertUnsplashImage(
     where: UnsplashImageWhereUniqueInput!
     create: UnsplashImageCreateInput!

@@ -21,6 +21,7 @@ import '../../../mutations/__generated__/insert_10_cards.req.gql.dart';
 import '../../../mutations/__generated__/insert_deck_invite.req.gql.dart';
 import '../../../mutations/__generated__/join_deck.req.gql.dart';
 import '../../../mutations/__generated__/log_in.req.gql.dart';
+import '../../../mutations/__generated__/sendFeedback.req.gql.dart';
 import '../../../mutations/__generated__/sign_up.req.gql.dart';
 import '../../../mutations/__generated__/subscribe.req.gql.dart';
 import '../../../mutations/__generated__/transfer_deck_ownership.req.gql.dart';
@@ -172,6 +173,8 @@ class RequestCommand implements GraphQLCommand {
             .request(GDeleteOfferReviewReq.fromJson(requestJson)!);
       case 'DeleteUser':
         return graphQLClient.request(GDeleteUserReq.fromJson(requestJson)!);
+      case 'SendFeedback':
+        return graphQLClient.request(GSendFeedbackReq.fromJson(requestJson)!);
       case 'GetPreSignedS3PostData':
         return graphQLClient
             .request(GGetPreSignedS3PostDataReq.fromJson(requestJson)!);

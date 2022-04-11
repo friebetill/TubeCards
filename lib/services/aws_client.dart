@@ -2,8 +2,6 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:mailer/mailer.dart';
-import 'package:mailer/smtp_server.dart';
 
 import '../utils/config.dart';
 import '../utils/progress.dart';
@@ -77,37 +75,6 @@ class AWSClient {
     } on DioError catch (e) {
       throw HttpException('Image was not uploaded: ${e.message}');
     }
-  }
-
-  /// Sends an email from the given [sender] to the [recipient] with the given
-  /// [title] and [text].
-  ///
-  /// The sender address should be an address from the getspace.app domain.
-  ///
-  /// Throws [SocketException], [SmtpClientAuthenticationException],
-  /// [SmtpClientCommunicationException] or [SmtpMessageValidationException]
-  /// when an exception occurs.
-  Future<SendReport> sendEmail({
-    required String sender,
-    required String recipient,
-    required String title,
-    required String text,
-  }) async {
-    final smtpServer = SmtpServer(
-      'email-smtp.eu-west-1.amazonaws.com',
-      username: sesUsername,
-      password: sesPassword,
-    );
-
-    final message = Message()
-      ..envelopeFrom = sender
-      ..from = Address(sender, 'Space Mobile')
-      ..recipients.add(recipient)
-      ..subject = title
-      ..text = text
-      ..html = text;
-
-    return send(message, smtpServer);
   }
 }
 

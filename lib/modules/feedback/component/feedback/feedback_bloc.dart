@@ -11,8 +11,6 @@ import 'package:rxdart/rxdart.dart';
 import '../../../../data/models/user.dart';
 import '../../../../data/repositories/user_repository.dart';
 import '../../../../i18n/i18n.dart';
-import '../../../../services/aws_client.dart';
-import '../../../../utils/config.dart';
 import '../../../../utils/custom_navigator.dart';
 import '../../../../utils/snackbar.dart';
 import '../../../../widgets/component/component_build_context.dart';
@@ -95,12 +93,8 @@ class FeedbackBloc with ComponentBuildContext, ComponentLifecycleListener {
     _isSending.add(true);
 
     try {
-      await const AWSClient().sendEmail(
-        sender: 'service@getspace.app',
-        recipient: supportEmail,
-        title: await _getTitle(user),
-        text: await _getBody(i18n, user),
-      );
+      await _userRepository
+          .sendFeedback(await _addMetadataToFeedback(i18n, user));
       messenger.showSuccessSnackBar(
         theme: theme,
         text: i18n.thankYouForFeedbackText,
@@ -121,25 +115,17 @@ class FeedbackBloc with ComponentBuildContext, ComponentLifecycleListener {
     }
   }
 
-  Future<String> _getTitle(User user) async {
-    final username = user.isAnonymous!
-        ? 'anonymous user'
-        : '${user.firstName} ${user.lastName}';
-
-    return 'Feedback from $username';
-  }
-
-  Future<String> _getBody(S i18n, User user) async {
+  Future<String> _addMetadataToFeedback(S i18n, User user) async {
     final userEmail = user.isAnonymous! ? _email : user.email!;
     // Fix wrong version number on windows, https://bit.ly/3ylB2Qm
     final packageInfo = await PackageInfo.fromPlatform();
 
     return '''
-${_feedback.replaceAll('\n', '<br>')}<br><br>
+$_feedback
 
-Submitted by: ${userEmail.isEmpty ? 'Anonymous' : userEmail} ${user.isAnonymous! ? '(anonymous)' : '(registered)'}<br>
-Locale: ${i18n.locale}<br>
-Space Version: ${packageInfo.version} (${packageInfo.buildNumber})<br>
+Submitted by: ${userEmail.isEmpty ? 'Anonymous' : userEmail} ${user.isAnonymous! ? '(anonymous)' : '(registered)'}
+Locale: ${i18n.locale}
+Space Version: ${packageInfo.version} (${packageInfo.buildNumber})
 OS: ${Platform.operatingSystem}
 ''';
   }

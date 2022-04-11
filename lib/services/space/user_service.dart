@@ -10,6 +10,7 @@ import '../../graphql/graph_ql_runner.dart';
 import '../../graphql/mutations/__generated__/create_anonymous_user.req.gql.dart';
 import '../../graphql/mutations/__generated__/delete_user.req.gql.dart';
 import '../../graphql/mutations/__generated__/log_in.req.gql.dart';
+import '../../graphql/mutations/__generated__/sendFeedback.req.gql.dart';
 import '../../graphql/mutations/__generated__/sign_up.req.gql.dart';
 import '../../graphql/mutations/__generated__/trigger_password_reset.req.gql.dart';
 import '../../graphql/mutations/__generated__/update_user.req.gql.dart';
@@ -220,6 +221,21 @@ class UserService {
         .request(GTriggerPasswordResetReq((b) => b
           ..fetchPolicy = FetchPolicy.NoCache
           ..vars.emailAddress = emailAddress))
+        .map((r) {
+      if (r.hasErrors) {
+        throw OperationException(
+          linkException: r.linkException,
+          graphqlErrors: r.graphqlErrors,
+        );
+      }
+    }).first;
+  }
+
+  Future<void> sendFeedback(String feedback) async {
+    return _graphQLRunner
+        .request(GSendFeedbackReq((b) => b
+          ..fetchPolicy = FetchPolicy.NoCache
+          ..vars.feedback = feedback))
         .map((r) {
       if (r.hasErrors) {
         throw OperationException(

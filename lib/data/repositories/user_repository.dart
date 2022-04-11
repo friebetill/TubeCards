@@ -134,4 +134,8 @@ class UserRepository {
     await _service.deleteUser();
     await _service.clear();
   }
+
+  Future<void> sendFeedback(String feedback) async {
+    await _service.sendFeedback(feedback);
+  }
 }
