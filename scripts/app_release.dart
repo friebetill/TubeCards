@@ -13,7 +13,7 @@ Future<void> main() async {
     updateLinuxReleases,
     addReleaseNotes,
     pushChanges,
-    updateMasterBranch,
+    updateMainBranch,
     createReleaseTag,
 
     // Prepare local files for builds
@@ -159,12 +159,12 @@ Future<void> pushChanges({
   await waitForEnter();
 }
 
-Future<void> updateMasterBranch({
+Future<void> updateMainBranch({
   required String version,
   required String code,
 }) async {
-  print('Switch to the `master` branch and get the latest dev updates:');
-  print('  git checkout master');
+  print('Switch to the `main` branch and get the latest dev updates:');
+  print('  git checkout main');
   print('  git pull origin dev');
   print('  git push');
   await waitForEnter();
@@ -187,6 +187,8 @@ Future<void> rebuildGeneratedFiles({
   print('Update latest packages and rebuild the generated files:');
   print('  flutter pub get');
   print('  ./scripts/update_generated_files.sh');
+  print('  ./scripts/update_language_files.sh');
+
   await waitForEnter();
 }
 
