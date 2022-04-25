@@ -35,6 +35,10 @@ jobs:
         with:
           flutter-version: ${{ steps.get-flutter-version.outputs.version }}
 
+      - name: "Create env file"
+        run: |
+          echo "${{ secrets.ENV_FILE }}" | base64 --decode > .env
+
       - run: flutter pub get
       - run: ./scripts/update_generated_files.sh
 
@@ -159,10 +163,13 @@ jobs:
         # too long.
         run: git config --system core.longpaths true
 
+      - name: "Create env file"
+        run: |
+          echo "${{ secrets.ENV_FILE }}" | base64 --decode > .env
       - run: flutter pub get
       - name: Generate Flutter files
         run: |
-          flutter pub run lang_table:generate --platform=airTable --target=Flutter --input=https://api.airtable.com/v0/app6dkbYXMccUCZb1/i18n --api-key=${{ secrets.AIRTABLE_KEY}}
+          flutter pub run lang_table:generate --platform=airTable --target=Flutter --input=${{ secrets.I18N_AIRTABLE_ADDRESS }} --api-key=${{ secrets.I18N_AIRTABLE_KEY}}
           flutter pub run build_runner build --delete-conflicting-outputs
           flutter packages pub run gen_lang:generate --output-dir lib/i18n
 
