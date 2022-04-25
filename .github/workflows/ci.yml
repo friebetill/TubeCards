@@ -36,8 +36,11 @@ jobs:
           flutter-version: ${{ steps.get-flutter-version.outputs.version }}
 
       - name: "Create env file"
-        run: |
-          echo "${{ secrets.ENV_FILE }}" | base64 --decode > .env
+        uses: timheuer/base64-to-file@v1.1
+        with:
+          fileName: ".env"
+          fileDir: "./"
+          encodedString: ${{ secrets.ENV_FILE }}
 
       - run: flutter pub get
       - run: ./scripts/update_generated_files.sh
@@ -164,8 +167,11 @@ jobs:
         run: git config --system core.longpaths true
 
       - name: "Create env file"
-        run: |
-          echo "${{ secrets.ENV_FILE }}" | base64 --decode > .env
+        uses: timheuer/base64-to-file@v1.1
+        with:
+          fileName: ".env"
+          fileDir: "./"
+          encodedString: ${{ secrets.ENV_FILE }}
       - run: flutter pub get
       - name: Generate Flutter files
         run: |
