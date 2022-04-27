@@ -249,7 +249,7 @@ Future<void> distributeWindowsBuild({
 }) async {
   print('Distribute the Windows app:');
   print(
-    '  Go to https://github.com/friebetill/space-app/releases/tag/$version',
+    '  Go to https://github.com/friebetill/space/releases/tag/$version',
   );
   print('  Download space_$version.msix');
   print('  Go to `https://partner.microsoft.com/` and publish the file.');

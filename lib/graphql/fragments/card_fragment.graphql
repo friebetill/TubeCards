@@ -7,6 +7,11 @@ fragment CardFragment on Card {
   deck {
     id
     name
+    viewerDeckMember {
+      role {
+        id
+      }
+    }
   }
   mirrorCard {
     id
