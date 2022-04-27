@@ -27,6 +27,7 @@
   </screenshots>
   <launchable type="desktop-id">app.getspace.Space.desktop</launchable>
   <releases>
+    <release version="2.0.3" date="2022-04-27"/>
     <release version="2.0.2" date="2022-04-25"/>
     <release version="2.0.1" date="2022-04-11"/>
     <release version="2.0.0" date="2022-01-10"/>
