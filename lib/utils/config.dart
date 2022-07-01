@@ -33,7 +33,7 @@ const String revenueCatAppleApiKey = Env.revenueCatAppleApiKey;
 /// Data source name for Sentry.
 const String sentryDSN = Env.sentryDSN;
 
-final Uri privacyPolicyURL = Uri.https('getspace.app', '/privacy-policy');
+const String privacyPolicyURL = 'https://getspace.app/privacy-policy';
 
 /// The Microsoft store id of Space
 ///
@@ -47,7 +47,7 @@ const String microsoftStoreId = '9n2zrwbkjkt9';
 /// after id: https://apps.apple.com/us/app/space-spaced-repetition/id1546202212
 const String appStoreId = '1546202212';
 
-final Uri voteNextFeaturesURL = Uri.https('forms.gle', '/DsFYWYUKZVDwdc2E9');
+const String voteNextFeaturesURL = 'https://forms.gle/DsFYWYUKZVDwdc2E9';
 
 /// ID of the PayPal donation button.
 const String payPalButtonId = '4JN8FL9G57NKU';

@@ -69,7 +69,7 @@ class _LandingViewState extends State<_LandingView>
         ..play();
     }
 
-    SchedulerBinding.instance.addPostFrameCallback((_) {
+    SchedulerBinding.instance!.addPostFrameCallback((_) {
       widget.viewModel.initDeepLinkSubscription();
     });
   }

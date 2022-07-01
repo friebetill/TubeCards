@@ -57,6 +57,6 @@ class TestCacheManager extends CacheManager implements BaseCacheManager {
       ));
     }
 
-    return Future.value();
+    return Future.value(null);
   }
 }

@@ -238,7 +238,7 @@ class HomeBloc
     }
 
     _isDialogShown = true;
-    SchedulerBinding.instance.addPostFrameCallback((_) {
+    SchedulerBinding.instance!.addPostFrameCallback((_) {
       final oldestReleaseNote = newReleaseNotes.removeLast();
       _appProperties.whatsNewModalShownBuildNumber
           .setValue(oldestReleaseNote.buildNumber);

@@ -6,10 +6,10 @@ publish_to: none
 
 environment:
   sdk: ">=2.13.0 <3.0.0"
-  flutter: 3.0.3
+  flutter: 2.10.4
 
 dependencies:
-  adaptive_theme: ^3.0.0
+  adaptive_theme: ^2.2.0
   amplitude_flutter: ^3.7.0
   android_intent_plus: ^3.0.0
   app_settings: ^4.1.0
@@ -21,19 +21,15 @@ dependencies:
   cached_network_image: ^3.0.0
   clock: ^1.1.0
   collection: ^1.15.0
-  confetti: 0.7.0
+  confetti: ^0.6.0-nullsafety
   copy_with_extension: ^2.0.0
   crypto: ^3.0.0
   csv: ^5.0.0
-  delta_markdown: 0.7.0
+  delta_markdown: 0.6.0
   devicelocale: ^0.5.0
   dio: ^4.0.0-prev3
   email_validator: ^2.0.1
-  envify: # ^2.0.2
-      git:
-        url: https://github.com/techouse/envify.git
-        ref: main
-        path: envify
+  envify: ^2.0.2
   equatable: ^2.0.0
   extended_image: ^6.0.1
   ferry: ^0.10.4
@@ -55,10 +51,14 @@ dependencies:
   flutter_localized_locales: ^2.0.1
   flutter_markdown: ^0.6.1
   flutter_native_timezone: ^2.0.0
-  flutter_painter: ^1.0.1
+  #  Wait for this issue, https://bit.ly/3Eyk1G1
+  flutter_painter:
+    git:
+      url: https://github.com/friebetill/flutter_painter
+      ref: 716525c
   # Updating to 2.0.11 leads to bugs when adding cards
   flutter_phosphor_icons: ^0.0.1+5
-  flutter_quill: ^5.0.0
+  flutter_quill: ^4.0.0
   flutter_rating_bar: ^4.0.0
   flutter_svg: ^1.0.0
   flutter_tts: ^3.0.0
@@ -91,7 +91,7 @@ dependencies:
   package_info_plus: ^1.0.0
   path: ^1.8.0
   path_provider: ^2.0.1
-  percent_indicator: ^4.0.0
+  percent_indicator: ^3.4.0
   #  Don't update until this issue is resolved, https://bit.ly/3q42eSD
   purchases_flutter: ^3.9.5
   quiver: ^3.0.0
@@ -106,23 +106,19 @@ dependencies:
   sqflite: ^2.0.0+3
   sqflite_common_ffi: ^2.0.0+1
   step_progress_indicator: ^1.0.1
-  sticky_headers: 0.3.0+2
+  sticky_headers: ^0.2.0
   streaming_shared_preferences: ^2.0.0
   timelines: ^0.1.0
   uni_links: 0.5.1
   url_launcher: ^6.0.2
   uuid: ^3.0.2
   video_player: ^2.0.2
-  visibility_detector: 0.3.3
+  visibility_detector: ^0.2.0-nullsafety.1
 
 dev_dependencies:
   build_runner: ^2.0.6
   copy_with_extension_gen: ^2.0.1
-  envify_generator: # ^2.0.2
-      git:
-        url: https://github.com/techouse/envify.git
-        ref: main
-        path: envify_generator
+  envify_generator: ^2.0.2
   # This currently often crashes the analyzer.
   # dart_code_metrics: ^4.1.0
   flutter_launcher_icons: ^0.9.0
@@ -155,7 +151,6 @@ flutter_icons:
   adaptive_icon_foreground: assets/icon/ic_foreground.png
 
 dependency_overrides:
-  analyzer: ^4.0.0
   flutter_colorpicker: 0.6.0
   image_picker:
     git:

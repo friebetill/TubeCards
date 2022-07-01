@@ -128,15 +128,13 @@ class ExportCSVBloc with ComponentLifecycleListener, ComponentBuildContext {
     final theme = Theme.of(context);
     final i18n = S.of(context);
 
-    final parsedUrl = Uri.tryParse(url);
-
-    if (parsedUrl == null || !(await canLaunchUrl(parsedUrl))) {
+    if (!(await canLaunch(url))) {
       return messenger.showErrorSnackBar(
         theme: theme,
         text: i18n.errorOpenPageText(url),
       );
     }
-    await launchUrl(parsedUrl);
+    await launch(url);
   }
 
   void _handleImageTap(String imageUrl) {

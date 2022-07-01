@@ -236,7 +236,7 @@ class _UpsertDeckViewState extends State<_UpsertDeckView> {
           final subtitleSize = textSize(subtitle);
           final isThreeLine = subtitleSize.width > constraints.maxWidth;
           if (isThreeLine != _isActiveTileThreeLine) {
-            WidgetsBinding.instance.addPostFrameCallback((_) {
+            WidgetsBinding.instance!.addPostFrameCallback((_) {
               setState(() => _isActiveTileThreeLine = isThreeLine);
             });
           }
@@ -264,7 +264,7 @@ class _UpsertDeckViewState extends State<_UpsertDeckView> {
           final subtitleSize = textSize(subtitle);
           final isThreeLine = subtitleSize.width > constraints.maxWidth;
           if (isThreeLine != _isBidirectionalLearningTileThreeLine) {
-            WidgetsBinding.instance.addPostFrameCallback((_) {
+            WidgetsBinding.instance!.addPostFrameCallback((_) {
               setState(() {
                 _isBidirectionalLearningTileThreeLine = isThreeLine;
               });

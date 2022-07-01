@@ -31,11 +31,11 @@ class SupportSpaceBloc with ComponentBuildContext {
   }
 
   Future<void> _handlePayPalButtonTap() async {
-    final url = Uri.https(
-        'paypal.com', '/donate/', {'hosted_button_id': payPalButtonId});
+    const url =
+        'https://www.paypal.com/donate/?hosted_button_id=$payPalButtonId';
 
-    if (await canLaunchUrl(url)) {
-      await launchUrl(url);
+    if (await canLaunch(url)) {
+      await launch(url);
     } else {
       ScaffoldMessenger.of(context).showErrorSnackBar(
         theme: Theme.of(context),

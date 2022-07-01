@@ -22,7 +22,7 @@ class StrengthIndicator extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         return CircularPercentIndicator(
-          radius: constraints.maxHeight / 2,
+          radius: constraints.maxHeight,
           lineWidth: constraints.maxHeight / 18,
           percent: strength,
           backgroundColor: _backgroundColor(context),
