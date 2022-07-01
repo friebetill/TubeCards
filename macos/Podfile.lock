@@ -23,19 +23,19 @@ PODS:
     - FlutterMacOS
   - Purchases (3.13.2):
     - PurchasesCoreSwift (= 3.13.2)
-  - purchases_flutter (3.9.5):
+  - purchases_flutter (3.10.0):
     - FlutterMacOS
     - PurchasesHybridCommon (= 1.11.2)
   - PurchasesCoreSwift (3.13.2)
   - PurchasesHybridCommon (1.11.2):
     - Purchases (= 3.13.2)
-  - Sentry (7.5.4):
-    - Sentry/Core (= 7.5.4)
-  - Sentry/Core (7.5.4)
+  - Sentry (7.18.1):
+    - Sentry/Core (= 7.18.1)
+  - Sentry/Core (7.18.1)
   - sentry_flutter (0.0.1):
     - Flutter
     - FlutterMacOS
-    - Sentry (~> 7.5.1)
+    - Sentry (~> 7.18.0)
   - share_plus_macos (0.0.1):
     - FlutterMacOS
   - shared_preferences_macos (0.0.1):
@@ -107,7 +107,7 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/macos
 
 SPEC CHECKSUMS:
-  bitsdojo_window_macos: 7e9b1bbb09bdce418d9657ead7fc9d824203ff0d
+  bitsdojo_window_macos: 44e3b8fe3dd463820e0321f6256c5b1c16bb6a00
   device_info_plus_macos: 1ad388a1ef433505c4038e7dd9605aadd1e2e9c7
   file_selector_macos: ff6dc948d4ddd34e8602a1f60b7d0b4cc6051a47
   flutter_local_notifications: 3805ca215b2fb7f397d78b66db91f6a747af52e4
@@ -117,17 +117,17 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   in_app_review: a850789fad746e89bce03d4aeee8078b45a53fd0
   package_info_plus_macos: f010621b07802a241d96d01876d6705f15e77c1c
-  path_provider_macos: 160cab0d5461f0c0e02995469a98f24bdb9a3f1f
+  path_provider_macos: 3c0c3b4b0d4a76d2bf989a913c2de869c5641a19
   Purchases: 03200de9288724e77de435000d1828601e6b8e00
-  purchases_flutter: d85c3f0298a538fde7a83d9f81bd942c8ae4216e
+  purchases_flutter: ec56bb806ae9076a2edced385860f1fea4b30639
   PurchasesCoreSwift: 2ea4b33e5cece5c8a0751594ef7c6cbfcbd747a9
   PurchasesHybridCommon: 56ef42d85c3e930d49aff4ac5fa027373d2e1bb8
-  Sentry: 5c5dd4005f3b7b9765d5a8871232cddbd0d888b7
-  sentry_flutter: 4cd99764f9fe01c9415790d1f3fb1c7fd3a5cbe9
+  Sentry: 2d70348d6247a29702a8317e710c5ba890672df5
+  sentry_flutter: b635e75d735415172e54bf3b72c39ce69882b4ca
   share_plus_macos: 853ee48e7dce06b633998ca0735d482dd671ade4
-  shared_preferences_macos: 480ce071d0666e37cef23fe6c702293a3d21799e
+  shared_preferences_macos: a64dc611287ed6cbe28fd1297898db1336975727
   sqflite: a5789cceda41d54d23f31d6de539d65bb14100ea
-  url_launcher_macos: 45af3d61de06997666568a7149c1be98b41c95d4
+  url_launcher_macos: 597e05b8e514239626bcf4a850fcf9ef5c856ec3
 
 PODFILE CHECKSUM: bed7c77eb1e9a3b3d2514aaf52de01c8b4ccd86d
 

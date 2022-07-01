@@ -8,6 +8,7 @@
 
 #include <bitsdojo_window_windows/bitsdojo_window_plugin.h>
 #include <file_selector_windows/file_selector_plugin.h>
+#include <flutter_tts/flutter_tts_plugin.h>
 #include <sentry_flutter/sentry_flutter_plugin.h>
 #include <url_launcher_windows/url_launcher_windows.h>
 
@@ -16,6 +17,8 @@ void RegisterPlugins(flutter::PluginRegistry* registry) {
       registry->GetRegistrarForPlugin("BitsdojoWindowPlugin"));
   FileSelectorPluginRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("FileSelectorPlugin"));
+  FlutterTtsPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("FlutterTtsPlugin"));
   SentryFlutterPluginRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("SentryFlutterPlugin"));
   UrlLauncherWindowsRegisterWithRegistrar(

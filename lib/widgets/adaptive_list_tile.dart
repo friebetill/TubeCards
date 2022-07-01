@@ -33,7 +33,7 @@ class _AdaptiveListTileState extends State<AdaptiveListTile> {
       subtitle: LayoutBuilder(builder: (context, constraints) {
         final largeSubtitle = subtitleSize.width > constraints.maxWidth;
         if (_isThreeLine != largeSubtitle) {
-          WidgetsBinding.instance!.addPostFrameCallback((_) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
             setState(() => _isThreeLine = false);
           });
         }

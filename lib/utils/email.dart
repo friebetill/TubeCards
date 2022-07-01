@@ -23,6 +23,9 @@ Future<void> openEmailAppWithTemplate({
       // replaceAll is necessary see https://bit.ly/3uXuSUH
       .replaceAll('+', '%20');
 
+  // ignore_for_file: deprecated_member_use
+  // If we use launchUrl, I don't know any way that spaces in the subject and
+  // body are not replaced with +.
   if (await canLaunch(url)) {
     final isSuccessful = await launch(url);
     if (!isSuccessful) {

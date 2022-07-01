@@ -39,12 +39,15 @@ class InstructionsBloc with ComponentBuildContext {
     if (url == null) {
       return;
     }
-    if (!(await canLaunch(url))) {
+
+    final parsedUrl = Uri.tryParse(url);
+
+    if (parsedUrl == null || !(await canLaunchUrl(parsedUrl))) {
       return ScaffoldMessenger.of(context).showErrorSnackBar(
         theme: Theme.of(context),
         text: S.of(context).errorOpenPageText(url),
       );
     }
-    await launch(url);
+    await launchUrl(parsedUrl);
   }
 }

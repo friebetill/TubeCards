@@ -8,14 +8,14 @@ import '../../../utils/custom_navigator.dart';
 import '../../../utils/os_icons.dart';
 import '../../../utils/snackbar.dart';
 
-const String _androidVersionURL =
-    'https://play.google.com/store/apps/details?id=com.space.space';
-const String _appleVersionURL =
-    'https://apps.apple.com/us/app/space-spaced-repetition/id1546202212';
-const String _windowsVersionURL =
-    'https://www.microsoft.com/en-us/p/space-spaced-repetition/9n2zrwbkjkt9';
-const String _linuxVersionURL =
-    'https://flathub.org/apps/details/app.getspace.Space';
+final Uri _androidVersionURL = Uri.https(
+    'play.google.com', '/store/apps/details', {'id': 'com.space.space'});
+final Uri _appleVersionURL =
+    Uri.https('apps.apple.com', '/us/app/space-spaced-repetition/id1546202212');
+final Uri _windowsVersionURL = Uri.https(
+    'www.microsoft.com', '/en-us/p/space-spaced-repetition/9n2zrwbkjkt9');
+final Uri _linuxVersionURL =
+    Uri.https('flathub.org', '/apps/details/app.getspace.Space');
 
 class OtherPlatformsDialog extends StatelessWidget {
   const OtherPlatformsDialog({Key? key}) : super(key: key);
@@ -68,9 +68,9 @@ class OtherPlatformsDialog extends StatelessWidget {
     );
   }
 
-  Future<void> _launchURL(String url, BuildContext context) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+  Future<void> _launchURL(Uri url, BuildContext context) async {
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url);
     } else {
       ScaffoldMessenger.of(context).showErrorSnackBar(
         theme: Theme.of(context),

@@ -28,7 +28,8 @@ class SubscriptionButtonsBloc {
   SubscriptionButtonsViewModel _createViewModel(PurchaserInfo purchaserInfo) {
     return SubscriptionButtonsViewModel(
       hasSubscription: purchaserInfo.activeSubscriptions.isNotEmpty,
-      onUnsubscribeTap: () => launch(purchaserInfo.managementURL!),
+      onUnsubscribeTap: () =>
+          launchUrl(Uri.parse(purchaserInfo.managementURL!)),
     );
   }
 }
