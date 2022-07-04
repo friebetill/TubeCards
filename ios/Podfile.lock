@@ -3,6 +3,8 @@ PODS:
   - amplitude_flutter (0.0.1):
     - Amplitude (= 8.5.0)
     - Flutter
+  - app_links (0.0.1):
+    - Flutter
   - "app_settings (3.0.0+1)":
     - Flutter
   - device_info_plus (0.0.1):
@@ -112,6 +114,7 @@ PODS:
 
 DEPENDENCIES:
   - amplitude_flutter (from `.symlinks/plugins/amplitude_flutter/ios`)
+  - app_links (from `.symlinks/plugins/app_links/ios`)
   - app_settings (from `.symlinks/plugins/app_settings/ios`)
   - device_info_plus (from `.symlinks/plugins/device_info_plus/ios`)
   - devicelocale (from `.symlinks/plugins/devicelocale/ios`)
@@ -155,6 +158,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   amplitude_flutter:
     :path: ".symlinks/plugins/amplitude_flutter/ios"
+  app_links:
+    :path: ".symlinks/plugins/app_links/ios"
   app_settings:
     :path: ".symlinks/plugins/app_settings/ios"
   device_info_plus:
@@ -209,6 +214,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Amplitude: ef9ed339ddd33c9183edf63fa4bbaa86cf873321
   amplitude_flutter: 8ddb231989e68ed8c005c838d7fc59edbca09833
+  app_links: 8941e7bac086136bae70d619141c36f258f4381d
   app_settings: d103828c9f5d515c4df9ee754dabd443f7cedcf3
   device_info_plus: e5c5da33f982a436e103237c0c85f9031142abed
   devicelocale: b22617f40038496deffba44747101255cee005b0

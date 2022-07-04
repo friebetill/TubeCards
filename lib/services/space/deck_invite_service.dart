@@ -21,12 +21,14 @@ class DeckInviteService {
 
   final GraphQLRunner _graphQLRunner;
 
-  Stream<DeckInvite> get(String link, {FetchPolicy? fetchPolicy}) {
+  Stream<DeckInvite> get(String deckInviteId, {FetchPolicy? fetchPolicy}) {
     DeckInvite? invite;
 
-    final request = GDeckInviteReq((b) => b
-      ..vars.inviteLink = link
-      ..fetchPolicy = fetchPolicy);
+    final request = GDeckInviteReq(
+      (b) => b
+        ..vars.deckInviteId = deckInviteId
+        ..fetchPolicy = fetchPolicy,
+    );
 
     return _graphQLRunner.request(request).distinct().map((response) {
       if (response.data != null) {

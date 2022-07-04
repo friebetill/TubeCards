@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:app_links/app_links.dart';
 import 'package:ferry/ferry.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart' hide Card;
@@ -149,27 +150,22 @@ class HomeBloc
 
   @override
   void onDialog() {
-    if (Platform.isAndroid || Platform.isIOS) {
+    if (!Platform.isLinux && !Platform.isFuchsia) {
       _initDeepLinkSubscription();
     }
     _handleWhatsNewPage();
   }
 
-  void _initDeepLinkSubscription() {
-    // Attach a listener to the links stream
-    _deepLinkSubscription = _deepLinkHelper.deepLinks.listen(
-      (link) async {
-        if (link == null || _isDialogShown) {
-          return;
-        }
+  Future<void> _initDeepLinkSubscription() async {
+    final _appLinks = AppLinks();
 
-        _isDialogShown = true;
-        await showModalBottomSheet(
-          context: context,
-          builder: (_) => AcceptDeckInviteComponent(link),
-        );
-        _deepLinkHelper.clear();
-      },
+    final uri = await _appLinks.getInitialAppLink();
+    if (uri != null) {
+      await _handleDeepLink(uri);
+    }
+
+    _deepLinkSubscription = _appLinks.uriLinkStream.listen(
+      _handleDeepLink,
       onError: (e, s) {
         _logger.severe(
           'Exception during init of deep link subscription.',
@@ -184,9 +180,20 @@ class HomeBloc
     );
   }
 
+  Future<void> _handleDeepLink(Uri uri) async {
+    final deckInviteId = uri.pathSegments.last;
+
+    _isDialogShown = true;
+    await showModalBottomSheet(
+      context: context,
+      builder: (_) => AcceptDeckInviteComponent(deckInviteId),
+    );
+    _deepLinkHelper.clear();
+  }
+
   Future<void> _handleWhatsNewPage() async {
     if (Platform.isWindows) {
-      // Skip "What's new" dialog until this is closed https://bit.ly/3BtQtrR
+      // TODO: Update Windows version with Flutter > 3.0.3, https://bit.ly/3NCdIVq
       return;
     }
 

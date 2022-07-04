@@ -404,7 +404,13 @@ type Query {
     searchTerm: String!
   ): DeckConnection! @deprecated(reason: "Use searchDecks instead")
   exportDecks(toEmail: String!): ExportDecksPayload!
-  deckInvite(inviteLink: String!): DeckInvite!
+  deckInvite(
+    # The deck invite id e.g. 123456789.
+    deckInviteId: String
+
+    # The invite link e.g. https://getspace.app/invite/123456789
+    inviteLink: String
+  ): DeckInvite!
 
   # Returns the deck member with the given user id and deck id.
   deckMember(deckId: ID!, userId: ID!): DeckMember!

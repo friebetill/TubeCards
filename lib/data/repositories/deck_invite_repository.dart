@@ -12,8 +12,8 @@ class DeckInviteRepository {
 
   final DeckInviteService _service;
 
-  Stream<DeckInvite> get(String link, {FetchPolicy? fetchPolicy}) =>
-      _service.get(link, fetchPolicy: fetchPolicy);
+  Stream<DeckInvite> get(String deckInviteId, {FetchPolicy? fetchPolicy}) =>
+      _service.get(deckInviteId, fetchPolicy: fetchPolicy);
 
   Future<DeckInvite> insert(String deckId, Role role) =>
       _service.insert(deckId, role);

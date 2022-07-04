@@ -1,5 +1,5 @@
-query DeckInvite($inviteLink: String!) {
-  deckInvite(inviteLink: $inviteLink) {
+query DeckInvite($deckInviteId: String!) {
+  deckInvite(deckInviteId: $deckInviteId) {
     id
     link
     inviteeRole {

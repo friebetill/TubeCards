@@ -32,14 +32,14 @@ class AcceptDeckInviteBloc with ComponentLifecycleListener {
   final _isLoading = BehaviorSubject.seeded(false);
   Exception? _exception;
 
-  Stream<AcceptDeckInviteViewModel> createViewModel(String invitationLink) {
+  Stream<AcceptDeckInviteViewModel> createViewModel(String deckInviteId) {
     if (_viewModel != null) {
       return _viewModel!;
     }
 
     return _viewModel = Rx.combineLatest2(
       _deckInviteRepository.get(
-        invitationLink,
+        deckInviteId,
         fetchPolicy: FetchPolicy.CacheAndNetwork,
       ),
       _isLoading,

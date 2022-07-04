@@ -23,9 +23,9 @@ class JoinSharedDeckBloc
   Stream<JoinSharedDeckViewModel>? _viewModel;
   Stream<JoinSharedDeckViewModel>? get viewModel => _viewModel;
 
+  final _linkTextController = TextEditingController();
   final _linkErrorText = BehaviorSubject<String?>.seeded(null);
   final _isLoading = BehaviorSubject.seeded(false);
-  final _emailTextController = TextEditingController();
 
   Stream<JoinSharedDeckViewModel> createViewModel() {
     if (_viewModel != null) {
@@ -44,39 +44,40 @@ class JoinSharedDeckBloc
     bool isLoading,
   ) {
     return JoinSharedDeckViewModel(
+      linkTextController: _linkTextController,
       linkErrorText: linkErrorText,
       isLoading: isLoading,
       onJoinTap: _handleJoinTap,
       onPasteLinkTap: _handlePasteLinkTap,
-      emailTextController: _emailTextController,
     );
   }
 
   @override
   void dispose() {
+    _linkTextController.dispose();
     _linkErrorText.close();
     _isLoading.close();
-    _emailTextController.dispose();
     super.dispose();
   }
 
   Future<void> _handleJoinTap() async {
     final isUrl =
-        Uri.tryParse(_emailTextController.text)?.hasAbsolutePath ?? false;
+        Uri.tryParse(_linkTextController.text)?.hasAbsolutePath ?? false;
     if (!isUrl) {
       return _linkErrorText.add(S.of(context).deckInvitationNotValidText);
     }
+    final deckInviteId = Uri.parse(_linkTextController.text).pathSegments.last;
 
     await showModalBottomSheet(
       context: context,
-      builder: (_) => AcceptDeckInviteComponent(_emailTextController.text),
+      builder: (_) => AcceptDeckInviteComponent(deckInviteId),
     );
   }
 
   Future<void> _handlePasteLinkTap() async {
     final clipboard = await Clipboard.getData('text/plain');
     if (clipboard?.text != null) {
-      _emailTextController.text = clipboard!.text!;
+      _linkTextController.text = clipboard!.text!;
     }
   }
 }

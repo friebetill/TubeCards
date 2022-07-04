@@ -116,7 +116,7 @@ class _JoinSharedDeckViewState extends State<_JoinSharedDeckView> {
         children: [
           Expanded(
             child: TextFormField(
-              controller: widget.viewModel.emailTextController,
+              controller: widget.viewModel.linkTextController,
               focusNode: _emailTextFocus,
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(

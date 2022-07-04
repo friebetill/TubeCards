@@ -17,15 +17,15 @@ import 'accept_deck_invite_view_model.dart';
 
 /// Bottom sheet to display an invitation for a deck.
 class AcceptDeckInviteComponent extends StatelessWidget {
-  const AcceptDeckInviteComponent(this._inviteLink, {Key? key})
+  const AcceptDeckInviteComponent(this._deckInviteId, {Key? key})
       : super(key: key);
 
-  final String _inviteLink;
+  final String _deckInviteId;
 
   @override
   Widget build(BuildContext context) {
     return Component<AcceptDeckInviteBloc>(
-      createViewModel: (bloc) => bloc.createViewModel(_inviteLink),
+      createViewModel: (bloc) => bloc.createViewModel(_deckInviteId),
       builder: (context, bloc) {
         return StreamBuilder<AcceptDeckInviteViewModel>(
           stream: bloc.viewModel,
