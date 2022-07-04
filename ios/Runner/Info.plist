@@ -67,5 +67,18 @@
 			<string>http</string>
 			<string>mailto</string>
 		</array>
+
+		<key>CFBundleURLTypes</key>
+		<array>
+			<dict>
+				<!-- To suppoprt custom URL schemes, see https://bit.ly/3y8mjcV -->
+				<key>CFBundleURLName</key>
+				<string>app.getspace</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>space</string>
+				</array>
+			</dict>
+		</array>
 	</dict>
 </plist>
