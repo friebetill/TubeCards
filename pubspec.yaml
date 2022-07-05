@@ -1,7 +1,7 @@
 name: client_mobile
 description: Spaced Repetition for Minimalists
 # The version and build number according to semver.org
-version: 2.0.3+83
+version: 2.0.4+84
 publish_to: none
 
 environment:
@@ -197,7 +197,7 @@ msix_config:
   publisher_display_name: Space App
   identity_name:
   display_name: "Space: Spaced Repetition"
-  msix_version: 2.0.3.0
+  msix_version: 2.0.4.0
   store: true
   publisher:
   capabilities: "internetClient"

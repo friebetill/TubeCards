@@ -7,6 +7,15 @@ final releaseNotes = [
     buildNumber: 81,
     date: DateTime(2022, 4, 11),
     releaseNote: '''
+🤌 Improve italian translation
+🚧 Update website to easier join shared decks
+    ''',
+    version: '2.0.1',
+  ),
+  ReleaseNote(
+    buildNumber: 81,
+    date: DateTime(2022, 4, 11),
+    releaseNote: '''
 ✨ Simplify UI by removing strength and stability
 🐞 Fix bug when publishing decks
     ''',
