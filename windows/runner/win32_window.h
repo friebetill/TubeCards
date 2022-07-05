@@ -86,6 +86,10 @@ class Win32Window {
   // Retrieves a class instance pointer for |window|
   static Win32Window* GetThisFromHandle(HWND const window) noexcept;
 
+  // Dispatches link if any.
+  // This method enables our app to be with a single instance too.
+  bool SendAppLinkToInstance(const std::wstring& title);
+
   bool quit_on_close_ = false;
 
   // window handle for top level window.

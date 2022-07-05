@@ -3,6 +3,7 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  app_links_windows
   bitsdojo_window_windows
   file_selector_windows
   sentry_flutter
