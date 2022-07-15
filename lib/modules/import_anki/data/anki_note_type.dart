@@ -14,7 +14,6 @@ class AnkiNoteType {
     required this.name,
     required this.tags,
     required this.tmpls,
-    required this.isCloze,
   });
 
   /// Constructs a new [AnkiNoteType] from the given [json].
@@ -44,10 +43,4 @@ class AnkiNoteType {
 
   /// JSONArray containing object of CardTemplate for each card in model
   final List<dynamic> tmpls;
-
-  // Whether the note type is a cloze-type note type or not.
-  @JsonKey(name: 'type', fromJson: isClozeFromType)
-  final bool isCloze;
 }
-
-bool isClozeFromType(int type) => type == 1;

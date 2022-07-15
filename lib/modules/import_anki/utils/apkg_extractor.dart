@@ -86,38 +86,22 @@ Future<List<AnkiCard>> _extractCards(
   final textCleaner = AnkiTextCleaner();
 
   final cards = <AnkiCard>[];
-  for (final cardRow in cardsJoinsNotesTable) {
-    final noteType = ankiNoteTypes.singleWhere((n) => n.id == cardRow['mid']);
-
-    String htmlFront;
-    String htmlBack;
-    if (noteType.isCloze) {
-      htmlFront = (noteType.tmpls[0]['qfmt'] as String).replaceFirst(
-        '{{cloze:Text}}',
-        cardRow['flds']! as String,
-      );
-      htmlBack = (noteType.tmpls[0]['afmt'] as String).replaceFirst(
-        '{{cloze:Text}}',
-        cardRow['flds']! as String,
-      );
-    } else {
-      htmlFront = noteType.tmpls[cardRow['ord']! as int]['qfmt'] as String;
-      htmlBack = noteType.tmpls[cardRow['ord']! as int]['afmt'] as String;
-    }
+  for (final row in cardsJoinsNotesTable) {
+    final noteType = ankiNoteTypes.singleWhere((n) => n.id == row['mid']);
+    var htmlFront = noteType.tmpls[row['ord']! as int]['qfmt'] as String;
+    var htmlBack = noteType.tmpls[row['ord']! as int]['afmt'] as String;
 
     htmlFront = textCleaner.replaceFieldsWithContent(
       cardText: htmlFront,
-      cardRow: cardRow,
+      cardEntry: row,
       noteType: noteType,
       decks: decks,
-      isFront: true,
     );
     htmlBack = textCleaner.replaceFieldsWithContent(
       cardText: htmlBack,
-      cardRow: cardRow,
+      cardEntry: row,
       noteType: noteType,
       decks: decks,
-      isFront: false,
       ignoreFields: ['Front'],
     );
 
@@ -125,7 +109,7 @@ Future<List<AnkiCard>> _extractCards(
     htmlBack = textCleaner.removeVideoAudioLinks(htmlBack);
 
     cards.add(AnkiCard(
-      deckId: cardRow['did']! as int,
+      deckId: row['did']! as int,
       front: htmlFront,
       back: htmlBack,
     ));
