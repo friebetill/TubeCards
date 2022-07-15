@@ -30,15 +30,9 @@ class AnkiTextCleaner {
       );
     }
 
-    cleanedCardText = _removeConditionalReplacements(
-      cleanedCardText,
-      fields,
-      noteType,
-    );
-
     if (noteType.isCloze) {
       cleanedCardText =
-          _replaceClozeText(cleanedCardText, cardRow, isFront: isFront);
+          replaceClozeText(cleanedCardText, cardRow, isFront: isFront);
     }
 
     // There are some special fields that can be included in the template:
@@ -71,7 +65,7 @@ class AnkiTextCleaner {
     return cleanedCardText;
   }
 
-  String _replaceClozeText(
+  String replaceClozeText(
     String text,
     Map<String, dynamic> cardEntry, {
     required bool isFront,
@@ -89,32 +83,6 @@ class AnkiTextCleaner {
         updatedText = updatedText.replaceAll(match.group(0)!, '_____');
       } else {
         updatedText = updatedText.replaceAll(match.group(0)!, match.group(2)!);
-      }
-    }
-
-    return updatedText;
-  }
-
-  String _removeConditionalReplacements(
-    String text,
-    List<String> fields,
-    AnkiNoteType noteType,
-  ) {
-    var updatedText = text;
-
-    for (var j = 0; j < noteType.flds.length; j++) {
-      if (fields[j] == '') {
-        // Remove the conditional replacement if the field is empty.
-        final regExp = RegExp('{{#([^}]*)}}.*{{/1}}', dotAll: true);
-        final match = regExp.firstMatch(text);
-
-        if (match != null) {
-          updatedText = updatedText.replaceAll(match.group(0)!, '');
-        }
-      } else {
-        final fieldName = noteType.flds[j]['name'] as String;
-        updatedText = updatedText.replaceAll('{{#$fieldName}}', '');
-        updatedText = updatedText.replaceAll('{{/$fieldName}}', '');
       }
     }
 
