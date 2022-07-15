@@ -6,13 +6,14 @@ class AnkiTextCleaner {
   /// Replaces the placeholder of Anki fields with the content.
   String replaceFieldsWithContent({
     required String cardText,
-    required Map<String, dynamic> cardEntry,
+    required Map<String, dynamic> cardRow,
     required AnkiNoteType noteType,
     required List<AnkiDeck> decks,
+    required bool isFront,
     List<String> ignoreFields = const <String>[],
   }) {
-    final deck = decks.singleWhere((d) => d.id == cardEntry['did'] as int);
-    final fields = (cardEntry['flds'] as String).split(String.fromCharCode(31));
+    final deck = decks.singleWhere((d) => d.id == cardRow['did'] as int);
+    final fields = (cardRow['flds'] as String).split(String.fromCharCode(31));
 
     var cleanedCardText = cardText;
 
@@ -27,6 +28,11 @@ class AnkiTextCleaner {
         '{{${noteType.flds[j]['name'] as String}}}',
         fields[j],
       );
+    }
+
+    if (noteType.isCloze) {
+      cleanedCardText =
+          replaceClozeText(cleanedCardText, cardRow, isFront: isFront);
     }
 
     // There are some special fields that can be included in the template:
@@ -57,6 +63,30 @@ class AnkiTextCleaner {
     cleanedCardText = cleanedCardText.trim();
 
     return cleanedCardText;
+  }
+
+  String replaceClozeText(
+    String text,
+    Map<String, dynamic> cardEntry, {
+    required bool isFront,
+  }) {
+    // Find matches of text that look similar to {{c1:text}} and
+    // {{c1::text::hint}}, where hint is currently ignored.
+    final regExp = RegExp('{{c([0-9]+)::([^}]*?)(?:::[^}]*)?}}');
+    final matches = regExp.allMatches(text);
+
+    var updatedText = text;
+    for (final match in matches) {
+      final clozeNumber = int.parse(match.group(1)!);
+
+      if (isFront && cardEntry['ord'] + 1 == clozeNumber) {
+        updatedText = updatedText.replaceAll(match.group(0)!, '_____');
+      } else {
+        updatedText = updatedText.replaceAll(match.group(0)!, match.group(2)!);
+      }
+    }
+
+    return updatedText;
   }
 
   /// Remove all audio and video links, as we don't support them yet.
