@@ -4,7 +4,24 @@ import '../i18n/i18n.dart';
 
 final releaseNotes = [
   ReleaseNote(
-    buildNumber: 81,
+    buildNumber: 85,
+    date: DateTime(2022, 6, 15),
+    releaseNote: '''
+🇯🇵 Fix import errors of cloze flashcards from Anki
+    ''',
+    version: '2.0.4',
+  ),
+  ReleaseNote(
+    buildNumber: 84,
+    date: DateTime(2022, 6, 5),
+    releaseNote: '''
+🤌 Improve italian translation
+🚧 Update website to easier join shared decks
+    ''',
+    version: '2.0.4',
+  ),
+  ReleaseNote(
+    buildNumber: 84,
     date: DateTime(2022, 4, 11),
     releaseNote: '''
 🤌 Improve italian translation
