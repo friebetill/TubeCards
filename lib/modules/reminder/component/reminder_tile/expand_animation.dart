@@ -4,9 +4,9 @@ const Duration _expandDuration = Duration(milliseconds: 200);
 
 /// The animations while the card is flipped.
 class ExpandAnimation {
-  ExpandAnimation(AnimationController _controller)
-      : _controller = _controller..duration = _expandDuration,
-        iconTurns = Tween<double>(begin: 0, end: 0.5).animate(_controller);
+  ExpandAnimation(AnimationController controller)
+      : _controller = controller..duration = _expandDuration,
+        iconTurns = Tween<double>(begin: 0, end: 0.5).animate(controller);
 
   /// The controller for the animations.
   final AnimationController _controller;

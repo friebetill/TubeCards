@@ -18,10 +18,10 @@ class EmailField extends StatefulWidget {
   final FocusNode _nextFieldFocus;
 
   @override
-  _EmailFieldState createState() => _EmailFieldState();
+  EmailFieldState createState() => EmailFieldState();
 }
 
-class _EmailFieldState extends State<EmailField> {
+class EmailFieldState extends State<EmailField> {
   final _textEditingController = TextEditingController();
 
   @override

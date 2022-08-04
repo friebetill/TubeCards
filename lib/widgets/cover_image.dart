@@ -46,10 +46,10 @@ class CoverImage extends StatefulWidget {
   final int minHeight;
 
   @override
-  _CoverImageState createState() => _CoverImageState();
+  CoverImageState createState() => CoverImageState();
 }
 
-class _CoverImageState extends State<CoverImage> {
+class CoverImageState extends State<CoverImage> {
   late String? imageUrl;
   late String tag;
 

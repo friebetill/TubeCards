@@ -104,11 +104,11 @@ class CustomNavigator {
     Object? args,
     RouteType? type,
   }) {
-    final _type =
-        type ?? (Platform.isMacOS ? RouteType.immediate : RouteType.material);
-
-    return navigatorKey.currentState!
-        .push<T>(_routeTypeToRoute(routeName, _type, args));
+    return navigatorKey.currentState!.push<T>(_routeTypeToRoute(
+      routeName,
+      type ?? (Platform.isMacOS ? RouteType.immediate : RouteType.material),
+      args,
+    ));
   }
 
   /// Wraps the [Navigator.pushNamedAndRemoveUntil].

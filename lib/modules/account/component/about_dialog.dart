@@ -11,10 +11,10 @@ class AboutDialog extends StatefulWidget {
   const AboutDialog({Key? key}) : super(key: key);
 
   @override
-  _AboutDialogState createState() => _AboutDialogState();
+  AboutDialogState createState() => AboutDialogState();
 }
 
-class _AboutDialogState extends State<AboutDialog> {
+class AboutDialogState extends State<AboutDialog> {
   String _version = '';
 
   @override

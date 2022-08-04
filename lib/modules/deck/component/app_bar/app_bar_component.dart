@@ -29,10 +29,10 @@ class AppBarComponent extends StatefulWidget implements PreferredSizeWidget {
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 
   @override
-  _AppBarComponentState createState() => _AppBarComponentState();
+  AppBarComponentState createState() => AppBarComponentState();
 }
 
-class _AppBarComponentState extends State<AppBarComponent> {
+class AppBarComponentState extends State<AppBarComponent> {
   @override
   Widget build(BuildContext context) {
     return Component<AppBarBloc>(

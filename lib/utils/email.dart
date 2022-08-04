@@ -18,13 +18,10 @@ Future<void> openEmailAppWithTemplate({
     scheme: 'mailto',
     path: email,
     queryParameters: {'subject': subject, 'body': body},
-  )
-      .toString()
-      // replaceAll is necessary see https://bit.ly/3uXuSUH
-      .replaceAll('+', '%20');
+  );
 
-  if (await canLaunch(url)) {
-    final isSuccessful = await launch(url);
+  if (await canLaunchUrl(url)) {
+    final isSuccessful = await launchUrl(url);
     if (!isSuccessful) {
       throw Exception('Cannot open email app');
     }
@@ -44,7 +41,7 @@ Future<void> openEmailApp() async {
     );
     await intent.launch();
   } else if (Platform.isIOS) {
-    await launch('message://');
+    await launchUrl(Uri(scheme: 'message', path: '/'));
   } else {
     throw Exception('Cannot open email app with template');
   }

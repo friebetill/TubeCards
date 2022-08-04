@@ -302,19 +302,19 @@ class _DrawImageViewState extends State<_DrawImageView> {
   }
 
   Color _getBackgroundColor() {
-    final _activeBackgroundColor =
+    final activeBackgroundColor =
         Theme.of(context).brightness == Brightness.light
             ? const Color(0xFFF4F8FE)
             : const Color(0xFF343D52);
-    final _inactiveBackgroundColor = Theme.of(context).custom.elevation4DPColor;
+    final inactiveBackgroundColor = Theme.of(context).custom.elevation4DPColor;
 
     if (widget.viewModel.mode == PainterMode.line ||
         widget.viewModel.mode == PainterMode.arrow ||
         widget.viewModel.mode == PainterMode.rectangle ||
         widget.viewModel.mode == PainterMode.circle) {
-      return _activeBackgroundColor;
+      return activeBackgroundColor;
     } else {
-      return _inactiveBackgroundColor;
+      return inactiveBackgroundColor;
     }
   }
 

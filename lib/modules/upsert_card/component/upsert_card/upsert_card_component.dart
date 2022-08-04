@@ -252,7 +252,7 @@ class _UpsertCardViewState extends State<_UpsertCardView>
   }
 
   List<Widget> _buildActions(BuildContext context) {
-    final _choices = <PopupMenuChoice>[
+    final choices = <PopupMenuChoice>[
       if (widget.viewModel.onMoveTap != null)
         PopupMenuChoice(
             title: S.of(context).moveTo,
@@ -310,7 +310,7 @@ class _UpsertCardViewState extends State<_UpsertCardView>
         PopupMenuButton<PopupMenuChoice>(
           onSelected: (choice) => choice.action(),
           itemBuilder: (context) {
-            return _choices.map((choice) {
+            return choices.map((choice) {
               return PopupMenuItem<PopupMenuChoice>(
                 value: choice,
                 child: Text(choice.title),

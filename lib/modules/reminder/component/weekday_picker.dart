@@ -14,10 +14,10 @@ class WeekdayPicker extends StatefulWidget {
   final Map<Weekday, bool> weekdayStates;
 
   @override
-  _WeekdayPickerState createState() => _WeekdayPickerState();
+  WeekdayPickerState createState() => WeekdayPickerState();
 }
 
-class _WeekdayPickerState extends State<WeekdayPicker> {
+class WeekdayPickerState extends State<WeekdayPicker> {
   late Map<Weekday, bool> weekdayStates;
 
   @override

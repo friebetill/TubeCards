@@ -157,14 +157,14 @@ class HomeBloc
   }
 
   Future<void> _initDeepLinkSubscription() async {
-    final _appLinks = AppLinks();
+    final appLinks = AppLinks();
 
-    final uri = await _appLinks.getInitialAppLink();
+    final uri = await appLinks.getInitialAppLink();
     if (uri != null) {
       await _handleDeepLink(uri);
     }
 
-    _deepLinkSubscription = _appLinks.uriLinkStream.listen(
+    _deepLinkSubscription = appLinks.uriLinkStream.listen(
       _handleDeepLink,
       onError: (e, s) {
         _logger.severe(
@@ -245,7 +245,7 @@ class HomeBloc
     }
 
     _isDialogShown = true;
-    SchedulerBinding.instance!.addPostFrameCallback((_) {
+    SchedulerBinding.instance.addPostFrameCallback((_) {
       final oldestReleaseNote = newReleaseNotes.removeLast();
       _appProperties.whatsNewModalShownBuildNumber
           .setValue(oldestReleaseNote.buildNumber);

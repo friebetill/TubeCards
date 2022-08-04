@@ -24,10 +24,10 @@ class DeckTileComponent extends StatefulWidget {
   final Deck deck;
 
   @override
-  _DeckTileComponentState createState() => _DeckTileComponentState();
+  DeckTileComponentState createState() => DeckTileComponentState();
 }
 
-class _DeckTileComponentState extends State<DeckTileComponent> {
+class DeckTileComponentState extends State<DeckTileComponent> {
   // Needed to ensure DeckTileComponent is rebuilt when the given Deck changes
   late final _deck = BehaviorSubject<Deck>.seeded(widget.deck);
 

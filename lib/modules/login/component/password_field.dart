@@ -22,10 +22,10 @@ class PasswordField extends StatefulWidget {
   final VoidCallback onObscureToggle;
 
   @override
-  _PasswordFieldState createState() => _PasswordFieldState();
+  PasswordFieldState createState() => PasswordFieldState();
 }
 
-class _PasswordFieldState extends State<PasswordField> {
+class PasswordFieldState extends State<PasswordField> {
   final _textEditingController = TextEditingController();
 
   @override

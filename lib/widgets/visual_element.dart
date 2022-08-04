@@ -24,16 +24,13 @@ import '../utils/logging/visual_element_ids.dart';
 /// }
 /// ```
 class VisualElement extends StatelessWidget {
-  VisualElement({
-    required this.id,
-    required this.childBuilder,
-    Key? key,
-  })  : controller = _VisualElementController(id),
+  VisualElement({required this.id, required this.childBuilder, Key? key})
+      : controller = VisualElementController(id),
         super(key: key);
 
   final VEs id;
-  final Widget Function(_VisualElementController) childBuilder;
-  final _VisualElementController controller;
+  final Widget Function(VisualElementController) childBuilder;
+  final VisualElementController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -43,8 +40,8 @@ class VisualElement extends StatelessWidget {
   }
 }
 
-class _VisualElementController {
-  _VisualElementController(this.id);
+class VisualElementController {
+  VisualElementController(this.id);
 
   BuildContext? context;
 

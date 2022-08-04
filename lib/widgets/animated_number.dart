@@ -25,10 +25,10 @@ class AnimatedNumber extends StatefulWidget {
   final String loadingPlaceHolder;
 
   @override
-  _AnimatedNumberState createState() => _AnimatedNumberState();
+  AnimatedNumberState createState() => AnimatedNumberState();
 }
 
-class _AnimatedNumberState extends State<AnimatedNumber>
+class AnimatedNumberState extends State<AnimatedNumber>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller =
       AnimationController(duration: widget.duration, vsync: this);

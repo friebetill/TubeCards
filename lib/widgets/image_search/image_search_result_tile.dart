@@ -2,7 +2,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 import '../../main.dart';
@@ -21,10 +20,10 @@ class ImageSearchResultTile extends StatefulWidget {
   final bool showThumbnail;
 
   @override
-  _ImageSearchResultTileState createState() => _ImageSearchResultTileState();
+  ImageSearchResultTileState createState() => ImageSearchResultTileState();
 }
 
-class _ImageSearchResultTileState extends State<ImageSearchResultTile> {
+class ImageSearchResultTileState extends State<ImageSearchResultTile> {
   bool _isShowingImage = false;
 
   @override
@@ -57,22 +56,16 @@ class _ImageSearchResultTileState extends State<ImageSearchResultTile> {
   }
 
   Widget _buildImage(ImageProvider image) {
-    return widget.item.imageUrl!.toLowerCase().endsWith('svg')
-        ? Container(
-            // Always color the SVG background white, even in dark mode.
-            color: Colors.white,
-            child: SvgPicture.file((image as dynamic).file as File),
-          )
-        : ExtendedImage(
-            image: image,
-            fit: BoxFit.cover,
-            beforePaintImage: (canvas, rect, image, paint) {
-              // Needed to color the background of transparent images white.
-              canvas.drawRect(rect, Paint()..color = Colors.white);
+    return ExtendedImage(
+      image: image,
+      fit: BoxFit.cover,
+      beforePaintImage: (canvas, rect, image, paint) {
+        // Needed to color the background of transparent images white.
+        canvas.drawRect(rect, Paint()..color = Colors.white);
 
-              return false;
-            },
-          );
+        return false;
+      },
+    );
   }
 
   void _onVisibilityChanged(VisibilityInfo info) {

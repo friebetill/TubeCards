@@ -84,7 +84,8 @@ class DrawImageBloc with ComponentBuildContext, ComponentLifecycleListener {
   ) {
     _controller.settings = _controller.settings.copyWith(
       freeStyle: FreeStyleSettings(
-        enabled: mode == PainterMode.draw,
+        mode:
+            mode == PainterMode.draw ? FreeStyleMode.draw : FreeStyleMode.none,
         color: _userHistory.recentBrushColors.getValue().first,
         strokeWidth: brushSize,
       ),

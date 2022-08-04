@@ -19,19 +19,19 @@ class SlideOutLeftAnimationComponent extends StatefulWidget {
   final VoidCallback onAnimationCompleted;
 
   @override
-  _SlideOutLeftAnimationComponentState createState() =>
-      _SlideOutLeftAnimationComponentState();
+  SlideOutLeftAnimationComponentState createState() =>
+      SlideOutLeftAnimationComponentState();
 }
 
-class _SlideOutLeftAnimationComponentState
+class SlideOutLeftAnimationComponentState
     extends State<SlideOutLeftAnimationComponent>
     with SingleTickerProviderStateMixin {
-  late _SlideOutLeftAnimation animation;
+  late SlideOutLeftAnimation animation;
 
   @override
   void initState() {
     super.initState();
-    animation = _SlideOutLeftAnimation(AnimationController(vsync: this))
+    animation = SlideOutLeftAnimation(AnimationController(vsync: this))
       ..controller.addStatusListener((status) {
         if (status == AnimationStatus.completed) {
           widget.onAnimationCompleted();
@@ -73,9 +73,9 @@ class _SlideOutLeftAnimationComponentState
 ///
 /// Rotates the card while moving it out of the screen
 /// to the left side.
-class _SlideOutLeftAnimation extends SlideOutAnimation {
+class SlideOutLeftAnimation extends SlideOutAnimation {
   /// Constructs an instance of [SlideOutRightAnimation].
-  _SlideOutLeftAnimation(AnimationController controller)
+  SlideOutLeftAnimation(AnimationController controller)
       : super(
           controller: controller,
           targetOffset: _targetLeftOffset,

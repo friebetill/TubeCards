@@ -46,7 +46,7 @@ class CardSideViewer extends StatelessWidget {
       enableInteractiveSelection: false,
       expands: false,
       padding: padding,
-      embedBuilder: (context, controller, embed, readOnly) => embedBuilder(
+      embedBuilder: (context, controller, embed, readOnly, _) => embedBuilder(
         context,
         embed,
         _controller,

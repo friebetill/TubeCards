@@ -40,10 +40,10 @@ class NumberPicker extends StatefulWidget {
   final int offValue;
 
   @override
-  _NumberPickerState createState() => _NumberPickerState();
+  NumberPickerState createState() => NumberPickerState();
 }
 
-class _NumberPickerState extends State<NumberPicker> {
+class NumberPickerState extends State<NumberPicker> {
   late int _selectedIndex;
   late int _offOffset;
 

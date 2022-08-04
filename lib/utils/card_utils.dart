@@ -28,15 +28,15 @@ String _replaceMarkdownImages(
   String content, [
   String replacement = _pictureEmoji,
 ]) {
-  final _markdownImageRegExp = RegExp(r'!\[(.*)\]\((.+)\)');
+  final markdownImageRegExp = RegExp(r'!\[(.*)\]\((.+)\)');
 
-  return content.replaceAll(_markdownImageRegExp, replacement);
+  return content.replaceAll(markdownImageRegExp, replacement);
 }
 
 /// Replaces all markdown links in the given [content] with the visible part
 /// of the respective link.
 String _replaceMarkdownLinks(String content) {
-  final _markdownLinkRegExp = RegExp(r'\[(.*)\]\((.+)\)');
+  final markdownLinkRegExp = RegExp(r'\[(.*)\]\((.+)\)');
 
-  return content.replaceAllMapped(_markdownLinkRegExp, (m) => m.group(1)!);
+  return content.replaceAllMapped(markdownLinkRegExp, (m) => m.group(1)!);
 }

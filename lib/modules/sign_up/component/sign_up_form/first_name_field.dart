@@ -18,10 +18,10 @@ class FirstNameField extends StatefulWidget {
   final FocusNode _nextFieldFocus;
 
   @override
-  _FirstNameFieldState createState() => _FirstNameFieldState();
+  FirstNameFieldState createState() => FirstNameFieldState();
 }
 
-class _FirstNameFieldState extends State<FirstNameField> {
+class FirstNameFieldState extends State<FirstNameField> {
   final _textEditingController = TextEditingController();
 
   @override

@@ -20,10 +20,10 @@ class InteractiveImagePage extends StatefulWidget {
   final String imageUrl;
 
   @override
-  _InteractiveImagePageState createState() => _InteractiveImagePageState();
+  InteractiveImagePageState createState() => InteractiveImagePageState();
 }
 
-class _InteractiveImagePageState extends State<InteractiveImagePage> {
+class InteractiveImagePageState extends State<InteractiveImagePage> {
   @override
   void initState() {
     super.initState();

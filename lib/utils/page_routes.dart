@@ -41,7 +41,7 @@ class PageRoutes {
         } else {
           // Code taken from _FadeUpwardsPageTransition in
           // page_transitions_theme.dart.
-          final _bottomUpTween = Tween<Offset>(
+          final bottomUpTween = Tween<Offset>(
             begin: const Offset(0, 0.25),
             end: Offset.zero,
           );
@@ -51,18 +51,18 @@ class PageRoutes {
             curve: const Interval(0.7, 1),
           );
 
-          final Animatable<double> _fastOutSlowInTween =
+          final Animatable<double> fastOutSlowInTween =
               CurveTween(curve: Curves.fastOutSlowIn);
-          final Animatable<double> _easeInTween =
+          final Animatable<double> easeInTween =
               CurveTween(curve: Curves.easeIn);
-          final _positionAnimation =
-              fastAnimation.drive(_bottomUpTween.chain(_fastOutSlowInTween));
-          final _opacityAnimation = fastAnimation.drive(_easeInTween);
+          final positionAnimation =
+              fastAnimation.drive(bottomUpTween.chain(fastOutSlowInTween));
+          final opacityAnimation = fastAnimation.drive(easeInTween);
 
           return SlideTransition(
-            position: _positionAnimation,
+            position: positionAnimation,
             child: FadeTransition(
-              opacity: _opacityAnimation,
+              opacity: opacityAnimation,
               child: newRoute,
             ),
           );

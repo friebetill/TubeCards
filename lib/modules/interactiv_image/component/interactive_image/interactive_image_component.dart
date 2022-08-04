@@ -120,8 +120,8 @@ class _InteractiveImageViewState extends State<_InteractiveImageView>
   }
 
   void _handleDoubleTap() {
-    final _position = _doubleTapDetails.localPosition;
-    final _endMatrix = _interactiveController.value != Matrix4.identity()
+    final position = _doubleTapDetails.localPosition;
+    final endMatrix = _interactiveController.value != Matrix4.identity()
         ? Matrix4.identity()
         :
         // 3x zoom at the position of the double-click
@@ -134,12 +134,12 @@ class _InteractiveImageViewState extends State<_InteractiveImageView>
         //
         // I am not sure why the matrix operation are the other way around.
         (Matrix4.identity()
-          ..translate(-_position.dx * 2, -_position.dy * 2)
+          ..translate(-position.dx * 2, -position.dy * 2)
           ..scale(3.0));
 
     _zoomAnimation = Matrix4Tween(
       begin: _interactiveController.value,
-      end: _endMatrix,
+      end: endMatrix,
     ).animate(
       CurveTween(curve: Curves.easeOut).animate(_zoomAnimationController),
     );

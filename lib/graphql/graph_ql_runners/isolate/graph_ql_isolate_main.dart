@@ -15,7 +15,7 @@ import 'graph_ql_isolate_runner.dart';
 
 Future<void> graphQLIsolateMain(Map data) async {
   await setupLogging();
-  final _logger = Logger('graphQLIsolateMain');
+  final logger = Logger('graphQLIsolateMain');
 
   if (Platform.isAndroid) {
     trustLetsEncryptCertificate();
@@ -52,7 +52,7 @@ Future<void> graphQLIsolateMain(Map data) async {
         // and listen to the stream with onError don't catch the exceptions.
         await runZonedGuarded(
           () => message.command.execute(client, message.sender),
-          (e, s) => _logger.severe('Unexpected exception', e, s),
+          (e, s) => logger.severe('Unexpected exception', e, s),
         );
       },
     );

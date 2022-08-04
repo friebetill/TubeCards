@@ -61,7 +61,12 @@ class AccountBloc with ComponentBuildContext {
           if (Platform.isAndroid || Platform.isIOS || Platform.isMacOS) {
             _inAppReview.openStoreListing(appStoreId: appStoreId);
           } else if (Platform.isWindows) {
-            launch('ms-windows-store://review/?ProductId=$microsoftStoreId');
+            launchUrl(Uri(
+              scheme: 'ms-windows-store',
+              host: '/',
+              path: '/review/',
+              queryParameters: {'ProductId': microsoftStoreId},
+            ));
           }
         },
         onDeveloperTap: () => CustomNavigator.getInstance()
@@ -78,9 +83,9 @@ class AccountBloc with ComponentBuildContext {
     });
   }
 
-  Future<void> _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+  Future<void> _launchURL(Uri url) async {
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url);
     } else {
       ScaffoldMessenger.of(context).showErrorSnackBar(
         theme: Theme.of(context),

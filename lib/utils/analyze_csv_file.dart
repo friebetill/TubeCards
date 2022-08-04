@@ -58,7 +58,7 @@ Future<CSVDeck?> catchCSVExceptions(
   void Function(String, [AsyncCallback]) errorCallback,
   AsyncCallback handleOpenEmailAppTap,
 ) async {
-  final _logger = Logger((catchCSVExceptions).toString());
+  final logger = Logger((catchCSVExceptions).toString());
 
   try {
     return await analyzeFile();
@@ -71,7 +71,7 @@ Future<CSVDeck?> catchCSVExceptions(
       S.of(context).pleaseSendUsAnEmailAtSupport(supportEmail),
       handleOpenEmailAppTap,
     );
-    _logger.severe('Exception during CSV import', e, s);
+    logger.severe('Exception during CSV import', e, s);
     // ignore: avoid_catching_errors
   } on StateError {
     // Swallow state errors that occur when the analysis is aborted.
@@ -83,7 +83,7 @@ Future<CSVDeck?> catchCSVExceptions(
       S.of(context).pleaseSendUsAnEmailAtSupport(supportEmail),
       handleOpenEmailAppTap,
     );
-    _logger.severe('Error during CSV import', e, s);
+    logger.severe('Error during CSV import', e, s);
   }
 
   return null;

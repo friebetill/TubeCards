@@ -14,10 +14,10 @@ class SupportSpacePage extends StatefulWidget {
   static const String routeName = '/support-us';
 
   @override
-  _SupportSpacePageState createState() => _SupportSpacePageState();
+  SupportSpacePageState createState() => SupportSpacePageState();
 }
 
-class _SupportSpacePageState extends State<SupportSpacePage> {
+class SupportSpacePageState extends State<SupportSpacePage> {
   @override
   void initState() {
     super.initState();

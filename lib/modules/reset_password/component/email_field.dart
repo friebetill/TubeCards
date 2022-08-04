@@ -18,10 +18,10 @@ class EmailField extends StatefulWidget {
   final VoidCallback onSubmitted;
 
   @override
-  _EmailFieldState createState() => _EmailFieldState();
+  EmailFieldState createState() => EmailFieldState();
 }
 
-class _EmailFieldState extends State<EmailField> {
+class EmailFieldState extends State<EmailField> {
   final _textEditingController = TextEditingController();
 
   @override

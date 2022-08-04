@@ -20,10 +20,10 @@ class ErrorIndicator extends StatefulWidget {
   final bool showImage;
 
   @override
-  _ErrorIndicatorState createState() => _ErrorIndicatorState();
+  ErrorIndicatorState createState() => ErrorIndicatorState();
 }
 
-class _ErrorIndicatorState extends State<ErrorIndicator> {
+class ErrorIndicatorState extends State<ErrorIndicator> {
   final _logger = Logger((ErrorIndicator).toString());
   var _hasLoggedError = false;
 

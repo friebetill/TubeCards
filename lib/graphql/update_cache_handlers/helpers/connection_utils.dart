@@ -16,7 +16,8 @@ Request? getRequestToLastPage<Data, Variables,
   }
 
   while (hasNextPage(cachedResponse)) {
-    final nextPageRequest = buildNextPageRequest(pageRequest, cachedResponse!);
+    final nextPageRequest =
+        buildNextPageRequest(pageRequest, cachedResponse as Data);
     final nextPage = proxy.readQuery(nextPageRequest);
 
     if (nextPage == null) {

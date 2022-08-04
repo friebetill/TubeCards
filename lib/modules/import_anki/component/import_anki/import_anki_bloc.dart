@@ -124,14 +124,14 @@ class ImportAnkiBloc with ComponentBuildContext, ComponentLifecycleListener {
   }
 
   Future<void> _analyzeAnkiFile() async {
-    final _extractionPath = Directory.systemTemp.path;
+    final extractionPath = Directory.systemTemp.path;
     await compute(extractZipFile, {
       'filePath': _filePath.value!,
-      'extractionPath': _extractionPath,
+      'extractionPath': extractionPath,
     });
 
-    final anki2DatabasePath = '$_extractionPath/collection.anki2';
-    final anki2_1DatabasePath = '$_extractionPath/collection.anki21';
+    final anki2DatabasePath = '$extractionPath/collection.anki2';
+    final anki2_1DatabasePath = '$extractionPath/collection.anki21';
 
     final databasePath = File(anki2_1DatabasePath).existsSync()
         ? anki2_1DatabasePath
@@ -146,14 +146,14 @@ class ImportAnkiBloc with ComponentBuildContext, ComponentLifecycleListener {
       // and there is almost always an empty default deck.
       ..removeWhere((d) => d.cards.isEmpty);
 
-    final mediaFileContent = File('$_extractionPath/media').readAsStringSync();
+    final mediaFileContent = File('$extractionPath/media').readAsStringSync();
     final jsonMedia = jsonDecode(mediaFileContent) as Map<String, dynamic>;
 
     _importState.add(ImportState.showDataOverview);
     _ankiPackage.add(AnkiPackage(
       decks: decks,
       jsonMedia: jsonMedia,
-      extractionPath: _extractionPath,
+      extractionPath: extractionPath,
     ));
   }
 

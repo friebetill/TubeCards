@@ -107,10 +107,10 @@ class StadiumTextField extends StatefulWidget {
   final TextCapitalization textCapitalization;
 
   @override
-  _StadiumTextFieldState createState() => _StadiumTextFieldState();
+  StadiumTextFieldState createState() => StadiumTextFieldState();
 }
 
-class _StadiumTextFieldState extends State<StadiumTextField> {
+class StadiumTextFieldState extends State<StadiumTextField> {
   /// Whether the text field currently has focus.
   bool _hasFocus = false;
 

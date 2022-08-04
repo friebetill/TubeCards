@@ -60,23 +60,22 @@ SM2Result run(
   assert(lastReviewDateUtc == null && streakKnown == 0 ||
       lastReviewDateUtc != null);
 
-  final _reviewDateUtc = reviewDateUtc ?? DateTime.now().toUtc();
-  final _ease = ease.clamp(1.3, 2.5).toDouble();
-  final _streakKnown = max(streakKnown, 0);
-  final _updatedStreakKnown =
-      confidence == Confidence.known ? _streakKnown + 1 : 0;
+  final clampedEase = ease.clamp(1.3, 2.5).toDouble();
+  final positiveStreakKnown = max(streakKnown, 0);
+  final updatedStreakKnown =
+      confidence == Confidence.known ? positiveStreakKnown + 1 : 0;
 
   return SM2Result._(
     _getNextDueDate(
       dueDateUtc,
       lastReviewDateUtc,
-      _ease,
-      _updatedStreakKnown,
+      clampedEase,
+      updatedStreakKnown,
       confidence,
-      _reviewDateUtc,
+      reviewDateUtc ?? DateTime.now().toUtc(),
     ),
-    _updatedStreakKnown,
-    _getUpdatedEase(confidence, _ease),
+    updatedStreakKnown,
+    _getUpdatedEase(confidence, clampedEase),
   );
 }
 

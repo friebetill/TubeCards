@@ -9,10 +9,10 @@ class EmptyHome extends StatefulWidget {
   const EmptyHome({Key? key}) : super(key: key);
 
   @override
-  _EmptyHomeState createState() => _EmptyHomeState();
+  EmptyHomeState createState() => EmptyHomeState();
 }
 
-class _EmptyHomeState extends State<EmptyHome>
+class EmptyHomeState extends State<EmptyHome>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
 

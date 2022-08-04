@@ -25,10 +25,10 @@ class SwipeFeedback extends StatefulWidget {
   final double targetDistance;
 
   @override
-  _SwipeFeedbackState createState() => _SwipeFeedbackState();
+  SwipeFeedbackState createState() => SwipeFeedbackState();
 }
 
-class _SwipeFeedbackState extends State<SwipeFeedback>
+class SwipeFeedbackState extends State<SwipeFeedback>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 

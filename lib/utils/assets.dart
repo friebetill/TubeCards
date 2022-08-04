@@ -7,8 +7,8 @@ import '../main.dart';
 class Assets {
   Assets._();
 
-  static final _Images images = _Images();
-  static final _Videos videos = _Videos();
+  static final Images images = Images();
+  static final Videos videos = Videos();
 
   static Future<void> initDefaultCoverImage() async {
     final cacheManager = getIt<BaseCacheManager>();
@@ -30,7 +30,7 @@ class Assets {
   }
 }
 
-class _Images {
+class Images {
   /// The path to the images folder
   static const _imagesPath = 'assets/images';
 
@@ -65,7 +65,7 @@ class _Images {
   String nightSkyPlaceholder = '$_imagesPath/night_sky_placeholder.jpg';
 }
 
-class _Videos {
+class Videos {
   /// The path to the videos folder
   static const _videosPath = 'assets/videos';
 

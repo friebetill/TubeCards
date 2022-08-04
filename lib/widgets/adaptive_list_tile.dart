@@ -18,10 +18,10 @@ class AdaptiveListTile extends StatefulWidget {
   final VoidCallback onTap;
 
   @override
-  _AdaptiveListTileState createState() => _AdaptiveListTileState();
+  AdaptiveListTileState createState() => AdaptiveListTileState();
 }
 
-class _AdaptiveListTileState extends State<AdaptiveListTile> {
+class AdaptiveListTileState extends State<AdaptiveListTile> {
   var _isThreeLine = true;
 
   @override
@@ -33,7 +33,7 @@ class _AdaptiveListTileState extends State<AdaptiveListTile> {
       subtitle: LayoutBuilder(builder: (context, constraints) {
         final largeSubtitle = subtitleSize.width > constraints.maxWidth;
         if (_isThreeLine != largeSubtitle) {
-          WidgetsBinding.instance!.addPostFrameCallback((_) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
             setState(() => _isThreeLine = false);
           });
         }

@@ -34,7 +34,7 @@ class ToolbarToggleButton extends StatelessWidget {
             ? activeIconColor
             : inactiveIconColor
         : disabledIconColor;
-    final _backgroundColor =
+    final backgroundColor =
         isToggled ? activeIconBackgroundColor : inactiveIconBackgroundColor;
 
     return SizedBox(
@@ -45,7 +45,7 @@ class ToolbarToggleButton extends StatelessWidget {
         child: RawMaterialButton(
           visualDensity: VisualDensity.compact,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(2)),
-          fillColor: _backgroundColor,
+          fillColor: backgroundColor,
           hoverElevation: 0,
           elevation: 0,
           highlightElevation: 0,

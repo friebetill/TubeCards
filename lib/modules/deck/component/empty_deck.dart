@@ -12,10 +12,10 @@ class EmptyDeck extends StatefulWidget {
   final String deckId;
 
   @override
-  _EmptyDeckState createState() => _EmptyDeckState();
+  EmptyDeckState createState() => EmptyDeckState();
 }
 
-class _EmptyDeckState extends State<EmptyDeck>
+class EmptyDeckState extends State<EmptyDeck>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
 

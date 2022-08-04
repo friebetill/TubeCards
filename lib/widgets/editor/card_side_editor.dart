@@ -41,7 +41,7 @@ class CardSideEditor extends StatelessWidget {
       placeholder: placeholder,
       expands: false,
       padding: contentPadding,
-      embedBuilder: (context, controller, embed, readonly) =>
+      embedBuilder: (context, controller, embed, readonly, _) =>
           embedBuilder(context, embed, controller, readOnly: readOnly),
       customStyles: buildEditorStyle(context),
     );

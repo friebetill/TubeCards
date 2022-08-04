@@ -23,10 +23,10 @@ class CardItemComponent extends StatefulWidget {
   final Card card;
 
   @override
-  _CardItemComponentState createState() => _CardItemComponentState();
+  CardItemComponentState createState() => CardItemComponentState();
 }
 
-class _CardItemComponentState extends State<CardItemComponent> {
+class CardItemComponentState extends State<CardItemComponent> {
   // Needed to ensure CardItemComponent is rebuilt when the given Card changes
   late final _card = BehaviorSubject<Card>.seeded(widget.card);
 
