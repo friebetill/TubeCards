@@ -7,7 +7,6 @@ Future<void> main() async {
   final code = await askWhichCode();
 
   final procedures = [
-    // Kickstart GitHub actions to build the release
     switchToDevBranch,
     updateVersionCodes,
     updateLinuxReleases,
@@ -15,25 +14,24 @@ Future<void> main() async {
     pushChanges,
     updateMainBranch,
     createReleaseTag,
-
-    // Prepare local files for builds
     rebuildGeneratedFiles,
 
-    // Build the iOS app
+    // iOS
     buildIOSArchive,
     distributeIOSArchive,
 
-    // Build the MacOS app
+    // macOS
     buildMacOSArchive,
     distributMacOSSArchive,
 
-    // Distribute the Windows app
+    // Windows
     distributeWindowsBuild,
 
-    // Distribute the Linux app
-    goToTheFlathubFolder,
-    addTheNewRelease,
-    distributeLinuxBuild,
+    // Linux
+    calculateLinuxShasum,
+    distributeLinuxArchive,
+
+    switchToDevBranch,
   ];
 
   for (final procedure in procedures) {
@@ -81,11 +79,10 @@ Future<void> switchToDevBranch({
   required String version,
   required String code,
 }) async {
-  print('Switch to the `dev` branch and get the latest updates:');
-  print('  git checkout dev');
-  print('  git pull');
-  print('Press ENTER to continue:');
+  print('Press ENTER to switch to the `dev` branch and get the latest updates');
   await waitForEnter();
+  await Process.run('git', ['checkout', 'dev']);
+  await Process.run('git', ['pull']);
 }
 
 Future<void> updateVersionCodes({
@@ -107,7 +104,9 @@ Future<void> updateVersionCodes({
 
   await file.writeAsString('${lines.join('\n')}\n');
 
-  print('Verify automatic version update in `pubspec.yaml`:');
+  print((await Process.run('git', ['--no-pager', 'diff', 'pubspec.yaml']))
+      .stdout);
+  print('Press ENTER if the version updates in `pubspec.yaml` are correct:');
   await waitForEnter();
 }
 
@@ -131,9 +130,14 @@ Future<void> updateLinuxReleases({
 
   await file.writeAsString('${lines.join('\n')}\n');
 
+  print((await Process.run('git', [
+    '--no-pager',
+    'diff',
+    'linux/flathub/app.getspace.Space.metainfo.xml'
+  ]))
+      .stdout);
   print(
-    'Verify automatic version update `linux/flathub/app.getspace.Space.metainfo.xml`:',
-  );
+      'Press ENTER if the version update in `linux/flathub/app.getspace.Space.metainfo.xml` is correct:');
   await waitForEnter();
 }
 
@@ -151,56 +155,63 @@ Future<void> pushChanges({
   required String version,
   required String code,
 }) async {
-  print('Commit and push the changes:');
-  print('    git add pubspec.yaml lib/utils/release_notes.dart '
-      'linux/flathub/app.getspace.Space.metainfo.xml android/whats_new/whatsnew-en-US');
-  print('    git commit -m "Bump to $version"');
-  print('    git push');
+  print('Press ENTER to commit and push the files:');
   await waitForEnter();
+  await Process.run('git', [
+    'add',
+    'pubspec.yaml',
+    'lib/utils/release_notes.dart',
+    'linux/flathub/app.getspace.Space.metainfo.xml',
+    'android/whats_new/whatsnew-en-US'
+  ]);
+  await Process.run('git', ['commit', '-m', 'Bump to $version']);
+  await Process.run('git', ['push']);
 }
 
 Future<void> updateMainBranch({
   required String version,
   required String code,
 }) async {
-  print('Switch to the `main` branch and get the latest dev updates:');
-  print('  git checkout main');
-  print('  git pull origin dev');
-  print('  git push');
+  print('Press ENTER to switch to the `main` branch '
+      'and get the latest dev updates');
   await waitForEnter();
+  await Process.run('git', ['checkout', 'main']);
+  await Process.run('git', ['pull', 'origin', 'dev']);
+  await Process.run('git', ['push']);
 }
 
 Future<void> createReleaseTag({
   required String version,
   required String code,
 }) async {
-  print('Create a release tag:');
-  print('  git tag $version');
-  print('  git push origin $version');
+  print('Press ENTER to create a release tag');
   await waitForEnter();
+  await Process.run('git', ['tag', version]);
+  await Process.run('git', ['push', 'origin', version]);
 }
 
 Future<void> rebuildGeneratedFiles({
   required String version,
   required String code,
 }) async {
-  print('Update latest packages and rebuild the generated files:');
-  print('  flutter pub get');
-  print('  ./scripts/update_generated_files.sh');
-  print('  ./scripts/update_language_files.sh');
-
+  print('Press ENTER to update latest packages and '
+      'rebuild the generated files');
   await waitForEnter();
+  await Process.run('flutter', ['pub', 'get']);
+  await Process.run('./scripts/update_generated_files.sh', []);
+  await Process.run('./scripts/update_language_files.sh', []);
 }
 
 Future<void> buildIOSArchive({
   required String version,
   required String code,
 }) async {
-  print('Build the iOS build archive:');
+  print('Press ENTER to build the iOS build archive');
+  await waitForEnter();
   // This refreshes the release mode configuration in Xcode (updates version
   // and number, maybe more)
-  print('  flutter build ipa --release --flavor prod');
-  await waitForEnter();
+  await Process.run(
+      'flutter', ['build', 'ipa', '--release', '--flavor', 'prod']);
 
   // Source: [Build and release an iOS app](https://flutter.dev/docs/deployment/ios#create-a-build-archive)
 }
@@ -223,9 +234,10 @@ Future<void> buildMacOSArchive({
   required String version,
   required String code,
 }) async {
-  print('Build the MacOS archive:');
-  print('  flutter build macos --dart-define app.flavor=prod');
+  print('Press ENTER to build the macOS archive');
   await waitForEnter();
+  await Process.run(
+      'flutter', ['build', 'macos', '--dart-define', 'app.flavor=prod']);
 }
 
 Future<void> distributMacOSSArchive({
@@ -256,19 +268,14 @@ Future<void> distributeWindowsBuild({
   await waitForEnter();
 }
 
-Future<void> goToTheFlathubFolder({
+Future<void> calculateLinuxShasum({
   required String version,
   required String code,
 }) async {
-  print('Go to the Flathub repository:');
-  print('  j flathub');
+  print('Press ENTER to calculate the shasum of the Linux archive');
   await waitForEnter();
-}
 
-Future<void> addTheNewRelease({
-  required String version,
-  required String code,
-}) async {
+  await Process.run('j', ['flathub']);
   print('Wait until the checksum of the Linux release has been calculated');
   await Process.run('curl', [
     '-O',
@@ -279,23 +286,40 @@ Future<void> addTheNewRelease({
   final shasum = (result.stdout as String).split(' ')[0];
   await Process.run('rm', ['space_$version.tar.xz']);
 
-  print('Add the new release to `app.getspace.Space.json`');
-  print(
-    '  "url": "https://space-linux.s3.eu-west-1.amazonaws.com/releases/space_$version.tar.xz",',
-  );
-  print('  "sha256": "$shasum",');
+  final file = File('app.getspace.Space.json');
+  final lines = (await file.readAsLines()).toList();
+
+  final urlIndex = lines.indexWhere((l) => l.startsWith('          "url": '));
+  lines
+    ..removeAt(urlIndex)
+    ..insert(urlIndex,
+        '          "url": "https://space-linux.s3.eu-west-1.amazonaws.com/releases/space_$version.tar.xz",');
+
+  final sha256Index =
+      lines.indexWhere((l) => l.startsWith('          "sha256":'));
+  lines
+    ..removeAt(sha256Index)
+    ..insert(sha256Index, '          "sha256": "$shasum",');
+
+  await file.writeAsString('${lines.join('\n')}\n');
+
+  print((await Process.run(
+          'git', ['--no-pager', 'diff', 'app.getspace.Space.json']))
+      .stdout);
+  print('Press ENTER if the version updates in '
+      '`app.getspace.Space.json` are correct:');
   await waitForEnter();
 }
 
-Future<void> distributeLinuxBuild({
+Future<void> distributeLinuxArchive({
   required String version,
   required String code,
 }) async {
-  print('Distribute the Linux version');
-  print('  git add app.getspace.Space.json');
-  print('  git commit -m "Release $version"');
-  print('  git push');
+  print('Press ENTER to distribute the Linux archive');
   await waitForEnter();
+  await Process.run('git', ['add', 'app.getspace.Space.json']);
+  await Process.run('git', ['commit', '-m', '"Release $version"']);
+  await Process.run('git', ['push']);
 }
 
 Future<void> waitForEnter() async {
