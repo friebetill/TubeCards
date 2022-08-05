@@ -533,9 +533,11 @@ packages:
   ferry_generator:
     dependency: "direct main"
     description:
-      name: ferry_generator
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "packages/ferry_generator"
+      ref: HEAD
+      resolved-ref: "8edec678c244f1cf349530fae33166fc8801d656"
+      url: "https://github.com/friebetill/ferry.git"
+    source: git
     version: "0.6.0-dev.1"
   ferry_hive_store:
     dependency: "direct main"

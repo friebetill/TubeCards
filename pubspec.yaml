@@ -38,7 +38,11 @@ dependencies:
   equatable: ^2.0.0
   extended_image: ^6.2.1
   ferry: ^0.10.5-dev.3
-  ferry_generator: ^0.6.0-dev.1
+  # Wait for this pull request, https://bit.ly/3SqfA7w
+  ferry_generator:
+    git:
+      url: https://github.com/friebetill/ferry.git
+      path: packages/ferry_generator/
   ferry_hive_store: ^0.4.5-dev.1
   file: ^6.1.2
   file_picker: ^4.0.0
@@ -94,7 +98,7 @@ dependencies:
   path: ^1.8.0
   path_provider: ^2.0.1
   percent_indicator: ^4.2.2
-  #  Don't update until this issue is resolved, https://bit.ly/3q42eSD
+  # Don't update until this issue is resolved, https://bit.ly/3q42eSD
   purchases_flutter: ^3.9.5
   quiver: ^3.0.0
   recase: ^4.0.0-nullsafety.0
@@ -165,6 +169,11 @@ dependency_overrides:
       url: https://github.com/techouse/envify.git
       ref: main
       path: envify_generator
+  # Wait for this pull request, https://bit.ly/3SqfA7w
+  ferry_generator:
+    git:
+      url: https://github.com/friebetill/ferry.git
+      path: packages/ferry_generator/
   flutter_colorpicker: 0.6.0
   i18n_extension:
     git:
