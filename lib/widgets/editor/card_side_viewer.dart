@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_quill/flutter_quill.dart';
 
 import 'editor_style.dart';
-import 'embed_builder.dart';
+import 'embed_divider_builder.dart';
+import 'embed_image_builder.dart';
 
 /// Read-only viewer of a card side.
 class CardSideViewer extends StatelessWidget {
@@ -46,12 +47,10 @@ class CardSideViewer extends StatelessWidget {
       enableInteractiveSelection: false,
       expands: false,
       padding: padding,
-      embedBuilder: (context, controller, embed, readOnly, _) => embedBuilder(
-        context,
-        embed,
-        _controller,
-        readOnly: _readOnly,
-      ),
+      embedBuilders: [
+        EmbedDividerBuilder(),
+        EmbedImageBuilder(),
+      ],
       customStyles: buildEditorStyle(context),
     );
   }

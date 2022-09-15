@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_quill/flutter_quill.dart';
 
 import 'editor_style.dart';
-import 'embed_builder.dart';
+import 'embed_divider_builder.dart';
+import 'embed_image_builder.dart';
 
 /// Editor for a single side of a card.
 class CardSideEditor extends StatelessWidget {
@@ -41,8 +42,10 @@ class CardSideEditor extends StatelessWidget {
       placeholder: placeholder,
       expands: false,
       padding: contentPadding,
-      embedBuilder: (context, controller, embed, readonly, _) =>
-          embedBuilder(context, embed, controller, readOnly: readOnly),
+      embedBuilders: <EmbedBuilder>[
+        EmbedDividerBuilder(),
+        EmbedImageBuilder(),
+      ],
       customStyles: buildEditorStyle(context),
     );
   }
