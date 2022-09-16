@@ -4,8 +4,16 @@ import '../i18n/i18n.dart';
 
 final releaseNotes = [
   ReleaseNote(
+    buildNumber: 86,
+    date: DateTime(2022, 9, 16),
+    releaseNote: '''
+🖼️ Add ability to paste images into the editor
+    ''',
+    version: '2.0.6',
+  ),
+  ReleaseNote(
     buildNumber: 85,
-    date: DateTime(2022, 6, 15),
+    date: DateTime(2022, 7, 15),
     releaseNote: '''
 🇯🇵 Fix import errors of cloze flashcards from Anki
     ''',
@@ -13,7 +21,7 @@ final releaseNotes = [
   ),
   ReleaseNote(
     buildNumber: 84,
-    date: DateTime(2022, 6, 5),
+    date: DateTime(2022, 7, 5),
     releaseNote: '''
 🤌 Improve italian translation
 🚧 Update website to easier join shared decks
@@ -22,7 +30,7 @@ final releaseNotes = [
   ),
   ReleaseNote(
     buildNumber: 84,
-    date: DateTime(2022, 4, 11),
+    date: DateTime(2022, 4, 27),
     releaseNote: '''
 🤌 Improve italian translation
 🚧 Update website to easier join shared decks
