@@ -19,12 +19,6 @@ jobs:
         with:
           distribution: "zulu"
           java-version: "11"
-      # - name: Android NDK toolchain Setup
-      #   uses: ravinderjangra/android-ndk-toolchain-setup@0.2
-      #   with:
-      #     api: "22"
-      #     arch: "x86"
-      #     install-location: "toolchains"
       - name: Get Flutter version
         id: get-flutter-version
         uses: zgosalvez/github-actions-get-flutter-version-env@v1
