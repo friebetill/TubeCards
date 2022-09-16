@@ -63,7 +63,11 @@ dependencies:
   flutter_native_timezone: ^2.0.0
   flutter_painter: ^1.0.1
   flutter_phosphor_icons: ^0.0.1+5
-  flutter_quill: ^6.0.3
+  # Wait for release after 6.0.3
+  flutter_quill:
+    git:
+      url: https://github.com/singerdmx/flutter-quill.git
+      ref: f6f548f
   flutter_rating_bar: ^4.0.0
   flutter_svg: ^1.0.0
   flutter_tts: ^3.0.0
@@ -175,6 +179,10 @@ dependency_overrides:
       url: https://github.com/friebetill/ferry.git
       path: packages/ferry_generator/
   flutter_colorpicker: 0.6.0
+  flutter_quill:
+    git:
+      url: https://github.com/singerdmx/flutter-quill.git
+      ref: f6f548f
   i18n_extension:
     git:
       url: https://github.com/ndungudedan/i18n_extension

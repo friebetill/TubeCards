@@ -769,9 +769,11 @@ packages:
   flutter_quill:
     dependency: "direct main"
     description:
-      name: flutter_quill
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: f6f548f
+      resolved-ref: f6f548f5482a521899b3f11b37ecbb7d76b64515
+      url: "https://github.com/singerdmx/flutter-quill.git"
+    source: git
     version: "6.0.3"
   flutter_rating_bar:
     dependency: "direct main"
