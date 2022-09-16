@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:flutter_quill/flutter_quill.dart';
+import 'package:uuid/uuid.dart';
 
+import '../../main.dart';
 import 'editor_style.dart';
+import 'editor_utils.dart';
 import 'embed_divider_builder.dart';
 import 'embed_image_builder.dart';
 
@@ -47,6 +51,16 @@ class CardSideEditor extends StatelessWidget {
         EmbedImageBuilder(),
       ],
       customStyles: buildEditorStyle(context),
+      onImagePaste: (bytes) async {
+        final uriPath = buildUriPath('${const Uuid().v1()}.png');
+
+        await getIt<BaseCacheManager>().putFile(
+          uriPath,
+          bytes,
+          fileExtension: '.png',
+        );
+        return uriPath;
+      },
     );
   }
 }

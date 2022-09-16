@@ -6,6 +6,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
   bitsdojo_window_linux
   devicelocale
   file_selector_linux
+  pasteboard
   sentry_flutter
   url_launcher_linux
 )
