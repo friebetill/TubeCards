@@ -227,11 +227,11 @@ flutter_native_splash:
 
 msix_config:
   publisher_display_name: Space App
-  identity_name:
+  identity_name: 32902SpaceApp.SpaceSpacedRepetition
   display_name: "Space: Spaced Repetition"
   msix_version: 2.0.6.0
   store: true
-  publisher:
+  publisher: CN=902234FE-40EF-4B23-8724-83780B4C06BE
   capabilities: "internetClient"
   icons_background_color: transparent
   logo_path: windows/runner/resources/app_icon.png
