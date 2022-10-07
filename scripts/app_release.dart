@@ -2,9 +2,12 @@
 
 import 'dart:io';
 
+String version = '';
+String code = '';
+
 Future<void> main() async {
-  final version = await askWhichVersion();
-  final code = await askWhichCode();
+  version = await askWhichVersion();
+  code = await askWhichCode();
 
   final procedures = [
     switchToDevBranch,
@@ -35,7 +38,7 @@ Future<void> main() async {
   ];
 
   for (final procedure in procedures) {
-    await procedure(version: version, code: code);
+    await procedure();
   }
 
   print('Done.');
@@ -75,20 +78,14 @@ Future<String> askWhichCode() async {
   return reply;
 }
 
-Future<void> switchToDevBranch({
-  required String version,
-  required String code,
-}) async {
+Future<void> switchToDevBranch() async {
   print('Press ENTER to switch to the `dev` branch and get the latest updates');
   await waitForEnter();
   await Process.run('git', ['checkout', 'dev']);
   await Process.run('git', ['pull']);
 }
 
-Future<void> updateVersionCodes({
-  required String version,
-  required String code,
-}) async {
+Future<void> updateVersionCodes() async {
   final file = File('pubspec.yaml');
   final lines = (await file.readAsLines()).toList();
 
@@ -110,10 +107,7 @@ Future<void> updateVersionCodes({
   await waitForEnter();
 }
 
-Future<void> updateLinuxReleases({
-  required String version,
-  required String code,
-}) async {
+Future<void> updateLinuxReleases() async {
   final today = DateTime.now();
   final dateSlug = '${today.year.toString()}-'
       '${today.month.toString().padLeft(2, '0')}-'
@@ -141,20 +135,14 @@ Future<void> updateLinuxReleases({
   await waitForEnter();
 }
 
-Future<void> addReleaseNotes({
-  required String version,
-  required String code,
-}) async {
+Future<void> addReleaseNotes() async {
   print('Add the release notes in:');
   print('  lib/utils/release_notes.dart');
   print('  android/whats_new/whatsnew-en-US');
   await waitForEnter();
 }
 
-Future<void> pushChanges({
-  required String version,
-  required String code,
-}) async {
+Future<void> pushChanges() async {
   print('Press ENTER to commit and push the files:');
   await waitForEnter();
   await Process.run('git', [
@@ -168,10 +156,7 @@ Future<void> pushChanges({
   await Process.run('git', ['push']);
 }
 
-Future<void> updateMainBranch({
-  required String version,
-  required String code,
-}) async {
+Future<void> updateMainBranch() async {
   print('Press ENTER to switch to the `main` branch '
       'and get the latest dev updates');
   await waitForEnter();
@@ -180,20 +165,14 @@ Future<void> updateMainBranch({
   await Process.run('git', ['push']);
 }
 
-Future<void> createReleaseTag({
-  required String version,
-  required String code,
-}) async {
+Future<void> createReleaseTag() async {
   print('Press ENTER to create a release tag');
   await waitForEnter();
   await Process.run('git', ['tag', version]);
   await Process.run('git', ['push', 'origin', version]);
 }
 
-Future<void> rebuildGeneratedFiles({
-  required String version,
-  required String code,
-}) async {
+Future<void> rebuildGeneratedFiles() async {
   print('Press ENTER to update latest packages and '
       'rebuild the generated files');
   await waitForEnter();
@@ -202,10 +181,7 @@ Future<void> rebuildGeneratedFiles({
   await Process.run('./scripts/update_language_files.sh', []);
 }
 
-Future<void> buildIOSArchive({
-  required String version,
-  required String code,
-}) async {
+Future<void> buildIOSArchive() async {
   print('Press ENTER to build the iOS build archive');
   await waitForEnter();
   // This refreshes the release mode configuration in Xcode (updates version
@@ -216,10 +192,7 @@ Future<void> buildIOSArchive({
   // Source: [Build and release an iOS app](https://flutter.dev/docs/deployment/ios#create-a-build-archive)
 }
 
-Future<void> distributeIOSArchive({
-  required String version,
-  required String code,
-}) async {
+Future<void> distributeIOSArchive() async {
   print('Distribute the iOS archive:');
   print('  Open `build/ios/archive/Runner.xcarchive` in Xcode');
   print('  Click "Distribute App".');
@@ -230,20 +203,14 @@ Future<void> distributeIOSArchive({
   await waitForEnter();
 }
 
-Future<void> buildMacOSArchive({
-  required String version,
-  required String code,
-}) async {
+Future<void> buildMacOSArchive() async {
   print('Press ENTER to build the macOS archive');
   await waitForEnter();
   await Process.run(
       'flutter', ['build', 'macos', '--dart-define', 'app.flavor=prod']);
 }
 
-Future<void> distributMacOSSArchive({
-  required String version,
-  required String code,
-}) async {
+Future<void> distributMacOSSArchive() async {
   print('Distribute the MacOS archive:');
   print('  Open `macos/Runner.xcworkspace` with Xcode');
   print('  Select `Product` -> `Archive`');
@@ -255,10 +222,7 @@ Future<void> distributMacOSSArchive({
   await waitForEnter();
 }
 
-Future<void> distributeWindowsBuild({
-  required String version,
-  required String code,
-}) async {
+Future<void> distributeWindowsBuild() async {
   print('Distribute the Windows app:');
   print(
     '  Go to https://github.com/friebetill/space/releases/tag/$version',
@@ -268,19 +232,16 @@ Future<void> distributeWindowsBuild({
   await waitForEnter();
 }
 
-Future<void> calculateLinuxShasum({
-  required String version,
-  required String code,
-}) async {
+Future<void> calculateLinuxShasum() async {
   print('Press ENTER to calculate the shasum of the Linux archive');
   await waitForEnter();
 
   await Process.run('j', ['flathub']);
   print('Wait until the checksum of the Linux release has been calculated');
-  await Process.run('curl', [
-    '-O',
-    'https://space-linux.s3.eu-west-1.amazonaws.com/releases/space_$version.tar.xz',
-  ]);
+
+  final releaseUrl =
+      'https://space-linux.s3.eu-west-1.amazonaws.com/releases/space_$version.tar.xz';
+  await Process.run('curl', ['-O', releaseUrl]);
   final result =
       await Process.run('shasum', ['-a', '256', 'space_$version.tar.xz']);
   final shasum = (result.stdout as String).split(' ')[0];
@@ -292,8 +253,7 @@ Future<void> calculateLinuxShasum({
   final urlIndex = lines.indexWhere((l) => l.startsWith('          "url": '));
   lines
     ..removeAt(urlIndex)
-    ..insert(urlIndex,
-        '          "url": "https://space-linux.s3.eu-west-1.amazonaws.com/releases/space_$version.tar.xz",');
+    ..insert(urlIndex, '          "url": "$releaseUrl",');
 
   final sha256Index =
       lines.indexWhere((l) => l.startsWith('          "sha256":'));
@@ -311,10 +271,7 @@ Future<void> calculateLinuxShasum({
   await waitForEnter();
 }
 
-Future<void> distributeLinuxArchive({
-  required String version,
-  required String code,
-}) async {
+Future<void> distributeLinuxArchive() async {
   print('Press ENTER to distribute the Linux archive');
   await waitForEnter();
   await Process.run('git', ['add', 'app.getspace.Space.json']);
