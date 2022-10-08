@@ -7,7 +7,7 @@
 ## What is TubeCards?
 TubeCards is a cross-platform spaced-repetition app which is seamlessly integrated with Youtube. It is written in Dart using [Flutter](https://flutter.io).
 
-[![Space - The flashcard revolution](https://user-images.githubusercontent.com/10923085/194709573-ad0cf0a2-ce32-4711-b419-8053ac2d8ab8.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Space - The flashcard revolution")
+[![Space - The flashcard revolution](https://user-images.githubusercontent.com/10923085/194709573-ad0cf0a2-ce32-4711-b419-8053ac2d8ab8.png)](https://www.youtube.com/watch?v=UX0L0BgH0v4 "Space - The flashcard revolution")
 
 ## Screenshots
 
