@@ -12,9 +12,9 @@ TubeCards is a cross-platform spaced-repetition app which is seamlessly integrat
 ## Screenshots
 
 <div float="left">
-  <img width="300" alt="Home Page" src="https://user-images.githubusercontent.com/10923085/194709711-a57f4e05-e770-4dfd-83b1-2d67da20a38b.png">
-  <img width="300" alt="Review Page" src="https://user-images.githubusercontent.com/10923085/194709716-0e66a3a6-2955-4b56-a52b-d27e04feb9c7.png">
-  <img width="300" alt="Statistic Page" src="https://user-images.githubusercontent.com/10923085/194709717-35bf88c5-1eb6-4d3a-88b1-9ebc45df6381.png">
+  <img width="200" alt="Home Page" src="https://user-images.githubusercontent.com/10923085/194709711-a57f4e05-e770-4dfd-83b1-2d67da20a38b.png">
+  <img width="200" alt="Review Page" src="https://user-images.githubusercontent.com/10923085/194709716-0e66a3a6-2955-4b56-a52b-d27e04feb9c7.png">
+  <img width="200" alt="Statistic Page" src="https://user-images.githubusercontent.com/10923085/194709717-35bf88c5-1eb6-4d3a-88b1-9ebc45df6381.png">
 </div>
 
 ## Build
