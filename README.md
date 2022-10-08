@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="http://getspace.app/" target="blank"><img src="https://user-images.githubusercontent.com/10923085/126051087-9ac0dd5d-72df-41a6-8ebf-0e0e0e830ff2.png" width="320" alt="Space Logo" /></a>
+  <a href="http://tubecards.app/" target="blank"><img src="https://user-images.githubusercontent.com/10923085/194705378-185a35e0-e648-4982-8330-50c4b4869c9a.png" width="320" alt="TubeCards Logo" /></a>
 </p>
 
-<p align="center"><a href="http://getspace.app" target="blank">Space</a> build with <a href="https://flutter.dev" target="blank">Flutter</a>.</p>
+<p align="center"><a href="http://getspace.app" target="blank">TubeCards</a> build with <a href="https://flutter.dev" target="blank">Flutter</a>.</p>
 
 ## Update generated flutter files
 #### From the console
