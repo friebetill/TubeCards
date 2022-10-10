@@ -10,7 +10,7 @@ cd "${SCRIPT_PATH}/.."
 source .env
 
 printf "%s\n" "${bold}Fetching translations...${normal}"
-flutter pub run lang_table:generate --platform=airTable --target=Flutter --input="$I18N_AIRTABLE_ADDRESS" --api-key="$I18N_AIRTABLE_KEY" > /dev/null
+flutter pub run lang_table:generate --platform=airTable --target=Flutter --input="https://api.airtable.com/v0/app6dkbYXMccUCZb1/i18n" --api-key="keyRYfny0HikUbPSL" > /dev/null
 printf "%s\n" "${bold}Done.${normal}"
 
 printf "%s\n" "${bold}Update language files...${normal}"

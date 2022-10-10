@@ -1,5 +1,5 @@
 echo ^<ESC^>[1m [1mFetching translations...[0m
-flutter pub run lang_table:generate --platform=airTable --target=Flutter --input=%I18N_AIRTABLE_ADDRESS% --api-key=%I18N_AIRTABLE_KEY%
+flutter pub run lang_table:generate --platform=airTable --target=Flutter --input=https://api.airtable.com/v0/app6dkbYXMccUCZb1/i18n --api-key=keyRYfny0HikUbPSL
 echo ^<ESC^>[1m [1mDone.[0m
 
 echo ^<ESC^>[1m [1mUpdate generated flutter files...[0m
