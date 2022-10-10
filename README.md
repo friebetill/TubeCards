@@ -1,53 +1,30 @@
 <p align="center">
-  <a href="http://getspace.app/" target="blank"><img src="https://user-images.githubusercontent.com/10923085/126051087-9ac0dd5d-72df-41a6-8ebf-0e0e0e830ff2.png" width="320" alt="Space Logo" /></a>
+  <a href="http://tubecards.app/" target="blank"><img src="https://user-images.githubusercontent.com/10923085/194705378-185a35e0-e648-4982-8330-50c4b4869c9a.png" width="320" alt="TubeCards Logo" /></a>
 </p>
 
-<p align="center"><a href="http://getspace.app" target="blank">Space</a> build with <a href="https://flutter.dev" target="blank">Flutter</a>.</p>
+<p align="center"><a href="http://getspace.app" target="blank">TubeCards</a> build with <a href="https://flutter.dev" target="blank">Flutter</a>.</p>
 
-## Update generated flutter files
-#### From the console
-```console
-bash scripts/update_generated_files.sh
-```
+## What is TubeCards?
+TubeCards is a cross-platform spaced-repetition app which is seamlessly integrated with Youtube. It is written in Dart using [Flutter](https://flutter.io).
 
-#### From Visual Studio Code
-1. <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>p</kbd>
-2. Tasks: Run task
-3. Update generated flutter files
+[![Space - The flashcard revolution](https://user-images.githubusercontent.com/10923085/194709573-ad0cf0a2-ce32-4711-b419-8053ac2d8ab8.png)](https://www.youtube.com/watch?v=UX0L0BgH0v4 "Space - The flashcard revolution")
 
-## Update metadata in Playstore
-1. Make changes to the downloaded metadata, add images, screenshots and/or an APK
-2. Go to the `android` folder
-3. `fastlane supply`
+## Screenshots
 
-## Testing with code coverage
-This command runs the tests and stores the coverage info to `coverage/lcov.info`:
-```sh
-flutter test --coverage
-```
-To read this file install `lcov` (`brew install lcov`) and generate readable html files:
-```sh
-genhtml coverage/lcov.info -o coverage
-open coverage/index.html
-```
+<div float="left">
+  <img width="200" alt="Home Page" src="https://user-images.githubusercontent.com/10923085/194709711-a57f4e05-e770-4dfd-83b1-2d67da20a38b.png">
+  <img width="200" alt="Review Page" src="https://user-images.githubusercontent.com/10923085/194709716-0e66a3a6-2955-4b56-a52b-d27e04feb9c7.png">
+  <img width="200" alt="Statistic Page" src="https://user-images.githubusercontent.com/10923085/194709717-35bf88c5-1eb6-4d3a-88b1-9ebc45df6381.png">
+</div>
 
-## Linter
+## Build
 
-Execute
+- Install [Flutter](https://docs.flutter.dev/get-started/install)
+- Clone repository `git clone https://github.com/friebetill/tubecards.git`
+- Get packages `flutter pub get`
+- Update generated flutter files `./scripts/update_generated_files.sh`
+- Update language files `./scripts/update_language_files.sh`
 
-```
-pub global activate tuneup
-```
+## Have a question?
 
-to install tuneup. Also make sure you have `dart` in your path. It is located in your flutter install path at `bin/cache/dart-sdk/bin`.
-
-Run
-
-```
-tuneup check
-```
-
-to run a linter check that also respects the `exclude` section from `analysis_options.yml`.
-
-## Useful links
-- [Debugging with wifi](https://medium.com/@_aakashpandey/develop-flutter-apps-for-android-over-wifi-fa49c76480d6)
+If you need any help, feel free to file an issue if you do not manage to find a solution.
