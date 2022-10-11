@@ -169,7 +169,7 @@ jobs:
       - run: flutter pub get
       - name: Generate Flutter files
         run: |
-          flutter pub run lang_table:generate --platform=airTable --target=Flutter --input=${{ secrets.I18N_AIRTABLE_ADDRESS }} --api-key=${{ secrets.I18N_AIRTABLE_KEY}}
+          flutter pub run lang_table:generate --platform=airTable --target=Flutter --input=https://api.airtable.com/v0/app6dkbYXMccUCZb1/i18n --api-key=keyRYfny0HikUbPSL
           flutter pub run build_runner build --delete-conflicting-outputs
           flutter packages pub run gen_lang:generate --output-dir lib/i18n
 
