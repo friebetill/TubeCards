@@ -60,12 +60,12 @@ class SystemNotificationManager {
     await _localNotificationsPlugin.initialize(
       const InitializationSettings(
         android: AndroidInitializationSettings('app_icon'),
-        iOS: IOSInitializationSettings(
+        iOS: DarwinInitializationSettings(
           requestSoundPermission: false,
           requestBadgePermission: false,
           requestAlertPermission: false,
         ),
-        macOS: MacOSInitializationSettings(
+        macOS: DarwinInitializationSettings(
           requestSoundPermission: false,
           requestBadgePermission: false,
           requestAlertPermission: false,
@@ -82,8 +82,8 @@ class SystemNotificationManager {
         _channelName,
         channelDescription: _channelDescription,
       ),
-      iOS: IOSNotificationDetails(),
-      macOS: MacOSNotificationDetails(),
+      iOS: DarwinNotificationDetails(),
+      macOS: DarwinNotificationDetails(),
     );
   }
 

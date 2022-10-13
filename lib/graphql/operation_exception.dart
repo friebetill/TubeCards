@@ -29,9 +29,7 @@ class OperationException implements Exception {
     final exception = linkException?.originalException;
 
     if (exception is FormatException) {
-      final message = linkException!.originalException.message as String;
-
-      return message.contains('Unexpected character');
+      return exception.message.contains('Unexpected character');
     } else if (exception is SocketException) {
       return exception.isServerOffline;
     }

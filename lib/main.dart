@@ -14,7 +14,6 @@ import 'package:logging/logging.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:url_protocol/url_protocol.dart';
 
 import 'data/preferences/reminders.dart';
 import 'data/preferences/user_history.dart';
@@ -46,9 +45,6 @@ void main() {
 
       if (Platform.isAndroid) {
         trustLetsEncryptCertificate();
-      }
-      if (Platform.isWindows) {
-        registerProtocolHandler('space', arguments: ['-url', '%s']);
       }
 
       await SentryFlutter.init(

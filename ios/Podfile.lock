@@ -45,6 +45,8 @@ PODS:
   - file_picker (0.0.1):
     - DKImagePickerController/PhotoGallery
     - Flutter
+  - file_selector_ios (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
   - flutter_isolate (0.0.1):
     - Flutter
@@ -81,16 +83,16 @@ PODS:
   - PurchasesCoreSwift (3.13.2)
   - PurchasesHybridCommon (1.11.2):
     - Purchases (= 3.13.2)
-  - SDWebImage (5.13.2):
-    - SDWebImage/Core (= 5.13.2)
-  - SDWebImage/Core (5.13.2)
-  - Sentry (7.22.0):
-    - Sentry/Core (= 7.22.0)
-  - Sentry/Core (7.22.0)
+  - SDWebImage (5.13.4):
+    - SDWebImage/Core (= 5.13.4)
+  - SDWebImage/Core (5.13.4)
+  - Sentry (7.27.1):
+    - Sentry/Core (= 7.27.1)
+  - Sentry/Core (7.27.1)
   - sentry_flutter (0.0.1):
     - Flutter
     - FlutterMacOS
-    - Sentry (~> 7.22.0)
+    - Sentry (~> 7.27.1)
   - share_plus (0.0.1):
     - Flutter
   - shared_preferences_ios (0.0.1):
@@ -113,6 +115,7 @@ DEPENDENCIES:
   - device_info_plus (from `.symlinks/plugins/device_info_plus/ios`)
   - devicelocale (from `.symlinks/plugins/devicelocale/ios`)
   - file_picker (from `.symlinks/plugins/file_picker/ios`)
+  - file_selector_ios (from `.symlinks/plugins/file_selector_ios/ios`)
   - Flutter (from `Flutter`)
   - flutter_isolate (from `.symlinks/plugins/flutter_isolate/ios`)
   - flutter_keyboard_visibility (from `.symlinks/plugins/flutter_keyboard_visibility/ios`)
@@ -161,6 +164,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/devicelocale/ios"
   file_picker:
     :path: ".symlinks/plugins/file_picker/ios"
+  file_selector_ios:
+    :path: ".symlinks/plugins/file_selector_ios/ios"
   Flutter:
     :path: Flutter
   flutter_isolate:
@@ -207,13 +212,14 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Amplitude: ef9ed339ddd33c9183edf63fa4bbaa86cf873321
   amplitude_flutter: 8ddb231989e68ed8c005c838d7fc59edbca09833
-  app_links: 8941e7bac086136bae70d619141c36f258f4381d
+  app_links: ab4ba54d10a13d45825336bc9707b5eadee81191
   app_settings: d103828c9f5d515c4df9ee754dabd443f7cedcf3
   device_info_plus: e5c5da33f982a436e103237c0c85f9031142abed
   devicelocale: b22617f40038496deffba44747101255cee005b0
   DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
   DKPhotoGallery: fdfad5125a9fdda9cc57df834d49df790dbb4179
   file_picker: 817ab1d8cd2da9d2da412a417162deee3500fc95
+  file_selector_ios: 6e9b6d7300556c730f224905726f0a2d5d874e51
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   flutter_isolate: 0edf5081826d071adf21759d1eb10ff5c24503b5
   flutter_keyboard_visibility: 0339d06371254c3eb25eeb90ba8d17dca8f9c069
@@ -232,9 +238,9 @@ SPEC CHECKSUMS:
   purchases_flutter: bcc0010ed14e80a46cc9050bd1afbfb9c48eee17
   PurchasesCoreSwift: 2ea4b33e5cece5c8a0751594ef7c6cbfcbd747a9
   PurchasesHybridCommon: 56ef42d85c3e930d49aff4ac5fa027373d2e1bb8
-  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
-  Sentry: 30b51086ca9aac23337880152e95538f7e177f7f
-  sentry_flutter: eaca55af5c951f4be6c4b1daddce1744c37d8476
+  SDWebImage: e5cc87bf736e60f49592f307bdf9e157189298a3
+  Sentry: bc644307e2eb6a4c9c55cf117a80b895bb2a25a7
+  sentry_flutter: 649559f0512e00d3f6fc92cf51f74bc2fe68d1d3
   share_plus: 056a1e8ac890df3e33cb503afffaf1e9b4fbae68
   shared_preferences_ios: 548a61f8053b9b8a49ac19c1ffbc8b92c50d68ad
   sqflite: 6d358c025f5b867b29ed92fc697fd34924e11904

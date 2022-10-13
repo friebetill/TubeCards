@@ -42,7 +42,7 @@ class ColorPickerState extends State<ColorPicker> {
             cp.ColorPicker(
               pickerColor: _color,
               onColorChanged: (color) => _color = color,
-              showLabel: false,
+              labelTypes: const [],
               portraitOnly: true,
               pickerAreaHeightPercent: 0.8,
             ),

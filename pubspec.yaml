@@ -16,7 +16,7 @@ dependencies:
   app_settings: ^4.1.0
   archive: ^3.1.2
   auto_size_text: ^3.0.0-nullsafety.0
-  bitsdojo_window: ^0.1.2
+  bitsdojo_window: ^0.1.5
   built_collection: ^5.0.0
   built_value: ^8.0.4
   cached_network_image: ^3.2.1
@@ -37,46 +37,38 @@ dependencies:
         path: envify
   equatable: ^2.0.0
   extended_image: ^6.2.1
-  ferry: ^0.10.5-dev.3
-  # Wait for this pull request, https://bit.ly/3SqfA7w
-  ferry_generator:
-    git:
-      url: https://github.com/friebetill/ferry.git
-      path: packages/ferry_generator/
-  ferry_hive_store: ^0.4.5-dev.1
+  ferry: ^0.11.2+1
+  ferry_generator: ^0.6.1
+  ferry_hive_store: ^0.4.5
   file: ^6.1.2
-  file_picker: ^4.0.0
-  file_selector: ^0.9.0
-  file_selector_linux: ^0.0.2
-  file_selector_macos: ^0.9.0
-  file_selector_windows: ^0.9.1
+  file_picker: ^5.2.1
+  file_selector: ^0.9.2+1
+  file_selector_linux: ^0.9.0+1
+  file_selector_macos: ^0.9.0+3
+  file_selector_windows: ^0.9.1+4
   flutter:
     sdk: flutter
   flutter_cache_manager: ^3.0.0-nullsafety.2
-  flutter_colorpicker: ^0.6.0
+  flutter_colorpicker: ^1.0.3
   flutter_isolate: ^2.0.1-pre
-  flutter_local_notifications: ^9.0.0
+  flutter_local_notifications: ^12.0.2
   flutter_localizations:
     sdk: flutter
   flutter_localized_locales: ^2.0.1
-  flutter_markdown: ^0.6.1
+  flutter_markdown: ^0.6.12
   flutter_native_timezone: ^2.0.0
   flutter_painter: ^1.0.1
   flutter_phosphor_icons: ^0.0.1+5
-  # Wait for release after 6.0.3
-  flutter_quill:
-    git:
-      url: https://github.com/singerdmx/flutter-quill.git
-      ref: f6f548f
+  flutter_quill: ^6.0.8+1
   flutter_rating_bar: ^4.0.0
   flutter_svg: ^1.0.0
   flutter_tts: ^3.0.0
   font_awesome_flutter: ^10.0.0
   get_it: ^7.0.0
-  gql_error_link: ^0.2.0-nullsafety.1
-  gql_exec: ^0.4.0
-  gql_http_link: ^0.4.0-nullsafety.1
-  gql_transform_link: ^0.2.0-nullsafety.1
+  gql_error_link: ^0.2.3
+  gql_exec: ^0.4.1
+  gql_http_link: ^0.4.4+1
+  gql_transform_link: ^0.2.2
   hive: ^2.0.0
   hive_flutter: ^1.0.0
   html2md: ^1.2.4
@@ -94,11 +86,11 @@ dependencies:
   lazy_load_scrollview: ^1.3.0
   logging: ^1.0.0
   mailer: ^5.0.0
-  markdown: ^5.0.0
+  markdown: ^6.0.1
   meta: ^1.3.0
   msix: ^3.6.2
   notification_permissions: ^0.6.1
-  package_info_plus: ^1.0.0
+  package_info_plus: ^2.0.0
   path: ^1.8.0
   path_provider: ^2.0.1
   percent_indicator: ^4.2.2
@@ -119,11 +111,10 @@ dependencies:
   sticky_headers: ^0.3.0+2
   streaming_shared_preferences: ^2.0.0
   timelines: ^0.1.0
-  timezone: ^0.8.0
+  timezone: ^0.9.0
   tuple: ^2.0.0
   uni_links: 0.5.1
   url_launcher: ^6.0.2
-  url_protocol: ^1.0.0
   uuid: ^3.0.2
   video_player: ^2.0.2
   visibility_detector: ^0.3.3
@@ -173,16 +164,6 @@ dependency_overrides:
       url: https://github.com/techouse/envify.git
       ref: main
       path: envify_generator
-  # Wait for this pull request, https://bit.ly/3SqfA7w
-  ferry_generator:
-    git:
-      url: https://github.com/friebetill/ferry.git
-      path: packages/ferry_generator/
-  flutter_colorpicker: 0.6.0
-  flutter_quill:
-    git:
-      url: https://github.com/singerdmx/flutter-quill.git
-      ref: f6f548f
   i18n_extension:
     git:
       url: https://github.com/ndungudedan/i18n_extension

@@ -263,7 +263,8 @@ class Toolbar extends StatelessWidget {
       Color? fillColor,
       // ignore: avoid_positional_boolean_parameters
       bool? isToggled,
-      VoidCallback? onPressed, [
+      VoidCallback? onPressed,
+      VoidCallback? afterPressed, [
       double iconSize = kDefaultIconSize,
       QuillIconTheme? iconTheme,
     ]) {

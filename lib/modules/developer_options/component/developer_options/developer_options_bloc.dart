@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print
 import 'dart:io';
 
+import 'package:file_selector/file_selector.dart';
 import 'package:injectable/injectable.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
@@ -40,8 +41,8 @@ class DeveloperOptionsBloc {
   /// Exports the cache manager SQL database.
   Future<void> _exportCacheManagerDatabase() async {
     final appDir = await getApplicationSupportDirectory();
-    await Share.shareFiles(
-      [join(appDir.path, '${CustomCacheManager.key}.db')],
+    await Share.shareXFiles(
+      [XFile(join(appDir.path, '${CustomCacheManager.key}.db'))],
       subject: 'CacheManager database',
       text: '${CustomCacheManager.key}.db',
     );

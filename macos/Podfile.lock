@@ -5,6 +5,8 @@ PODS:
     - FlutterMacOS
   - device_info_plus_macos (0.0.1):
     - FlutterMacOS
+  - devicelocale (0.0.1):
+    - FlutterMacOS
   - file_selector_macos (0.0.1):
     - FlutterMacOS
   - flutter_local_notifications (0.0.1):
@@ -33,13 +35,13 @@ PODS:
   - PurchasesCoreSwift (3.13.2)
   - PurchasesHybridCommon (1.11.2):
     - Purchases (= 3.13.2)
-  - Sentry (7.22.0):
-    - Sentry/Core (= 7.22.0)
-  - Sentry/Core (7.22.0)
+  - Sentry (7.27.1):
+    - Sentry/Core (= 7.27.1)
+  - Sentry/Core (7.27.1)
   - sentry_flutter (0.0.1):
     - Flutter
     - FlutterMacOS
-    - Sentry (~> 7.22.0)
+    - Sentry (~> 7.27.1)
   - share_plus_macos (0.0.1):
     - FlutterMacOS
   - shared_preferences_macos (0.0.1):
@@ -54,6 +56,7 @@ DEPENDENCIES:
   - app_links_macos (from `Flutter/ephemeral/.symlinks/plugins/app_links_macos/macos`)
   - bitsdojo_window_macos (from `Flutter/ephemeral/.symlinks/plugins/bitsdojo_window_macos/macos`)
   - device_info_plus_macos (from `Flutter/ephemeral/.symlinks/plugins/device_info_plus_macos/macos`)
+  - devicelocale (from `Flutter/ephemeral/.symlinks/plugins/devicelocale/macos`)
   - file_selector_macos (from `Flutter/ephemeral/.symlinks/plugins/file_selector_macos/macos`)
   - flutter_local_notifications (from `Flutter/ephemeral/.symlinks/plugins/flutter_local_notifications/macos`)
   - flutter_native_timezone (from `Flutter/ephemeral/.symlinks/plugins/flutter_native_timezone/macos`)
@@ -85,6 +88,8 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral/.symlinks/plugins/bitsdojo_window_macos/macos
   device_info_plus_macos:
     :path: Flutter/ephemeral/.symlinks/plugins/device_info_plus_macos/macos
+  devicelocale:
+    :path: Flutter/ephemeral/.symlinks/plugins/devicelocale/macos
   file_selector_macos:
     :path: Flutter/ephemeral/.symlinks/plugins/file_selector_macos/macos
   flutter_local_notifications:
@@ -120,6 +125,7 @@ SPEC CHECKSUMS:
   app_links_macos: 15e554f46b367713cb8d1db37cee3d1701d22a27
   bitsdojo_window_macos: 44e3b8fe3dd463820e0321f6256c5b1c16bb6a00
   device_info_plus_macos: 1ad388a1ef433505c4038e7dd9605aadd1e2e9c7
+  devicelocale: 9f0f36ac651cabae2c33f32dcff4f32b61c38225
   file_selector_macos: f1b08a781e66103e3ba279fd5d4024a2478b3af6
   flutter_local_notifications: 3805ca215b2fb7f397d78b66db91f6a747af52e4
   flutter_native_timezone: 3a4724189c47dea215bb3e168e555e18308d312c
@@ -134,8 +140,8 @@ SPEC CHECKSUMS:
   purchases_flutter: ec56bb806ae9076a2edced385860f1fea4b30639
   PurchasesCoreSwift: 2ea4b33e5cece5c8a0751594ef7c6cbfcbd747a9
   PurchasesHybridCommon: 56ef42d85c3e930d49aff4ac5fa027373d2e1bb8
-  Sentry: 30b51086ca9aac23337880152e95538f7e177f7f
-  sentry_flutter: eaca55af5c951f4be6c4b1daddce1744c37d8476
+  Sentry: bc644307e2eb6a4c9c55cf117a80b895bb2a25a7
+  sentry_flutter: 649559f0512e00d3f6fc92cf51f74bc2fe68d1d3
   share_plus_macos: 853ee48e7dce06b633998ca0735d482dd671ade4
   shared_preferences_macos: a64dc611287ed6cbe28fd1297898db1336975727
   sqflite: a5789cceda41d54d23f31d6de539d65bb14100ea
