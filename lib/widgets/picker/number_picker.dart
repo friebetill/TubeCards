@@ -63,7 +63,7 @@ class NumberPickerState extends State<NumberPicker> {
       actions: <Widget>[
         TextButton(
           style: TextButton.styleFrom(
-            primary: Theme.of(context).textTheme.bodyText2!.color,
+            foregroundColor: Theme.of(context).textTheme.bodyText2!.color,
           ),
           onPressed: _handleCancel,
           child: Text(S.of(context).cancel.toUpperCase()),

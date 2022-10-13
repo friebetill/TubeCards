@@ -20,7 +20,7 @@ class DiscardDialog extends StatelessWidget {
       actions: <Widget>[
         TextButton(
           style: TextButton.styleFrom(
-            primary: Theme.of(context).textTheme.bodyText1!.color,
+            foregroundColor: Theme.of(context).textTheme.bodyText1!.color,
           ),
           onPressed: () => CustomNavigator.getInstance().pop(false),
           child: Text(S.of(context).cancel.toUpperCase()),
@@ -28,7 +28,7 @@ class DiscardDialog extends StatelessWidget {
         TextButton(
           onPressed: () => CustomNavigator.getInstance().pop(true),
           style: TextButton.styleFrom(
-            primary: Theme.of(context).colorScheme.error,
+            foregroundColor: Theme.of(context).colorScheme.error,
           ),
           child: Text(S.of(context).discard.toUpperCase()),
         ),

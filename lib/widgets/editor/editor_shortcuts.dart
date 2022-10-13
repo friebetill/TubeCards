@@ -85,10 +85,10 @@ class EditorShortcuts extends StatelessWidget {
 
   Map<LogicalKeySet, Intent> _disabledNavigationKeys() {
     return <LogicalKeySet, Intent>{
-      LogicalKeySet(LogicalKeyboardKey.arrowUp): DoNothingIntent(),
-      LogicalKeySet(LogicalKeyboardKey.arrowDown): DoNothingIntent(),
-      LogicalKeySet(LogicalKeyboardKey.arrowLeft): DoNothingIntent(),
-      LogicalKeySet(LogicalKeyboardKey.arrowRight): DoNothingIntent(),
+      LogicalKeySet(LogicalKeyboardKey.arrowUp): const DoNothingIntent(),
+      LogicalKeySet(LogicalKeyboardKey.arrowDown): const DoNothingIntent(),
+      LogicalKeySet(LogicalKeyboardKey.arrowLeft): const DoNothingIntent(),
+      LogicalKeySet(LogicalKeyboardKey.arrowRight): const DoNothingIntent(),
     };
   }
 }

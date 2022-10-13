@@ -68,7 +68,7 @@ class ButtonGroup extends StatelessWidget {
   Widget _activeButton(int index) {
     return TextButton(
       style: TextButton.styleFrom(
-        primary: inactiveColor,
+        foregroundColor: inactiveColor,
         backgroundColor: activeColor,
         padding: const EdgeInsets.symmetric(horizontal: 24),
         shape: const RoundedRectangleBorder(),
@@ -81,7 +81,7 @@ class ButtonGroup extends StatelessWidget {
   Widget _inActiveButton(int index, BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
-        primary: Theme.of(context).disabledColor,
+        foregroundColor: Theme.of(context).disabledColor,
         backgroundColor: inactiveColor,
         padding: const EdgeInsets.symmetric(horizontal: 24),
         shape: const RoundedRectangleBorder(),

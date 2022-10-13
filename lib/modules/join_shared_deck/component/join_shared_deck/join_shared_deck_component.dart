@@ -144,8 +144,8 @@ class _JoinSharedDeckViewState extends State<_JoinSharedDeckView> {
           const SizedBox(width: 8),
           TextButton(
             style: TextButton.styleFrom(
+              foregroundColor: Theme.of(context).colorScheme.surface,
               backgroundColor: Theme.of(context).colorScheme.primary,
-              primary: Theme.of(context).colorScheme.surface,
               visualDensity: VisualDensity.comfortable,
             ),
             onPressed: widget.viewModel.onPasteLinkTap,

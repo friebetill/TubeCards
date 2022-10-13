@@ -107,7 +107,7 @@ class _SubscriptionButtonsView extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-          primary: Theme.of(context).colorScheme.error,
+          foregroundColor: Theme.of(context).colorScheme.error,
         ),
         onPressed: viewModel.onUnsubscribeTap,
         child: Center(

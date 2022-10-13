@@ -117,7 +117,7 @@ class CoverImageState extends State<CoverImage> {
         shape: const StadiumBorder(),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         backgroundColor: Colors.black26,
-        primary: Colors.white,
+        foregroundColor: Colors.white,
       ),
       onPressed: onPickImage,
       child: Text(S.of(context).changeImage.toUpperCase()),

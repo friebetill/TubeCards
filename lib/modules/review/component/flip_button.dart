@@ -30,7 +30,7 @@ class FlipButton extends StatelessWidget {
           elevation: 6,
           shape: const CircleBorder(),
           // To remove a 1px lighter color border in dark mode
-          primary: isEmphasized ? foregroundColor : backgroundColor,
+          backgroundColor: isEmphasized ? foregroundColor : backgroundColor,
         ),
         child: AnimatedContainer(
           height: 56,

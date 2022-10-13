@@ -54,7 +54,7 @@ class LabelButton extends StatelessWidget {
             onPressed: onPressed,
             style: ElevatedButton.styleFrom(
               elevation: 6,
-              primary: isEmphasized ? foregroundColor : backgroundColor,
+              backgroundColor: isEmphasized ? foregroundColor : backgroundColor,
               shape: CircularNotchedRectangleShape(
                 notchSide: notchSide,
                 notchDiameter: notchDiameter,

@@ -172,8 +172,11 @@ class _SupportUsViewState extends State<_SupportUsView> {
         label: Text(S.of(context).donate.toUpperCase()),
         icon: const FaIcon(FontAwesomeIcons.paypal),
         style: ElevatedButton.styleFrom(
-          primary: Theme.of(context).colorScheme.primary,
-          onSurface: Theme.of(context).colorScheme.onPrimary,
+          foregroundColor: Theme.of(context).colorScheme.primary,
+          disabledForegroundColor:
+              Theme.of(context).colorScheme.onPrimary.withOpacity(0.38),
+          disabledBackgroundColor:
+              Theme.of(context).colorScheme.onPrimary.withOpacity(0.12),
           fixedSize: const Size(350, 40),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(100),

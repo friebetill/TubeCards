@@ -112,7 +112,8 @@ class _LoginFormViewState extends State<_LoginFormView> {
           constraints: const BoxConstraints(maxHeight: 36),
           padding: const EdgeInsets.only(right: edgeInset),
           child: TextButton(
-            style: TextButton.styleFrom(primary: Theme.of(context).hintColor),
+            style: TextButton.styleFrom(
+                foregroundColor: Theme.of(context).hintColor),
             onPressed: () {
               controller.logTap();
               widget.viewModel.onResetPassword();

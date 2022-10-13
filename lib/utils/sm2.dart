@@ -156,7 +156,7 @@ bool _isDateTimeAdditionAllowed(DateTime dateTime, Duration duration) {
 double _getUpdatedEase(Confidence confidence, double ease) {
   // Removes inaccuracies from calculating with floating point numbers.
   // Method comes from https://stackoverflow.com/a/32205216/6169345.
-  double _toDoubleWithFixed(int fractionDigits, double n) =>
+  double toDoubleWithFixed(int fractionDigits, double n) =>
       double.parse(n.toStringAsFixed(fractionDigits));
 
   // Diverge from SM-2 algorithm, as there are currently only KNOWN and UNKNOWN.
@@ -167,5 +167,5 @@ double _getUpdatedEase(Confidence confidence, double ease) {
   // KNOWN corresponds to a quality of 5 and UNKNOWN to ~2.
   final newEase = ease + (confidence == Confidence.known ? 0.1 : -0.3);
 
-  return _toDoubleWithFixed(2, newEase.clamp(1.3, 2.5).toDouble());
+  return toDoubleWithFixed(2, newEase.clamp(1.3, 2.5).toDouble());
 }

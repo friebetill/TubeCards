@@ -144,7 +144,7 @@ class ReminderAddBloc with ComponentBuildContext, ComponentLifecycleListener {
 
 extension TimeOfDayToString on TimeOfDay {
   String toReadableString() {
-    String _addLeadingZeroIfNeeded(int value) {
+    String addLeadingZeroIfNeeded(int value) {
       if (value < 10) {
         return '0$value';
       }
@@ -152,8 +152,8 @@ extension TimeOfDayToString on TimeOfDay {
       return value.toString();
     }
 
-    final hourLabel = _addLeadingZeroIfNeeded(hour);
-    final minuteLabel = _addLeadingZeroIfNeeded(minute);
+    final hourLabel = addLeadingZeroIfNeeded(hour);
+    final minuteLabel = addLeadingZeroIfNeeded(minute);
 
     return '$hourLabel:$minuteLabel';
   }

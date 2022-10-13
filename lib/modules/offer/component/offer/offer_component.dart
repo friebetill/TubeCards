@@ -152,7 +152,7 @@ class _OfferView extends StatelessWidget {
       childBuilder: (controller) {
         return TextButton(
           style: TextButton.styleFrom(
-            primary: Theme.of(context).colorScheme.onPrimary,
+            foregroundColor: Theme.of(context).colorScheme.onPrimary,
             backgroundColor: Theme.of(context).colorScheme.primary,
             padding: const EdgeInsets.all(8),
           ),
@@ -176,7 +176,7 @@ class _OfferView extends StatelessWidget {
       childBuilder: (controller) {
         return TextButton(
           style: TextButton.styleFrom(
-            primary: Theme.of(context).colorScheme.onPrimary,
+            foregroundColor: Theme.of(context).colorScheme.onPrimary,
             backgroundColor: Theme.of(context).colorScheme.primary,
             padding: const EdgeInsets.all(8),
           ),

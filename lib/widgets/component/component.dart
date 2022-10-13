@@ -4,7 +4,6 @@ import '../../main.dart';
 import '../component/component_life_cycle_listener.dart';
 import 'component_build_context.dart';
 import 'component_dialog.dart';
-import 'component_life_cycle_listener.dart';
 
 // Bloc needs to extend Object to be retrievable by GetIt.
 class Component<Bloc extends Object> extends StatefulWidget {

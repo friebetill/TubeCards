@@ -3,8 +3,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:in_app_review/in_app_review.dart';
-import '../../../../i18n/i18n.dart';
 
+import '../../../../i18n/i18n.dart';
 import '../../../data/preferences/user_history.dart';
 import '../../../utils/config.dart';
 import '../../../utils/custom_navigator.dart';
@@ -32,7 +32,7 @@ class RateSpaceDialog extends StatelessWidget {
             TextButton(
               onPressed: _handleNeverButtonTap,
               style: TextButton.styleFrom(
-                primary: Theme.of(context).textTheme.bodyText2!.color,
+                foregroundColor: Theme.of(context).textTheme.bodyText2!.color,
               ),
               child: Text(S.of(context).never.toUpperCase()),
             ),
@@ -40,7 +40,7 @@ class RateSpaceDialog extends StatelessWidget {
             TextButton(
               onPressed: _handleLaterButtonTap,
               style: TextButton.styleFrom(
-                primary: Theme.of(context).textTheme.bodyText2!.color,
+                foregroundColor: Theme.of(context).textTheme.bodyText2!.color,
               ),
               child: Text(S.of(context).later.toUpperCase()),
             ),

@@ -53,7 +53,7 @@ class ColorPickerState extends State<ColorPicker> {
       actions: <Widget>[
         TextButton(
           style: TextButton.styleFrom(
-            primary: Theme.of(context).textTheme.bodyText2!.color,
+            foregroundColor: Theme.of(context).textTheme.bodyText2!.color,
           ),
           onPressed: CustomNavigator.getInstance().pop,
           child: Text(S.of(context).cancel.toUpperCase()),

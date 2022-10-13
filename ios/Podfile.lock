@@ -46,18 +46,13 @@ PODS:
     - DKImagePickerController/PhotoGallery
     - Flutter
   - Flutter (1.0.0)
-  - flutter_inappwebview_quill (0.0.1):
-    - Flutter
-    - flutter_inappwebview_quill/Core (= 0.0.1)
-    - OrderedSet (~> 5.0)
-  - flutter_inappwebview_quill/Core (0.0.1):
-    - Flutter
-    - OrderedSet (~> 5.0)
   - flutter_isolate (0.0.1):
     - Flutter
   - flutter_keyboard_visibility (0.0.1):
     - Flutter
   - flutter_local_notifications (0.0.1):
+    - Flutter
+  - flutter_native_splash (0.0.1):
     - Flutter
   - flutter_native_timezone (0.0.1):
     - Flutter
@@ -66,22 +61,21 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - gallery_saver (0.0.1):
-    - Flutter
   - image_picker (0.0.1):
     - Flutter
   - in_app_review (0.2.0):
     - Flutter
   - notification_permissions (0.4.4):
     - Flutter
-  - OrderedSet (5.0.0)
   - package_info_plus (0.4.5):
+    - Flutter
+  - pasteboard (0.0.1):
     - Flutter
   - path_provider_ios (0.0.1):
     - Flutter
   - Purchases (3.13.2):
     - PurchasesCoreSwift (= 3.13.2)
-  - purchases_flutter (3.9.5):
+  - purchases_flutter (3.10.0):
     - Flutter
     - PurchasesHybridCommon (= 1.11.2)
   - PurchasesCoreSwift (3.13.2)
@@ -120,17 +114,17 @@ DEPENDENCIES:
   - devicelocale (from `.symlinks/plugins/devicelocale/ios`)
   - file_picker (from `.symlinks/plugins/file_picker/ios`)
   - Flutter (from `Flutter`)
-  - flutter_inappwebview_quill (from `.symlinks/plugins/flutter_inappwebview_quill/ios`)
   - flutter_isolate (from `.symlinks/plugins/flutter_isolate/ios`)
   - flutter_keyboard_visibility (from `.symlinks/plugins/flutter_keyboard_visibility/ios`)
   - flutter_local_notifications (from `.symlinks/plugins/flutter_local_notifications/ios`)
+  - flutter_native_splash (from `.symlinks/plugins/flutter_native_splash/ios`)
   - flutter_native_timezone (from `.symlinks/plugins/flutter_native_timezone/ios`)
   - flutter_tts (from `.symlinks/plugins/flutter_tts/ios`)
-  - gallery_saver (from `.symlinks/plugins/gallery_saver/ios`)
   - image_picker (from `.symlinks/plugins/image_picker/ios`)
   - in_app_review (from `.symlinks/plugins/in_app_review/ios`)
   - notification_permissions (from `.symlinks/plugins/notification_permissions/ios`)
   - package_info_plus (from `.symlinks/plugins/package_info_plus/ios`)
+  - pasteboard (from `.symlinks/plugins/pasteboard/ios`)
   - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
   - purchases_flutter (from `.symlinks/plugins/purchases_flutter/ios`)
   - sentry_flutter (from `.symlinks/plugins/sentry_flutter/ios`)
@@ -147,7 +141,6 @@ SPEC REPOS:
     - DKImagePickerController
     - DKPhotoGallery
     - FMDB
-    - OrderedSet
     - Purchases
     - PurchasesCoreSwift
     - PurchasesHybridCommon
@@ -170,20 +163,18 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/file_picker/ios"
   Flutter:
     :path: Flutter
-  flutter_inappwebview_quill:
-    :path: ".symlinks/plugins/flutter_inappwebview_quill/ios"
   flutter_isolate:
     :path: ".symlinks/plugins/flutter_isolate/ios"
   flutter_keyboard_visibility:
     :path: ".symlinks/plugins/flutter_keyboard_visibility/ios"
   flutter_local_notifications:
     :path: ".symlinks/plugins/flutter_local_notifications/ios"
+  flutter_native_splash:
+    :path: ".symlinks/plugins/flutter_native_splash/ios"
   flutter_native_timezone:
     :path: ".symlinks/plugins/flutter_native_timezone/ios"
   flutter_tts:
     :path: ".symlinks/plugins/flutter_tts/ios"
-  gallery_saver:
-    :path: ".symlinks/plugins/gallery_saver/ios"
   image_picker:
     :path: ".symlinks/plugins/image_picker/ios"
   in_app_review:
@@ -192,6 +183,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/notification_permissions/ios"
   package_info_plus:
     :path: ".symlinks/plugins/package_info_plus/ios"
+  pasteboard:
+    :path: ".symlinks/plugins/pasteboard/ios"
   path_provider_ios:
     :path: ".symlinks/plugins/path_provider_ios/ios"
   purchases_flutter:
@@ -220,35 +213,34 @@ SPEC CHECKSUMS:
   devicelocale: b22617f40038496deffba44747101255cee005b0
   DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
   DKPhotoGallery: fdfad5125a9fdda9cc57df834d49df790dbb4179
-  file_picker: 3e6c3790de664ccf9b882732d9db5eaf6b8d4eb1
-  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  flutter_inappwebview_quill: eb69bfa35fdde431e273476cf359a3686427b8da
+  file_picker: 817ab1d8cd2da9d2da412a417162deee3500fc95
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   flutter_isolate: 0edf5081826d071adf21759d1eb10ff5c24503b5
   flutter_keyboard_visibility: 0339d06371254c3eb25eeb90ba8d17dca8f9c069
   flutter_local_notifications: 0c0b1ae97e741e1521e4c1629a459d04b9aec743
+  flutter_native_splash: 52501b97d1c0a5f898d687f1646226c1f93c56ef
   flutter_native_timezone: 5f05b2de06c9776b4cc70e1839f03de178394d22
   flutter_tts: 0f492aab6accf87059b72354fcb4ba934304771d
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  gallery_saver: 9fc173c9f4fcc48af53b2a9ebea1b643255be542
   image_picker: e06f7a68f000bd36f552c1847e33cda96ed31f1f
   in_app_review: 4a97249f7a2f539a0f294c2d9196b7fe35e49541
   notification_permissions: 825ea1bf2a52ab585c53fd7b5e8e96876d735d4b
-  OrderedSet: aaeb196f7fef5a9edf55d89760da9176ad40b93c
   package_info_plus: 6c92f08e1f853dc01228d6f553146438dafcd14e
-  path_provider_ios: 7d7ce634493af4477d156294792024ec3485acd5
+  pasteboard: 982969ebaa7c78af3e6cc7761e8f5e77565d9ce0
+  path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
   Purchases: 03200de9288724e77de435000d1828601e6b8e00
-  purchases_flutter: cf2b742f12b7ffef6f618c7f1ba1961e652825b1
+  purchases_flutter: bcc0010ed14e80a46cc9050bd1afbfb9c48eee17
   PurchasesCoreSwift: 2ea4b33e5cece5c8a0751594ef7c6cbfcbd747a9
   PurchasesHybridCommon: 56ef42d85c3e930d49aff4ac5fa027373d2e1bb8
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   Sentry: 30b51086ca9aac23337880152e95538f7e177f7f
   sentry_flutter: eaca55af5c951f4be6c4b1daddce1744c37d8476
   share_plus: 056a1e8ac890df3e33cb503afffaf1e9b4fbae68
-  shared_preferences_ios: aef470a42dc4675a1cdd50e3158b42e3d1232b32
+  shared_preferences_ios: 548a61f8053b9b8a49ac19c1ffbc8b92c50d68ad
   sqflite: 6d358c025f5b867b29ed92fc697fd34924e11904
   SwiftyGif: 6c3eafd0ce693cad58bb63d2b2fb9bacb8552780
   uni_links: d97da20c7701486ba192624d99bffaaffcfc298a
-  url_launcher_ios: 02f1989d4e14e998335b02b67a7590fa34f971af
+  url_launcher_ios: 839c58cdb4279282219f5e248c3321761ff3c4de
   video_player_avfoundation: e489aac24ef5cf7af82702979ed16f2a5ef84cff
 
 PODFILE CHECKSUM: a5adfe7971131cf0589107393691ada35be2b45f

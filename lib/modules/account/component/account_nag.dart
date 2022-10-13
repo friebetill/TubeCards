@@ -91,7 +91,7 @@ class AccountNag extends StatelessWidget {
   Widget _buildLoginButton(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
-        primary: Colors.white,
+        foregroundColor: Colors.white,
         textStyle: const TextStyle(fontSize: 12),
         // Leads to 8 pixel padding
         minimumSize: const Size(64, 38),

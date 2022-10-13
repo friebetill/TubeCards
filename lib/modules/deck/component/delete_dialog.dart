@@ -18,14 +18,14 @@ class DeleteDialog extends StatelessWidget {
       actions: <Widget>[
         TextButton(
           style: TextButton.styleFrom(
-            primary: Theme.of(context).textTheme.bodyText2!.color,
+            foregroundColor: Theme.of(context).textTheme.bodyText2!.color,
           ),
           onPressed: () => CustomNavigator.getInstance().pop(false),
           child: Text(S.of(context).cancel.toUpperCase()),
         ),
         TextButton(
           style: TextButton.styleFrom(
-            primary: Theme.of(context).colorScheme.error,
+            foregroundColor: Theme.of(context).colorScheme.error,
           ),
           onPressed: () => CustomNavigator.getInstance().pop(true),
           child: Text(S.of(context).delete.toUpperCase()),

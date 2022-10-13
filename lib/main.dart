@@ -63,7 +63,7 @@ void main() {
 
       sqfliteFfiInit();
 
-      await configureDependencies();
+      await initDependencyInjection();
       if (Platform.isAndroid || Platform.isIOS || Platform.isMacOS) {
         await Purchases.setup(Platform.isAndroid
             ? revenueCatGoogleApiKey
@@ -124,7 +124,7 @@ final getIt = GetIt.instance;
 final _logger = Logger('main.dart');
 
 @InjectableInit()
-Future<void> configureDependencies() {
+Future<void> initDependencyInjection() {
   return $initGetIt(getIt, environment: 'graphql_isolate'); // graphql_main
 }
 
