@@ -64,7 +64,6 @@ class BrandLogo extends StatelessWidget {
           ? Assets.images.brandLogo
           : Assets.images.brandLogoWhite,
       width: _convertedSize(),
-      height: _convertedSize(),
     );
   }
 
@@ -74,7 +73,6 @@ class BrandLogo extends StatelessWidget {
           ? Assets.images.brandText
           : Assets.images.brandTextWhite,
       height: _convertedSize(),
-      width: _textWidth(),
     );
   }
 
@@ -91,12 +89,5 @@ class BrandLogo extends StatelessWidget {
       case BrandLogoSize.huge:
         return 72;
     }
-  }
-
-  /// Returns the width of the text image asset based on the given size.
-  double _textWidth() {
-    const imageRatio = 2.829;
-
-    return _convertedSize() * imageRatio;
   }
 }
