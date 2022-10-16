@@ -1,6 +1,6 @@
 import 'package:ferry/typed_links.dart';
 
-import '../../services/space/card_service.dart';
+import '../../services/tubecards/card_service.dart';
 import '../fragments/__generated__/offer_fragment.data.gql.dart';
 import '../fragments/__generated__/offer_fragment.req.gql.dart';
 import '../mutations/__generated__/subscribe.data.gql.dart';

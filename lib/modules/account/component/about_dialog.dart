@@ -78,7 +78,7 @@ class AboutDialogState extends State<AboutDialog> {
         Expanded(
           child: ListBody(
             children: <Widget>[
-              Text('Space', style: Theme.of(context).textTheme.headline5),
+              Text('TubeCards', style: Theme.of(context).textTheme.headline5),
               Text(_version, style: Theme.of(context).textTheme.bodyText2),
             ],
           ),
@@ -158,7 +158,7 @@ class AboutDialogState extends State<AboutDialog> {
         onPressed: () {
           showLicensePage(
             context: context,
-            applicationName: 'Space',
+            applicationName: 'TubeCards',
             applicationVersion: _version,
             applicationIcon: SvgPicture.asset(
               Assets.images.brandLogo,

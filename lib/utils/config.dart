@@ -3,7 +3,7 @@ import '../env.dart';
 /// True when the client is running in production.
 const bool isProduction = String.fromEnvironment('app.flavor') != 'dev';
 
-/// The URL to the Space API server.
+/// The URL to the TubeCards API server.
 const String spaceGraphQlUrl = isProduction
     ? 'https://api.getspace.app'
     :
@@ -14,8 +14,8 @@ const String spaceGraphQlUrl = isProduction
 // Use this to develop locally for a desktop platform.
 // 'http://localhost:3000/graphql';
 
-/// The support email of Space.
-const supportEmail = 'space.flashcards.app@gmail.com';
+/// The support email of TubeCards.
+const supportEmail = 'support@tubecards.app';
 
 /// Access token to send API requests to the Azure Cognitive Service.
 const azureSubscriptionKey = Env.azureSubscriptionKey;
@@ -35,13 +35,13 @@ const sentryDSN = Env.sentryDSN;
 
 final privacyPolicyURL = Uri.https('getspace.app', '/privacy-policy');
 
-/// The Microsoft store id of Space
+/// The Microsoft store id of TubeCards
 ///
-/// Can be found at the end of Space Windows store url:
+/// Can be found at the end of TubeCards Windows store url:
 /// https://www.microsoft.com/en-us/p/space-spaced-repetition/9n2zrwbkjkt9
 const microsoftStoreId = '9n2zrwbkjkt9';
 
-/// The App Store id of Space
+/// The App Store id of TubeCards
 ///
 /// Can be found in the iTunes store URL as the string of numbers directly
 /// after id: https://apps.apple.com/us/app/space-spaced-repetition/id1546202212

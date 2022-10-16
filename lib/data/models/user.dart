@@ -7,7 +7,7 @@ import 'offer.dart';
 
 part 'user.g.dart';
 
-/// Represents a Space user.
+/// Represents a TubeCards user.
 @JsonSerializable()
 @immutable
 class User extends Equatable {

@@ -21,12 +21,12 @@ enum BrandLogoSize {
   huge,
 }
 
-/// Widget to display the brand logo and if needed the text 'Space' next to it.
+/// Displays the brand logo and if needed the text 'TubeCards' next to it.
 class BrandLogo extends StatelessWidget {
   /// Create a new instance of [BrandLogo].
   ///
   /// The [size] of the logo can be adjusted using [BrandLogoSize] and defaults
-  /// to [BrandLogoSize.medium]. In addition the title 'Space' can be
+  /// to [BrandLogoSize.medium]. In addition the title 'TubeCards' can be
   /// deactivated with [showText] and defaults to false.
   const BrandLogo({
     this.size = BrandLogoSize.medium,
@@ -38,10 +38,10 @@ class BrandLogo extends StatelessWidget {
   /// Specifies the size of both the logo and the text
   final BrandLogoSize size;
 
-  /// Whether to show the Space logo.
+  /// Whether to show the TubeCards logo.
   final bool showLogo;
 
-  /// Whether to show the text 'Space' next to the logo.
+  /// Whether to show the text 'TubeCards' next to the logo.
   final bool showText;
 
   @override

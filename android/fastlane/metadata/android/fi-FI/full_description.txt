@@ -1,6 +1,6 @@
-Space on helppokäyttöinen SRS-sovellus (Spaced Repetition System). Luo ja opettele muistitikkuja missä tahansa oletkin, mahdollisimman tehokkaalla tavalla.
+TubeCards on helppokäyttöinen SRS-sovellus (Spaced Repetition System). Luo ja opettele muistitikkuja missä tahansa oletkin, mahdollisimman tehokkaalla tavalla.
 
-Toisin kuin muut flashcardsovellukset, Space on helppokäyttöinen ja silti varustettu monilla ominaisuuksilla.
+Toisin kuin muut flashcardsovellukset, TubeCards on helppokäyttöinen ja silti varustettu monilla ominaisuuksilla.
 
 <big>Ominaisuudet</big>
 
@@ -23,6 +23,6 @@ Näin sanovat käyttäjämme:
 
 "<i>Tämä on yksi niistä sovelluksista, jotka muistan asentaa, kun ostan uuden puhelimen tai tehdasasetusten palautuksen. Myös kaunis sovellus.</i>" - Ricardo Passos
 
-"<i>Erikoinen Spaced Repetition -sovellus! 1000 × parempi kuin vanha ystäväsi Anki. Käyttöliittymä on niin intuitiivinen & sinun ei tarvitse huolehtia käsitteistä kuten Spaced repetition & sen optimaaliset asetukset kuten Anki. Kaikki, mitä sinun tarvitsee tietää, on selitetty niin selkeästi antamatta ylimääräistä tietoa, jota ei edes tarvita. Tämä asia aiheuttaa vain liikaa päänsärkyä. Lataa Space & unohda kaikki nuo huolet & se varmistaa, ettet unohda sitä, mitä kannattaa muistaa.🔥</i>" - Rahul Ranjan Rahul Ranjan
+"<i>Erikoinen Spaced Repetition -sovellus! 1000 × parempi kuin vanha ystäväsi Anki. Käyttöliittymä on niin intuitiivinen & sinun ei tarvitse huolehtia käsitteistä kuten Spaced repetition & sen optimaaliset asetukset kuten Anki. Kaikki, mitä sinun tarvitsee tietää, on selitetty niin selkeästi antamatta ylimääräistä tietoa, jota ei edes tarvita. Tämä asia aiheuttaa vain liikaa päänsärkyä. Lataa TubeCards & unohda kaikki nuo huolet & se varmistaa, ettet unohda sitä, mitä kannattaa muistaa.🔥</i>" - Rahul Ranjan Rahul Ranjan
 
 Spacen missio on tehdä oppimisesta tehokasta ja iloista. Toivomme, että liityt seuraamme! 🚀

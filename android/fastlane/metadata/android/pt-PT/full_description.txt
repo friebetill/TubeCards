@@ -1,4 +1,4 @@
-Space é uma aplicação do Sistema de Repetição Espaçada (SRS) fácil de usar. Cria e aprende flashcards onde quer que estejas, da forma mais eficaz possível.
+TubeCards é uma aplicação do Sistema de Repetição Espaçada (SRS) fácil de usar. Cria e aprende flashcards onde quer que estejas, da forma mais eficaz possível.
 
 Ao contrário de outras aplicações Flashcards, o espaço é fácil de usar e, no entanto, equipado com muitas funcionalidades.
 

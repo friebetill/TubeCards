@@ -168,8 +168,8 @@ final releaseNotes = [
     releaseNote: '''
 🐧 Add Linux version
 🚅 Speed up search
-💇 Redesign "About Space" page
-🦚 Redesign "Support Space" page
+💇 Redesign "About TubeCards" page
+🦚 Redesign "Support TubeCards" page
 💅 Redesign "Feedback" page
 🏆 Adjust congratulation page for large screens
 👁️ Show markdown in card item preview
@@ -416,8 +416,8 @@ final releaseNotes = [
     buildNumber: 22,
     date: DateTime(2019, 11, 13),
     releaseNote: '''
-📋 Share text and images with Space to create cards more easily
-🇮🇹 Use Space in Italian
+📋 Share text and images with TubeCards to create cards more easily
+🇮🇹 Use TubeCards in Italian
 🐛 Have no problems with missing images
 ''',
     version: '0.16.0',
@@ -446,7 +446,7 @@ final releaseNotes = [
     releaseNote: '''
 🗺️ Translations for German, French, Turkish
 ➡️ Fix and improve 'Move to deck' functionality
-📦 Import and export your Space decks (more to come!)
+📦 Import and export your TubeCards decks (more to come!)
 ''',
     version: '0.13.0',
   ),
@@ -547,7 +547,7 @@ final releaseNotes = [
     buildNumber: 6,
     date: DateTime(2019, 2, 4),
     releaseNote: '''
-👋 Use Space without an account
+👋 Use TubeCards without an account
 🔍 Search your decks and cards
 💅 Fresh new logo
 ''',

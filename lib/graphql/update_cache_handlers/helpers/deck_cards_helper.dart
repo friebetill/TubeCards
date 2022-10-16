@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:ferry/typed_links.dart';
 
-import '../../../services/space/card_service.dart';
+import '../../../services/tubecards/card_service.dart';
 import '../../__generated__/schema.schema.gql.dart';
 import '../../fragments/__generated__/card_fragment.data.gql.dart';
 import '../../queries/__generated__/deck_cards.data.gql.dart';

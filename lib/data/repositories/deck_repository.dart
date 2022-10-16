@@ -3,7 +3,7 @@ import 'package:ferry/typed_links.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../graphql/operation_exception.dart';
-import '../../services/space/deck_service.dart';
+import '../../services/tubecards/deck_service.dart';
 import '../models/average_learning_state.dart';
 import '../models/connection.dart';
 import '../models/deck.dart';

@@ -2,7 +2,7 @@ import 'package:ferry/ferry.dart';
 import 'package:ferry/typed_links.dart';
 import 'package:injectable/injectable.dart';
 
-import '../../services/space/offer_service.dart';
+import '../../services/tubecards/offer_service.dart';
 import '../models/connection.dart';
 import '../models/flexible_size_offer_connection.dart';
 import '../models/offer.dart';

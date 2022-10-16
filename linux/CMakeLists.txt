@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "client_mobile")
-set(APPLICATION_ID "app.getspace.space.client_mobile")
+set(BINARY_NAME "tubecards")
+set(APPLICATION_ID "app.getspace.space.tubecards")
 
 cmake_policy(SET CMP0063 NEW)
 

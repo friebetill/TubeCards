@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
 
-import '../../services/space/offer_review_service.dart';
+import '../../services/tubecards/offer_review_service.dart';
 import '../models/offer_review.dart';
 
 /// Repository for the [OfferReview] model.

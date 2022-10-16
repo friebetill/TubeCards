@@ -105,7 +105,7 @@ void main() {
         doWhenWindowReady(() {
           appWindow
             ..minSize = const Size(minimumScreenWidth, minimumScreenHeight)
-            ..title = 'Space'
+            ..title = 'TubeCards'
             ..show();
         });
       }
@@ -150,7 +150,7 @@ class SpaceApp extends StatelessWidget {
       initial: savedThemeMode ?? AdaptiveThemeMode.system,
       builder: (theme, darkTheme) {
         return MaterialApp(
-          title: 'Space',
+          title: 'TubeCards',
           home: firstScreen,
           theme: theme,
           darkTheme: darkTheme,

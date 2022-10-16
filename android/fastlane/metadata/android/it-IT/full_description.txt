@@ -1,6 +1,6 @@
-Space è un'applicazione del Sistema di Ripetizione Intervallata (SRS) facile da usare. Crea e impara le flashcard ovunque tu sia nel modo più efficace possibile.
+TubeCards è un'applicazione del Sistema di Ripetizione Intervallata (SRS) facile da usare. Crea e impara le flashcard ovunque tu sia nel modo più efficace possibile.
 
-A differenza di altre app per flashcards, Space è facile da usare e tuttavia dotata di molte funzioni.
+A differenza di altre app per flashcards, TubeCards è facile da usare e tuttavia dotata di molte funzioni.
 
 <big>Caratteristiche</big>
 
@@ -23,6 +23,6 @@ Questo è quello che dicono i nostri utenti:
 
 "<i>Questa è una di quelle app che mi ricordo di installare quando compro un nuovo telefono o un reset di fabbrica. Inoltre, bella app.</i>" - Ricardo Passos
 
-"<i>Eccezionale app a ripetizione spaziata! 1000 volte meglio del tuo vecchio amico Anki. L'interfaccia è così intuitiva e non devi preoccuparti di concetti come la ripetizione spaziata e le sue impostazioni ottimali come fai su Anki. Tutto ciò che devi sapere è spiegato molto chiaramente senza dare informazioni extra che non sono nemmeno necessarie. Queste cose fanno venire troppi mal di testa. Scarica Space e dimentica tutte quelle preoccupazioni e ti assicurerà di non dimenticare ciò che vale la pena ricordare.🔥</i>" - Rahul Ranjan
+"<i>Eccezionale app a ripetizione spaziata! 1000 volte meglio del tuo vecchio amico Anki. L'interfaccia è così intuitiva e non devi preoccuparti di concetti come la ripetizione spaziata e le sue impostazioni ottimali come fai su Anki. Tutto ciò che devi sapere è spiegato molto chiaramente senza dare informazioni extra che non sono nemmeno necessarie. Queste cose fanno venire troppi mal di testa. Scarica TubeCards e dimentica tutte quelle preoccupazioni e ti assicurerà di non dimenticare ciò che vale la pena ricordare.🔥</i>" - Rahul Ranjan
 
-La missione di Space è di rendere l'apprendimento efficace e gioioso. Speriamo che ti unirai a noi! 🚀
+La missione di TubeCards è di rendere l'apprendimento efficace e gioioso. Speriamo che ti unirai a noi! 🚀

@@ -1,8 +1,8 @@
-import 'package:client_mobile/data/models/review_summary.dart';
-import 'package:client_mobile/modules/offer/component/offer_review_statistic.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
+import 'package:tubecards/data/models/review_summary.dart';
+import 'package:tubecards/modules/offer/component/offer_review_statistic.dart';
 
 import '../helpers/theme_wrapper.dart';
 

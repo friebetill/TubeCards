@@ -48,7 +48,7 @@ class Images {
   String googleSheetsLogo = '$_imagesPath/google_sheets_logo.svg';
   String microsoftExcelLogo = '$_imagesPath/microsoft_excel_logo.svg';
 
-  // Space brand images
+  // TubeCards brand images
   String brandLogo = '$_imagesPath/brand_logo.svg';
   String brandLogoWhite = '$_imagesPath/brand_logo_white.svg';
   String brandText = '$_imagesPath/brand_text.svg';

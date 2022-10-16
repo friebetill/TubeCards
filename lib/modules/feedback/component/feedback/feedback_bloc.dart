@@ -125,7 +125,7 @@ $_feedback
 
 Submitted by: ${userEmail.isEmpty ? 'Anonymous' : userEmail} ${user.isAnonymous! ? '(anonymous)' : '(registered)'}
 Locale: ${i18n.locale}
-Space Version: ${packageInfo.version} (${packageInfo.buildNumber})
+TubeCards Version: ${packageInfo.version} (${packageInfo.buildNumber})
 OS: ${Platform.operatingSystem}
 ''';
   }

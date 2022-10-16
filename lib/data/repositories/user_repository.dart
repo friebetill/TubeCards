@@ -4,7 +4,7 @@ import 'package:ferry/ferry.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../graphql/operation_exception.dart';
-import '../../services/space/user_service.dart';
+import '../../services/tubecards/user_service.dart';
 import '../models/auth_result.dart';
 import '../models/average_learning_state.dart';
 import '../models/user.dart';

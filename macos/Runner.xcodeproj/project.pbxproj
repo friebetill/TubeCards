@@ -438,7 +438,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = app.getspace.space;
 				PRODUCT_COPYRIGHT = "Copyright © 2021 getspace.app All rights reserved.";
-				PRODUCT_NAME = Space;
+				PRODUCT_NAME = TubeCards;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
@@ -572,7 +572,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = app.getspace.space;
 				PRODUCT_COPYRIGHT = "Copyright © 2021 getspace.app All rights reserved.";
-				PRODUCT_NAME = Space;
+				PRODUCT_NAME = TubeCards;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -599,7 +599,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = app.getspace.space;
 				PRODUCT_COPYRIGHT = "Copyright © 2021 getspace.app All rights reserved.";
-				PRODUCT_NAME = Space;
+				PRODUCT_NAME = TubeCards;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};

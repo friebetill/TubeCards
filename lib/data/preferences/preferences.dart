@@ -47,7 +47,7 @@ class Preferences {
 
   final Preference<CardsSortOrder> cardsSortOrder;
 
-  /// If [isDataSaverModeEnabled] is active, Space syncs also without wifi
+  /// If [isDataSaverModeEnabled] is active, TubeCards syncs also without wifi
   /// connection.
   final Preference<bool> isDataSaverModeEnabled;
 

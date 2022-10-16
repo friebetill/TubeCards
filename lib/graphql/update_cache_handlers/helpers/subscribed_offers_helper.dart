@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:ferry/typed_links.dart';
 
-import '../../../services/space/offer_service.dart';
+import '../../../services/tubecards/offer_service.dart';
 import '../../fragments/__generated__/offer_fragment.data.gql.dart';
 import '../../queries/__generated__/subscribed_offers.data.gql.dart';
 import '../../queries/__generated__/subscribed_offers.req.gql.dart';

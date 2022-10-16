@@ -1,6 +1,6 @@
-Space, kullanımı kolay bir Aralıklı Tekrar Sistemi (SRS) uygulamasıdır. Nerede olursanız olun mümkün olan en etkili şekilde bilgi kartları oluşturun ve öğrenin.
+TubeCards, kullanımı kolay bir Aralıklı Tekrar Sistemi (SRS) uygulamasıdır. Nerede olursanız olun mümkün olan en etkili şekilde bilgi kartları oluşturun ve öğrenin.
 
-Diğer bilgi kartları uygulamalarının aksine, Space'in kullanımı kolaydır ve buna rağmen birçok özellikle donatılmıştır.
+Diğer bilgi kartları uygulamalarının aksine, TubeCards'in kullanımı kolaydır ve buna rağmen birçok özellikle donatılmıştır.
 
 <big>Özellikler</big>
 
@@ -25,4 +25,4 @@ Kullanıcılarımız şöyle diyor:
 
 "<i>Olağanüstü Aralıklı Tekrar uygulaması! Eski dostunuz Anki'den 1000 kat daha iyi. Arayüz çok sezgisel ve Anki'de yaptığınız gibi Aralıklı tekrar ve optimum ayarlar gibi kavramlar hakkında endişelenmenize gerek yok. İhtiyacınız olan her şey bilmek, gerekmeyen ekstra bilgi vermeden çok net bir şekilde açıklanıyor. Bu şeyler çok fazla baş ağrısına neden oluyor. Alanı İndirin ve tüm bu endişeleri unutun; hatırlamaya değer şeyleri unutmadığınızdan emin olun.🔥</i >" - Rahul Ranjan
 
-Space'in misyonu, öğrenmeyi etkili ve eğlenceli hale getirmektir. Bize katılacağınızı umuyoruz! 🚀
+TubeCards'in misyonu, öğrenmeyi etkili ve eğlenceli hale getirmektir. Bize katılacağınızı umuyoruz! 🚀

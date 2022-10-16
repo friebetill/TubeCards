@@ -1,5 +1,5 @@
-name: client_mobile
-description: Spaced Repetition for Minimalists
+name: tubecards
+description: Spaced Repetition for flashcards with YouTube
 # The version and build number according to semver.org
 version: 2.0.6+87
 publish_to: none
@@ -207,9 +207,9 @@ flutter_native_splash:
   color: "#121212"
 
 msix_config:
-  publisher_display_name: Space App
+  publisher_display_name: TubeCards App
   identity_name: 32902SpaceApp.SpaceSpacedRepetition
-  display_name: "Space: Spaced Repetition"
+  display_name: "TubeCards: Spaced Repetition"
   msix_version: 2.0.6.0
   store: true
   publisher: CN=902234FE-40EF-4B23-8724-83780B4C06BE

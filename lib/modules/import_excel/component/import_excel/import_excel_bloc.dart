@@ -13,7 +13,6 @@ import '../../../../utils/select_csv_file.dart';
 import '../../../../utils/snackbar.dart';
 import '../../../../widgets/component/component_build_context.dart';
 import '../../../../widgets/component/component_life_cycle_listener.dart';
-
 import '../../../../widgets/import/import_state.dart';
 import '../../../import_csv/data/csv_deck.dart';
 import 'import_excel_component.dart';
@@ -100,7 +99,7 @@ class ImportExcelBloc with ComponentBuildContext, ComponentLifecycleListener {
       await openEmailAppWithTemplate(
         email: supportEmail,
         subject: 'Problems importing an CSV file',
-        body: 'Hey Space Team,\n\n'
+        body: 'Hey TubeCards Team,\n\n'
             "I'm having trouble analyzing my CSV file. "
             'I have attached the CSV file.\n\n'
             'Best regards',

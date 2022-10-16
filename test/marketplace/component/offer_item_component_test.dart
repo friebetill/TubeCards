@@ -1,13 +1,13 @@
-import 'package:client_mobile/data/models/deck.dart';
-import 'package:client_mobile/data/models/offer.dart';
-import 'package:client_mobile/data/models/review_summary.dart';
-import 'package:client_mobile/data/models/unsplash_image.dart';
-import 'package:client_mobile/modules/marketplace/component/offer_item_component.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_it/get_it.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
+import 'package:tubecards/data/models/deck.dart';
+import 'package:tubecards/data/models/offer.dart';
+import 'package:tubecards/data/models/review_summary.dart';
+import 'package:tubecards/data/models/unsplash_image.dart';
+import 'package:tubecards/modules/marketplace/component/offer_item_component.dart';
 
 import '../../helpers/test_cache_manager.dart';
 import '../../helpers/theme_wrapper.dart';

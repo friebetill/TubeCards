@@ -100,7 +100,7 @@ class ImportGoogleSheetsBloc
       await openEmailAppWithTemplate(
         email: supportEmail,
         subject: 'Problems importing an CSV file',
-        body: 'Hey Space Team,\n\n'
+        body: 'Hey TubeCards Team,\n\n'
             "I'm having trouble analyzing my CSV file. "
             'I have attached the CSV file.\n\n'
             'Best regards',

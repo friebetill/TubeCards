@@ -39,7 +39,7 @@ class CardMediaHandler {
     return matches.map((m) => m.group(1)).toList();
   }
 
-  /// Removes all urls from [imageURLs] linking to Space S3 images.
+  /// Removes all urls from [imageURLs] linking to TubeCards S3 images.
   void removeS3URLs(Set<String> imageURLs) =>
       imageURLs.removeWhere((u) => u.contains(getS3ImageBucketUrl()));
 
@@ -72,7 +72,7 @@ class CardMediaHandler {
     urlsToRemove.forEach(imageURLs.remove);
   }
 
-  /// Uploads the file from the given URL to the Space Backend.
+  /// Uploads the file from the given URL to the TubeCards Backend.
   ///
   /// Returns the url to the uploaded file and null when the upload failed.
   ///

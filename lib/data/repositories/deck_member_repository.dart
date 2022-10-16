@@ -1,7 +1,7 @@
 import 'package:ferry/ferry.dart';
 import 'package:injectable/injectable.dart';
 
-import '../../services/space/deck_member_service.dart';
+import '../../services/tubecards/deck_member_service.dart';
 import '../models/connection.dart';
 import '../models/deck_member.dart';
 

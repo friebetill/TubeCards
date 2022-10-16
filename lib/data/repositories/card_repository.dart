@@ -4,7 +4,7 @@ import 'package:ferry/ferry.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../graphql/operation_exception.dart';
-import '../../services/space/card_service.dart';
+import '../../services/tubecards/card_service.dart';
 import '../models/card.dart';
 import '../models/cards_sort_order.dart';
 import '../models/confidence.dart';

@@ -39,7 +39,7 @@
 				<string>app.getspace</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>space</string>
+					<string>tubecards</string>
 				</array>
 			</dict>
 		</array>

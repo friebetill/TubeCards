@@ -186,7 +186,7 @@ jobs:
       - name: Build msix installer
         run: flutter pub run msix:create
       - name: Rename msix installer
-        run: mv build\windows\runner\Release\client_mobile.msix build\windows\runner\Release\space_${{ steps.tagName.outputs.tag }}.msix
+        run: mv build\windows\runner\Release\tubecards.msix build\windows\runner\Release\space_${{ steps.tagName.outputs.tag }}.msix
       - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v1
         with:

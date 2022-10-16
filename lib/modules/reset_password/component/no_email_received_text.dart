@@ -49,7 +49,7 @@ class NoEmailReceivedText extends StatelessWidget {
       await openEmailAppWithTemplate(
         email: supportEmail,
         subject: 'Problems resetting the password',
-        body: 'Hey Space Team,\n\n'
+        body: 'Hey TubeCards Team,\n\n'
             "I'm having trouble resetting my account password "
             'with the email $email.\n\nBest regards',
       );

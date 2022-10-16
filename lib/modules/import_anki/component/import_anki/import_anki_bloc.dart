@@ -199,7 +199,7 @@ class ImportAnkiBloc with ComponentBuildContext, ComponentLifecycleListener {
       await openEmailAppWithTemplate(
         email: supportEmail,
         subject: 'Problems importing an APKG file',
-        body: 'Hey Space Team,\n\n'
+        body: 'Hey TubeCards Team,\n\n'
             "I'm having trouble analyzing my Anki APKG file. "
             'I have attached the APKG file.\n\n'
             'Best regards',

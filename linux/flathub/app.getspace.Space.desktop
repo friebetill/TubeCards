@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Space
+Name=TubeCards
 Icon=app.getspace.Space
-Exec=space
+Exec=tubecards
 Categories=Education;Languages;Physics;
 Keywords=spaced repetition;flashcards;srs;learn;collaboration;

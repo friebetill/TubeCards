@@ -1,6 +1,6 @@
-A Space egy könnyen használható Spaced Repetition System (SRS) alkalmazás. Készítsen és tanuljon tanulókártyákat bárhol, a lehető leghatékonyabb módon.
+A TubeCards egy könnyen használható Spaced Repetition System (SRS) alkalmazás. Készítsen és tanuljon tanulókártyákat bárhol, a lehető leghatékonyabb módon.
 
-Más tanulókártya-alkalmazásokkal ellentétben a Space könnyen használható, mégis számos funkcióval rendelkezik.
+Más tanulókártya-alkalmazásokkal ellentétben a TubeCards könnyen használható, mégis számos funkcióval rendelkezik.
 
 <big>Tulajdonságok</big>
 
@@ -23,6 +23,6 @@ Ezt mondják a felhasználóink:
 
 "<i>Ez az egyik olyan alkalmazás, amit emlékszem, hogy telepítek, amikor új telefont veszek vagy a gyári visszaállítás. Emellett gyönyörű alkalmazás.</i>" - Ricardo Passos
 
-"<i>Kivételes Spaced Repetition alkalmazás! 1000 × jobb, mint a régi barátod Anki. A felület annyira intuitív & nem kell aggódnod az olyan fogalmak miatt, mint a Spaced repetition & annak optimális beállításai, mint az Anki esetében. Minden, amit tudnod kell, olyan világosan meg van magyarázva, anélkül, hogy extra információt adna, amire nincs is szükség. Ez a dolog csak túl sok fejfájást okoz. Töltsd le a Space-t & felejtsd el ezeket az aggodalmakat & ez gondoskodik arról, hogy ne felejtsd el azt, amire érdemes emlékezni.🔥</i>" - Rahul Ranjan Ranjan
+"<i>Kivételes Spaced Repetition alkalmazás! 1000 × jobb, mint a régi barátod Anki. A felület annyira intuitív & nem kell aggódnod az olyan fogalmak miatt, mint a Spaced repetition & annak optimális beállításai, mint az Anki esetében. Minden, amit tudnod kell, olyan világosan meg van magyarázva, anélkül, hogy extra információt adna, amire nincs is szükség. Ez a dolog csak túl sok fejfájást okoz. Töltsd le a TubeCards-t & felejtsd el ezeket az aggodalmakat & ez gondoskodik arról, hogy ne felejtsd el azt, amire érdemes emlékezni.🔥</i>" - Rahul Ranjan Ranjan
 
-A Space küldetése, hogy a tanulást hatékonnyá és örömtelivé tegye. Reméljük, hogy csatlakozol hozzánk! 🚀
+A TubeCards küldetése, hogy a tanulást hatékonnyá és örömtelivé tegye. Reméljük, hogy csatlakozol hozzánk! 🚀

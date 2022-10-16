@@ -70,7 +70,7 @@ class _DeveloperOptionsView extends StatelessWidget {
       ),
       ListTileAdapter(
         child: ListTile(
-          title: const Text('Clear Space database'),
+          title: const Text('Clear TubeCards database'),
           onTap: viewModel.clearDatabase,
         ),
       ),

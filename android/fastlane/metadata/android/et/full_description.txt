@@ -1,6 +1,6 @@
-Space on lihtsasti kasutatav Spaced Repetition System (SRS) rakendus. Loo ja õpi mälukaarte, kus iganes sa oled, kõige tõhusamal võimalikul viisil.
+TubeCards on lihtsasti kasutatav Spaced Repetition System (SRS) rakendus. Loo ja õpi mälukaarte, kus iganes sa oled, kõige tõhusamal võimalikul viisil.
 
-Erinevalt teistest mälukaardirakendustest on Space'i lihtne kasutada ja samas varustatud paljude funktsioonidega.
+Erinevalt teistest mälukaardirakendustest on TubeCards'i lihtne kasutada ja samas varustatud paljude funktsioonidega.
 
 <big>Funktsioonid</big>
 
@@ -23,6 +23,6 @@ Seda ütlevad meie kasutajad:
 
 "<i>See on üks neist rakendustest, mida ma mäletan, et ma paigaldan, kui ma ostan uue telefoni või tehase reset. Samuti ilus rakendus. </i>" - Ricardo Passos
 
-"<i>Väljapaistev Spaced Repetition rakendus! 1000 × parem kui teie vana sõber Anki. Kasutajaliides on nii intuitiivne & sa ei pea muretsema selliste mõistete nagu Spaced repetition & selle optimaalsed seaded nagu Anki puhul. Kõik, mida sa pead teadma, on seletatud nii selgelt ilma lisainfot andmata, mida pole isegi vaja. See asi annab lihtsalt liiga palju peavalu. Lae alla Space & unusta kõik need mured & see tagab, et sa ei unusta seda, mida tasub meeles pidada.🔥</i>" - Rahul Ranjan
+"<i>Väljapaistev Spaced Repetition rakendus! 1000 × parem kui teie vana sõber Anki. Kasutajaliides on nii intuitiivne & sa ei pea muretsema selliste mõistete nagu Spaced repetition & selle optimaalsed seaded nagu Anki puhul. Kõik, mida sa pead teadma, on seletatud nii selgelt ilma lisainfot andmata, mida pole isegi vaja. See asi annab lihtsalt liiga palju peavalu. Lae alla TubeCards & unusta kõik need mured & see tagab, et sa ei unusta seda, mida tasub meeles pidada.🔥</i>" - Rahul Ranjan
 
-Space'i missioon on muuta õppimine efektiivseks ja rõõmsaks. Loodame, et sa liitud meiega! 🚀
+TubeCards'i missioon on muuta õppimine efektiivseks ja rõõmsaks. Loodame, et sa liitud meiega! 🚀

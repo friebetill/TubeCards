@@ -4,7 +4,7 @@ targets:
       ferry_generator|graphql_builder:
         enabled: true
         options:
-          schema: client_mobile|lib/graphql/schema.graphql
+          schema: tubecards|lib/graphql/schema.graphql
           type_overrides:
             DateTime:
               name: DateTime
@@ -15,9 +15,9 @@ targets:
       ferry_generator|serializer_builder:
         enabled: true
         options:
-          schema: client_mobile|lib/graphql/schema.graphql
+          schema: tubecards|lib/graphql/schema.graphql
           custom_serializers:
-            - import: "package:client_mobile/graphql/serializers/date_time_serializer.dart"
+            - import: "package:tubecards/graphql/serializers/date_time_serializer.dart"
               name: DateTimeSerializer
           type_overrides:
             JSON:

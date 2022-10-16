@@ -1,6 +1,6 @@
-Space este o aplicație ușor de utilizat a Sistemului de repetiție spațioasă (SRS). Creați și învățați flashcards oriunde vă aflați, în cel mai eficient mod posibil.
+TubeCards este o aplicație ușor de utilizat a Sistemului de repetiție spațioasă (SRS). Creați și învățați flashcards oriunde vă aflați, în cel mai eficient mod posibil.
 
-Spre deosebire de alte aplicații de cartonașe flash, Space este ușor de utilizat și totuși dotată cu multe funcții.
+Spre deosebire de alte aplicații de cartonașe flash, TubeCards este ușor de utilizat și totuși dotată cu multe funcții.
 
 <big>Caracteristici</big>.
 
@@ -23,6 +23,6 @@ Iată ce spun utilizatorii noștri:
 
 "<i>Aceasta este una dintre acele aplicații pe care îmi amintesc că le instalez atunci când cumpăr un telefon nou sau la resetarea din fabrică. De asemenea, o aplicație frumoasă.</i>" - Ricardo Passos
 
-"<i>Aplicație excepțională Spaced Repetition! 1000 × mai bună decât vechiul tău prieten Anki. Interfața este atât de intuitivă & nu trebuie să vă faceți griji cu privire la concepte precum Spaced repetition & it's optimal settings, așa cum faceți pe Anki. Tot ceea ce trebuie să știți este explicat atât de clar, fără a da informații suplimentare care nu sunt necesare. Aceste lucruri dau prea multe dureri de cap. Descărcați Space & uitați toate aceste griji & se va asigura că nu uitați ceea ce merită să vă amintiți. 🔥</i>" - Rahul Ranjan
+"<i>Aplicație excepțională Spaced Repetition! 1000 × mai bună decât vechiul tău prieten Anki. Interfața este atât de intuitivă & nu trebuie să vă faceți griji cu privire la concepte precum Spaced repetition & it's optimal settings, așa cum faceți pe Anki. Tot ceea ce trebuie să știți este explicat atât de clar, fără a da informații suplimentare care nu sunt necesare. Aceste lucruri dau prea multe dureri de cap. Descărcați TubeCards & uitați toate aceste griji & se va asigura că nu uitați ceea ce merită să vă amintiți. 🔥</i>" - Rahul Ranjan
 
-Misiunea Space este de a face învățarea eficientă și plină de bucurie. Sperăm că ni te vei alătura! 🚀
+Misiunea TubeCards este de a face învățarea eficientă și plină de bucurie. Sperăm că ni te vei alătura! 🚀

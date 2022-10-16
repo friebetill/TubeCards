@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:client_mobile/utils/locale_utils.dart';
 import 'package:test/test.dart';
+import 'package:tubecards/utils/locale_utils.dart';
 
 void main() {
   const kFirstLocale = Locale('abc', '');

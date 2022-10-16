@@ -1,6 +1,6 @@
-Space ir viegli lietojama Spaced Repetition System (SRS) lietotne. Veidojiet un apgūstiet zibatmiņas kartes, lai kur jūs atrastos, visefektīvākajā iespējamajā veidā.
+TubeCards ir viegli lietojama Spaced Repetition System (SRS) lietotne. Veidojiet un apgūstiet zibatmiņas kartes, lai kur jūs atrastos, visefektīvākajā iespējamajā veidā.
 
-Atšķirībā no citām zibatmiņu kartīšu lietotnēm Space ir viegli lietojama un vienlaikus aprīkota ar daudzām funkcijām.
+Atšķirībā no citām zibatmiņu kartīšu lietotnēm TubeCards ir viegli lietojama un vienlaikus aprīkota ar daudzām funkcijām.
 
 <big>Iezīmes</big>
 
@@ -23,6 +23,6 @@ Tā saka mūsu lietotāji:
 
 "<i>Šī ir viena no tām lietotnēm, ko es atceros instalēt, kad pērku jaunu tālruni vai rūpnīcas atiestatīšanu. Turklāt skaista lietotne.</i>" - Ricardo Passos
 
-"<i>"Izcila izkliedētas atkārtošanas lietotne! 1000 × labāka nekā jūsu vecais draugs Anki. Interfeiss ir tik intuitīvs & jums nav jāuztraucas par tādiem jēdzieniem kā izkliedēta atkārtošana & tās optimālie iestatījumi, kā tas ir Anki. Viss, kas jums jāzina, ir izskaidrots tik skaidri, nesniedzot papildu informāciju, kas pat nav nepieciešama. Tas vienkārši sagādā pārāk daudz galvassāpju. Lejupielādējiet Space & aizmirst visas šīs raizes & tas nodrošinās, ka jūs neaizmirsīsiet to, ko ir vērts atcerēties.🔥</i>" - Rahul Ranjan
+"<i>"Izcila izkliedētas atkārtošanas lietotne! 1000 × labāka nekā jūsu vecais draugs Anki. Interfeiss ir tik intuitīvs & jums nav jāuztraucas par tādiem jēdzieniem kā izkliedēta atkārtošana & tās optimālie iestatījumi, kā tas ir Anki. Viss, kas jums jāzina, ir izskaidrots tik skaidri, nesniedzot papildu informāciju, kas pat nav nepieciešama. Tas vienkārši sagādā pārāk daudz galvassāpju. Lejupielādējiet TubeCards & aizmirst visas šīs raizes & tas nodrošinās, ka jūs neaizmirsīsiet to, ko ir vērts atcerēties.🔥</i>" - Rahul Ranjan
 
-Space misija ir padarīt mācīšanos efektīvu un priecīgu. Mēs ceram, ka tu mums pievienosies! 🚀
+TubeCards misija ir padarīt mācīšanos efektīvu un priecīgu. Mēs ceram, ka tu mums pievienosies! 🚀

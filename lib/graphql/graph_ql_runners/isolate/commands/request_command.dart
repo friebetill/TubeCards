@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:isolate';
 
-import '../../../../services/space/card_service.dart';
-import '../../../../services/space/deck_member_service.dart';
-import '../../../../services/space/deck_service.dart';
-import '../../../../services/space/offer_service.dart';
+import '../../../../services/tubecards/card_service.dart';
+import '../../../../services/tubecards/deck_member_service.dart';
+import '../../../../services/tubecards/deck_service.dart';
+import '../../../../services/tubecards/offer_service.dart';
 import '../../../graph_ql_client.dart';
 import '../../../mutations/__generated__/add_offer.req.gql.dart';
 import '../../../mutations/__generated__/add_repetition.req.gql.dart';

@@ -1,6 +1,6 @@
-Space ist eine einfach zu bedienende Spaced Repetition System (SRS) App. Erstelle und lerne Karteikarten, wo auch immer du bist, auf die effektivste Weise.
+TubeCards ist eine einfach zu bedienende Spaced Repetition System (SRS) App. Erstelle und lerne Karteikarten, wo auch immer du bist, auf die effektivste Weise.
 
-Im Gegensatz zu anderen Karteikarten-Apps ist Space einfach zu bedienen und dennoch mit vielen Funktionen ausgestattet.
+Im Gegensatz zu anderen Karteikarten-Apps ist TubeCards einfach zu bedienen und dennoch mit vielen Funktionen ausgestattet.
 
 <big>Features</big>
 
@@ -23,6 +23,6 @@ Das sagen unsere Nutzer:
 
 "<i>Dies ist eine dieser Apps, an die ich mich erinnere, wenn ich ein neues Handy kaufe. Außerdem ist es eine schöne App.</i>" - Ricardo Passos
 
-"<i>Ausgezeichnete Spaced Repetition App! 1000 × besser als dein alter Freund Anki. Die Oberfläche ist so intuitiv und man muss sich nicht wie bei Anki mit Konzepten wie Spaced Repetition und seinen optimalen Einstellungen beschäftigen. Alles, was man wissen muss, wird so klar und deutlich erklärt, ohne zusätzliche Informationen zu geben, die man gar nicht braucht. Diese Dinge bereiten einfach zu viel Kopfzerbrechen. Lade dir Space herunter und vergesse all deine Sorgen und stelle sicher, dass du nichts vergisst, was es wert ist sich zu erinnern.🔥</i>" - Rahul Ranjan
+"<i>Ausgezeichnete Spaced Repetition App! 1000 × besser als dein alter Freund Anki. Die Oberfläche ist so intuitiv und man muss sich nicht wie bei Anki mit Konzepten wie Spaced Repetition und seinen optimalen Einstellungen beschäftigen. Alles, was man wissen muss, wird so klar und deutlich erklärt, ohne zusätzliche Informationen zu geben, die man gar nicht braucht. Diese Dinge bereiten einfach zu viel Kopfzerbrechen. Lade dir TubeCards herunter und vergesse all deine Sorgen und stelle sicher, dass du nichts vergisst, was es wert ist sich zu erinnern.🔥</i>" - Rahul Ranjan
 
-Space hat es sich zur Aufgabe gemacht, Lernen effektiv und angenehm zu gestalten. Wir hoffen, dass du dich uns anschließen wirst! 🚀
+TubeCards hat es sich zur Aufgabe gemacht, Lernen effektiv und angenehm zu gestalten. Wir hoffen, dass du dich uns anschließen wirst! 🚀

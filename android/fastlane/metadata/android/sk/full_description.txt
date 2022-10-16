@@ -1,6 +1,6 @@
-Space je ľahko použiteľná aplikácia Spaced Repetition System (SRS). Vytvárajte a učte sa flashcards kdekoľvek sa nachádzate čo najefektívnejším spôsobom.
+TubeCards je ľahko použiteľná aplikácia Spaced Repetition System (SRS). Vytvárajte a učte sa flashcards kdekoľvek sa nachádzate čo najefektívnejším spôsobom.
 
-Na rozdiel od iných aplikácií na tvorbu flashkariet sa Space jednoducho používa, a pritom je vybavený mnohými funkciami.
+Na rozdiel od iných aplikácií na tvorbu flashkariet sa TubeCards jednoducho používa, a pritom je vybavený mnohými funkciami.
 
 <big>Funkcie</big>
 
@@ -23,6 +23,6 @@ To hovoria naši používatelia:
 
 "<i>Toto je jedna z tých aplikácií, ktoré si pamätám, že som si nainštaloval pri kúpe nového telefónu alebo pri obnovení továrenských nastavení. Tiež krásna aplikácia.</i>" - Ricardo Passos
 
-"<i>Výnimočná aplikácia na rozložené opakovanie! 1000 × lepšia ako váš starý priateľ Anki. Rozhranie je tak intuitívne & nemusíte sa trápiť s pojmami ako Rozložené opakovanie & jeho optimálne nastavenia ako v Anki. Všetko, čo potrebujete vedieť, je vysvetlené tak nuch jasne bez poskytovania ďalších informácií, ktoré ani nie sú potrebné. Z týchto vecí jednoducho príliš bolí hlava. Stiahnite si Space & zabudnite na všetky tieto starosti & zabezpečí, že nezabudnete to, čo stojí za to si zapamätať.🔥</i>" - Rahul Ranjan
+"<i>Výnimočná aplikácia na rozložené opakovanie! 1000 × lepšia ako váš starý priateľ Anki. Rozhranie je tak intuitívne & nemusíte sa trápiť s pojmami ako Rozložené opakovanie & jeho optimálne nastavenia ako v Anki. Všetko, čo potrebujete vedieť, je vysvetlené tak nuch jasne bez poskytovania ďalších informácií, ktoré ani nie sú potrebné. Z týchto vecí jednoducho príliš bolí hlava. Stiahnite si TubeCards & zabudnite na všetky tieto starosti & zabezpečí, že nezabudnete to, čo stojí za to si zapamätať.🔥</i>" - Rahul Ranjan
 
-Poslaním aplikácie Space je urobiť učenie efektívnym a radostným. Dúfame, že sa k nám pridáte! 🚀
+Poslaním aplikácie TubeCards je urobiť učenie efektívnym a radostným. Dúfame, že sa k nám pridáte! 🚀

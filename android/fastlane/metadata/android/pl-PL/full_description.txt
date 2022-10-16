@@ -1,6 +1,6 @@
-Space jest łatwą w użyciu aplikacją Spaced Repetition System (SRS). Twórz i ucz się flashcards gdziekolwiek jesteś w najbardziej efektywny sposób.
+TubeCards jest łatwą w użyciu aplikacją Spaced Repetition System (SRS). Twórz i ucz się flashcards gdziekolwiek jesteś w najbardziej efektywny sposób.
 
-W przeciwieństwie do innych aplikacji do nauki flashcards, Space jest łatwy w użyciu, a jednocześnie wyposażony w wiele funkcji.
+W przeciwieństwie do innych aplikacji do nauki flashcards, TubeCards jest łatwy w użyciu, a jednocześnie wyposażony w wiele funkcji.
 
 <big>Funkcje</big>
 
@@ -25,4 +25,4 @@ Oto co mówią nasi użytkownicy:
 
 "<i>Wyjątkowa aplikacja Spaced Repetition! 1000 razy lepsza niż twój stary przyjaciel Anki. Interfejs jest tak intuicyjny i nie musisz się martwić o pojęcia takie jak Spaced Repetition i jego optymalne ustawienia, jak w Anki. Wszystko, co musisz wiedzieć, jest wyjaśnione tak jasno, bez podawania dodatkowych informacji, które nie są nawet potrzebne. Te rzeczy po prostu przyprawiają o zbyt duży ból głowy. Pobierz Kosmos i zapomnij o tych wszystkich zmartwieniach, a on sprawi, że nie zapomnisz tego, co warto zapamiętać 🔥</i>" - Rahul Ranjan
 
-Misją Space jest uczynić naukę efektywną i radosną. Mamy nadzieję, że do nas dołączysz! 🚀
+Misją TubeCards jest uczynić naukę efektywną i radosną. Mamy nadzieję, że do nas dołączysz! 🚀

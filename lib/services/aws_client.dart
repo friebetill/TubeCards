@@ -6,13 +6,14 @@ import 'package:dio/dio.dart';
 import '../utils/config.dart';
 import '../utils/progress.dart';
 
-/// The domain of the data center of Amazon where Space S3 buckets are located.
+/// The domain of the data center of Amazon where TubeCards S3 buckets are
+/// located.
 const s3EuWestDomain = 's3-eu-west-1.amazonaws.com';
 
-/// The name of the Space production image bucket.
+/// The name of the TubeCards production image bucket.
 const s3ImageBucketName = 'image.getspace.app';
 
-/// The name of the Space stage image bucket.
+/// The name of the TubeCards stage image bucket.
 const s3StageImageBucketName = 'stage.image.getspace.app';
 
 /// Returns the URL of the image bucket.
@@ -29,10 +30,11 @@ class AWSClient {
   /// Uploads the given [file] with the given [fileName] in the S3 bucket.
   ///
   /// The given pre-signed post data must be specially generated for the file
-  /// name by the Space API. Normally not used directly but via a repository.
+  /// name by the TubeCards API. Normally not used directly but via a
+  /// repository.
   ///
-  /// Throws a [SocketException] when there is no internet connection
-  /// and a [HttpException] if the request was unsuccessful.
+  /// Throws a [SocketException] when there is no internet connection and a
+  /// [HttpException] if the request was unsuccessful.
   Future<void> uploadImage(
     File file,
     String fileName,
@@ -79,7 +81,7 @@ class AWSClient {
 }
 
 /// The class that stores all information to send an authenticated post to the
-/// Space S3 bucket.
+/// TubeCards S3 bucket.
 class PreSignedS3PostData {
   /// Returns from the given [json] string a [PreSignedS3PostData].
   PreSignedS3PostData.fromJson(Map<String, dynamic> json)

@@ -27,7 +27,7 @@
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundleName</key>
-		<string>Space</string>
+		<string>TubeCards</string>
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
@@ -76,11 +76,11 @@
 				<string>app.getspace</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>space</string>
+					<string>TubeCards</string>
 				</array>
 			</dict>
 		</array>
 		<key>CADisableMinimumFrameDurationOnPhone</key>
-	<true/>
-</dict>
+		<true/>
+	</dict>
 </plist>

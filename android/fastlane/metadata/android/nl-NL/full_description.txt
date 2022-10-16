@@ -1,6 +1,6 @@
-Space is een gemakkelijk te gebruiken Spaced Repetition System (SRS) app. Maak en leer flashcards waar je ook bent op de meest effectieve manier.
+TubeCards is een gemakkelijk te gebruiken Spaced Repetition System (SRS) app. Maak en leer flashcards waar je ook bent op de meest effectieve manier.
 
-In tegenstelling tot andere flashcards apps is Space eenvoudig te gebruiken en toch uitgerust met veel functies.
+In tegenstelling tot andere flashcards apps is TubeCards eenvoudig te gebruiken en toch uitgerust met veel functies.
 
 <big>Functies</big>
 
@@ -23,6 +23,6 @@ Dat is wat onze gebruikers zeggen:
 
 "<i>Dit is een van die apps die ik me herinner te installeren als ik een nieuwe telefoon koop of een fabrieksreset doe. Ook een prachtige app.</i>" - Ricardo Passos
 
-"<i>Uitzonderlijke Spaced Repetition app! 1000 × beter dan je oude vriend Anki. De interface is zo intuïtief & je hoeft je geen zorgen te maken over begrippen als Spaced repetition & de optimale instellingen ervan zoals je bij Anki doet. Alles wat je moet weten wordt zo nuch duidelijk uitgelegd zonder extra info te geven die niet eens nodig is. Deze dingen geven gewoon te veel hoofdbrekens. Download Space & vergeet al die zorgen & het zal ervoor zorgen dat je niet vergeet wat de moeite waard is om te onthouden.🔥</i>" - Rahul Ranjan
+"<i>Uitzonderlijke Spaced Repetition app! 1000 × beter dan je oude vriend Anki. De interface is zo intuïtief & je hoeft je geen zorgen te maken over begrippen als Spaced repetition & de optimale instellingen ervan zoals je bij Anki doet. Alles wat je moet weten wordt zo nuch duidelijk uitgelegd zonder extra info te geven die niet eens nodig is. Deze dingen geven gewoon te veel hoofdbrekens. Download TubeCards & vergeet al die zorgen & het zal ervoor zorgen dat je niet vergeet wat de moeite waard is om te onthouden.🔥</i>" - Rahul Ranjan
 
-De missie van Space is om leren effectief en vreugdevol te maken. We hopen dat je je bij ons zult aansluiten! 🚀
+De missie van TubeCards is om leren effectief en vreugdevol te maken. We hopen dat je je bij ons zult aansluiten! 🚀

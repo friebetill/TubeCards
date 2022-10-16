@@ -1,6 +1,6 @@
 import 'package:ferry/typed_links.dart';
 
-import '../../../services/space/offer_service.dart';
+import '../../../services/tubecards/offer_service.dart';
 import '../../queries/__generated__/new_offers.data.gql.dart';
 import '../../queries/__generated__/new_offers.req.gql.dart';
 import '../../queries/__generated__/new_offers.var.gql.dart';

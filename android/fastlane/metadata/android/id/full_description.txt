@@ -1,12 +1,12 @@
-Space is an easy-to-use Spaced Repetition System (SRS) app. Create and learn flashcards wherever you are in the most effective way possible.
+TubeCards is an easy-to-use Spaced Repetition System (SRS) app. Create and learn flashcards wherever you are in the most effective way possible.
 
-Unlike other flashcards apps, Space is easy to use and yet equipped with many features.
+Unlike other flashcards apps, TubeCards is easy to use and yet equipped with many features.
 
 <big>Features</big>
 
-Space adalah aplikasi Spaced Repetition System (SRS) yang mudah digunakan. Buat dan pelajari kartu flash di mana pun Anda berada dengan cara seefektif mungkin.
+TubeCards adalah aplikasi Spaced Repetition System (SRS) yang mudah digunakan. Buat dan pelajari kartu flash di mana pun Anda berada dengan cara seefektif mungkin.
 
-Tidak seperti aplikasi kartu flash lainnya, Space mudah digunakan namun dilengkapi dengan banyak fitur.
+Tidak seperti aplikasi kartu flash lainnya, TubeCards mudah digunakan namun dilengkapi dengan banyak fitur.
 
 <big>Fitur</big>
 
@@ -30,6 +30,6 @@ Itulah yang dikatakan pengguna kami:
 
 "<i>Ini adalah salah satu aplikasi yang saya ingat pernah menginstalnya ketika saya membeli ponsel baru atau mengembalikan ke setelan pabrik. Juga, aplikasi yang bagus.</i>" - Ricardo Passos
 
-"<i>Aplikasi Pengulangan Spasi Luar Biasa! 1000 × lebih baik dari teman lama Anda Anki. Antarmukanya sangat intuitif & Anda tidak perlu khawatir tentang konsep seperti pengulangan Spasi & pengaturan optimal seperti yang Anda lakukan di Anki. Semua yang Anda butuhkan untuk mengetahui dijelaskan dengan sangat jelas tanpa memberikan info tambahan yang bahkan tidak diperlukan. Hal ini hanya membuat terlalu banyak sakit kepala. Unduh Space & lupakan semua kekhawatiran itu & itu akan memastikan Anda tidak melupakan apa yang patut diingat.🔥</i >" - Rahul Ranjan
+"<i>Aplikasi Pengulangan Spasi Luar Biasa! 1000 × lebih baik dari teman lama Anda Anki. Antarmukanya sangat intuitif & Anda tidak perlu khawatir tentang konsep seperti pengulangan Spasi & pengaturan optimal seperti yang Anda lakukan di Anki. Semua yang Anda butuhkan untuk mengetahui dijelaskan dengan sangat jelas tanpa memberikan info tambahan yang bahkan tidak diperlukan. Hal ini hanya membuat terlalu banyak sakit kepala. Unduh TubeCards & lupakan semua kekhawatiran itu & itu akan memastikan Anda tidak melupakan apa yang patut diingat.🔥</i >" - Rahul Ranjan
 
-Misi Space adalah membuat pembelajaran menjadi efektif dan menyenangkan. Kami harap Anda akan bergabung dengan kami! 🚀.
+Misi TubeCards adalah membuat pembelajaran menjadi efektif dan menyenangkan. Kami harap Anda akan bergabung dengan kami! 🚀.

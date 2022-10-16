@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:ferry/ferry.dart';
 import 'package:gql_exec/gql_exec.dart';
 
-import '../services/space/graph_ql_error_code.dart';
+import '../services/tubecards/graph_ql_error_code.dart';
 import '../utils/socket_exception_extension.dart';
 
 class OperationException implements Exception {

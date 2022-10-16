@@ -8,7 +8,7 @@ import 'component/support_space/support_space_component.dart';
 import 'repository/support_space_repository.dart';
 
 class SupportSpacePage extends StatefulWidget {
-  /// The page where users can support Space.
+  /// The page where users can support TubeCards.
   const SupportSpacePage({Key? key}) : super(key: key);
 
   static const String routeName = '/support-us';

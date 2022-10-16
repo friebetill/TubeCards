@@ -1,6 +1,6 @@
-import 'package:client_mobile/data/models/confidence.dart';
-import 'package:client_mobile/utils/sm2.dart' as sm2;
 import 'package:test/test.dart';
+import 'package:tubecards/data/models/confidence.dart';
+import 'package:tubecards/utils/sm2.dart' as sm2;
 
 void main() {
   test(

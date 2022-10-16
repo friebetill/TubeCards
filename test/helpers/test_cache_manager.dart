@@ -1,7 +1,5 @@
 import 'dart:async';
 
-import 'package:client_mobile/data/models/unsplash_image.dart';
-import 'package:client_mobile/utils/assets.dart';
 import 'package:file/file.dart';
 import 'package:file/local.dart';
 import 'package:file/memory.dart';
@@ -9,6 +7,8 @@ import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:flutter_cache_manager/src/cache_store.dart';
 import 'package:flutter_cache_manager/src/storage/file_system/file_system.dart'
     as fs;
+import 'package:tubecards/data/models/unsplash_image.dart';
+import 'package:tubecards/utils/assets.dart';
 
 // A dummy test file system to access test fixture files.
 class _TestFileSystem extends fs.FileSystem {

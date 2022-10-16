@@ -1,8 +1,8 @@
 import 'package:built_collection/built_collection.dart';
-import 'package:client_mobile/data/models/reminder.dart';
-import 'package:client_mobile/modules/reminder/weekday.dart';
 import 'package:flutter/material.dart';
 import 'package:test/test.dart';
+import 'package:tubecards/data/models/reminder.dart';
+import 'package:tubecards/modules/reminder/weekday.dart';
 
 void main() {
   test('parses json to weekly reminder object', () {

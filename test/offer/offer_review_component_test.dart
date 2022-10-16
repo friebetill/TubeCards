@@ -1,10 +1,10 @@
-import 'package:client_mobile/data/models/offer_review.dart';
-import 'package:client_mobile/data/models/user.dart';
-import 'package:client_mobile/modules/offer/component/offer_review_component.dart';
 import 'package:clock/clock.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
+import 'package:tubecards/data/models/offer_review.dart';
+import 'package:tubecards/data/models/user.dart';
+import 'package:tubecards/modules/offer/component/offer_review_component.dart';
 
 import '../helpers/theme_wrapper.dart';
 

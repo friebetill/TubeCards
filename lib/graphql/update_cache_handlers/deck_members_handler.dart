@@ -1,6 +1,6 @@
 import 'package:ferry/typed_links.dart';
 
-import '../../services/space/deck_member_service.dart';
+import '../../services/tubecards/deck_member_service.dart';
 import '../queries/__generated__/deck_member.data.gql.dart';
 import '../queries/__generated__/deck_member.req.gql.dart';
 import '../queries/__generated__/deck_members.data.gql.dart';

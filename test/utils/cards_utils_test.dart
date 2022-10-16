@@ -1,5 +1,5 @@
-import 'package:client_mobile/utils/card_utils.dart';
 import 'package:test/test.dart';
+import 'package:tubecards/utils/card_utils.dart';
 
 void main() {
   test('Skips empty lines up to the first character', () {

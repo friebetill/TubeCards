@@ -1,6 +1,6 @@
-Space is an easy-to-use Spaced Repetition System (SRS) app. Create and learn flashcards wherever you are in the most effective way possible.
+TubeCards is an easy-to-use Spaced Repetition System (SRS) app. Create and learn flashcards wherever you are in the most effective way possible.
 
-Unlike other flashcards apps, Space is easy to use and yet equipped with many features.
+Unlike other flashcards apps, TubeCards is easy to use and yet equipped with many features.
 
 <big>Features</big>
 
@@ -23,6 +23,6 @@ That's what our users say:
 
 "<i>This is one of those apps that I remember installing when I buy a new phone or a the factory reset. Also, beautiful app.</i>" - Ricardo Passos
 
-"<i>Exceptional Spaced Repetition app! 1000 × better than your old friend Anki. The interface is so intuitive & you don't have to worry about concepts like Spaced repetition & it's optimal settings as you do on Anki. Everything that you need to know is explained so nuch clearly without giving extra info that's not even needed. This things just gives too much headaches. Download Space & forget all those worries & it'll make sure you don't forget what's worth remembering.🔥</i>" - Rahul Ranjan
+"<i>Exceptional Spaced Repetition app! 1000 × better than your old friend Anki. The interface is so intuitive & you don't have to worry about concepts like Spaced repetition & it's optimal settings as you do on Anki. Everything that you need to know is explained so nuch clearly without giving extra info that's not even needed. This things just gives too much headaches. Download TubeCards & forget all those worries & it'll make sure you don't forget what's worth remembering.🔥</i>" - Rahul Ranjan
 
-The mission of Space is to make learning effective and joyful. We hope you'll join us! 🚀
+The mission of TubeCards is to make learning effective and joyful. We hope you'll join us! 🚀

@@ -1,6 +1,6 @@
-Space je snadno použitelná aplikace Spaced Repetition System (SRS). Vytvářejte a učte se flashkarty, ať jste kdekoli, tím nejefektivnějším možným způsobem.
+TubeCards je snadno použitelná aplikace Spaced Repetition System (SRS). Vytvářejte a učte se flashkarty, ať jste kdekoli, tím nejefektivnějším možným způsobem.
 
-Na rozdíl od jiných aplikací na flashkarty se Space snadno používá, a přesto je vybaven mnoha funkcemi.
+Na rozdíl od jiných aplikací na flashkarty se TubeCards snadno používá, a přesto je vybaven mnoha funkcemi.
 
 <big>Funkce</big>
 
@@ -25,4 +25,4 @@ To říkají naši uživatelé:
 
 "<i>Výjimečná aplikace pro rozložené opakování! 1000× lepší než váš starý známý Anki. Rozhraní je tak intuitivní & nemusíte si lámat hlavu s pojmy jako rozložené opakování & jeho optimální nastavení jako u Anki. Vše, co potřebujete vědět, je vysvětleno tak nuch jasně, aniž by poskytovalo další informace, které ani nejsou potřeba. Z těchto věcí prostě příliš bolí hlava. Stáhněte si Prostor a zapomeňte na všechny ty starosti & zajistí, že nezapomenete, co stojí za zapamatování 🔥</i>." - Rahul Ranjan
 
-Posláním aplikace Space je učinit učení efektivním a radostným. Doufáme, že se k nám přidáte! 🚀
+Posláním aplikace TubeCards je učinit učení efektivním a radostným. Doufáme, že se k nám přidáte! 🚀
