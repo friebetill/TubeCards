@@ -192,11 +192,6 @@ class HomeBloc
   }
 
   Future<void> _handleWhatsNewPage() async {
-    if (Platform.isWindows) {
-      // TODO(tillf): Update Windows version with Flutter > 3.0.3, https://bit.ly/3NCdIVq
-      return;
-    }
-
     final lastBuildNumber =
         _appProperties.whatsNewModalShownBuildNumber.getValue();
     final buildNumber =
