@@ -54,6 +54,7 @@ class _AccountView extends StatelessWidget {
         _buildSupportUsTile(context),
         _buildNextFeaturesTile(context),
         _buildFeedbackTile(context),
+        _buildSourceCodeTile(context),
         if (Platform.isAndroid ||
             Platform.isIOS ||
             Platform.isMacOS ||
@@ -157,6 +158,27 @@ class _AccountView extends StatelessWidget {
             onTap: () {
               controller.logTap();
               viewModel.onFeedbackTap();
+            },
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildSourceCodeTile(BuildContext context) {
+    return VisualElement(
+      id: VEs.sourceCodeTile,
+      childBuilder: (controller) {
+        return ListTileAdapter(
+          child: ListTile(
+            leading: Icon(
+              Icons.code_outlined,
+              color: Theme.of(context).iconTheme.color,
+            ),
+            title: Text(S.of(context).sourceCode),
+            onTap: () {
+              controller.logTap();
+              viewModel.onSourceCodeTap();
             },
           ),
         );

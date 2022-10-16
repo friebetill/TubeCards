@@ -79,6 +79,7 @@ class AccountBloc with ComponentBuildContext {
         onSupportUsTap: () =>
             CustomNavigator.getInstance().pushNamed(SupportSpacePage.routeName),
         onOtherPlatformsTap: _showOtherPlatformsDialog,
+        onSourceCodeTap: () => _launchURL(githubRepository),
       );
     });
   }

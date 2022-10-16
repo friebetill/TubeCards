@@ -61,6 +61,7 @@ enum VEs {
   searchCardsButton,
   sendResetPasswordInstructionsButton,
   signUpButton,
+  sourceCodeTile,
   storeButton,
   storeTile,
   subscribeButton,

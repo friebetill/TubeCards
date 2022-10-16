@@ -49,6 +49,9 @@ const appStoreId = '1546202212';
 
 final voteNextFeaturesURL = Uri.https('forms.gle', '/DsFYWYUKZVDwdc2E9');
 
+/// The URL to the TubeCards repository on GitHub.
+final githubRepository = Uri.https('github.com', '/friebetill/tubecards');
+
 /// ID of the PayPal donation button.
 const String payPalButtonId = '4JN8FL9G57NKU';
 

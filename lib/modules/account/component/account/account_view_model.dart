@@ -14,6 +14,7 @@ class AccountViewModel {
     required this.onPrivacyPolicyTap,
     required this.onRateUsTap,
     required this.onSupportUsTap,
+    required this.onSourceCodeTap,
   });
 
   final bool isLoggedIn;
@@ -29,4 +30,5 @@ class AccountViewModel {
   final VoidCallback onPrivacyPolicyTap;
   final VoidCallback onRateUsTap;
   final VoidCallback onSupportUsTap;
+  final VoidCallback onSourceCodeTap;
 }
