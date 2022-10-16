@@ -13,9 +13,9 @@ jobs:
       - uses: olegtarasov/get-tag@v2.1
         id: tagName
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup Java JDK 11
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v3
         with:
           distribution: "zulu"
           java-version: "11"
@@ -25,7 +25,7 @@ jobs:
         with:
           pubspec-file-path: pubspec.yaml
       - name: Setup Flutter
-        uses: subosito/flutter-action@v1
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: ${{ steps.get-flutter-version.outputs.version }}
 
@@ -104,9 +104,9 @@ jobs:
   #     - uses: olegtarasov/get-tag@v2.1
   #       id: tagName
   #     - name: Checkout repository
-  #       uses: actions/checkout@v2
+  #       uses: actions/checkout@v3
   #     - name: Setup Java JDK 11
-  #       uses: actions/setup-java@v2
+  #       uses: actions/setup-java@v3
   #       with:
   #         distribution: 'zulu'
   #         java-version: '11'
@@ -116,7 +116,7 @@ jobs:
   #       with:
   #         pubspec-file-path: pubspec.yaml
   #     - name: Setup Flutter
-  #       uses: subosito/flutter-action@v1
+  #       uses: subosito/flutter-action@v2
   #       with:
   #         flutter-version: ${{ steps.get-flutter-version.outputs.version }}
 
@@ -139,9 +139,9 @@ jobs:
       - uses: olegtarasov/get-tag@v2.1
         id: tagName
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup Java JDK 11
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v3
         with:
           distribution: "zulu"
           java-version: "11"
@@ -151,7 +151,7 @@ jobs:
         with:
           pubspec-file-path: pubspec.yaml
       - name: Setup Flutter
-        uses: subosito/flutter-action@v1
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: ${{ steps.get-flutter-version.outputs.version }}
 
