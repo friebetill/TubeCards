@@ -1,7 +1,7 @@
 name: tubecards
 description: Spaced Repetition for flashcards with YouTube
 # The version and build number according to semver.org
-version: 2.0.6+87
+version: 2.1.0+88
 publish_to: none
 
 environment:
@@ -210,7 +210,7 @@ msix_config:
   publisher_display_name: TubeCards App
   identity_name: 32902SpaceApp.SpaceSpacedRepetition
   display_name: "TubeCards: Spaced Repetition"
-  msix_version: 2.0.6.0
+  msix_version: 2.1.0.0
   store: true
   publisher: CN=902234FE-40EF-4B23-8724-83780B4C06BE
   capabilities: "internetClient"
