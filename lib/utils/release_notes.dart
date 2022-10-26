@@ -4,6 +4,16 @@ import '../i18n/i18n.dart';
 
 final releaseNotes = [
   ReleaseNote(
+    buildNumber: 88,
+    date: DateTime(2022, 10, 26),
+    releaseNote: '''
+📹 Rename Space to TubeCards
+📖 Make TubeCards open source
+    ''',
+    version: '2.1.0',
+    whatsNewText: (context) => S.of(context).whatsNew88Text,
+  ),
+  ReleaseNote(
     buildNumber: 86,
     date: DateTime(2022, 9, 16),
     releaseNote: '''
