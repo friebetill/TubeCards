@@ -3,12 +3,13 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
-  app_links_windows
+  app_links
   bitsdojo_window_windows
   file_selector_windows
   flutter_tts
   pasteboard
   sentry_flutter
+  share_plus
   url_launcher_windows
 )
 
