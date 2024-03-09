@@ -38,28 +38,34 @@ class Toolbar extends StatelessWidget {
       color: theme.colorScheme.surface,
       child: SafeArea(
         child: QuillToolbar(
-          color: backgroundColor,
-          toolbarHeight: 56,
-          multiRowsDisplay: isDesktop,
-          children: [
-            // Text buttons
-            _buildBoldButton(context),
-            _buildItalicButton(context),
-            _buildDivider(context),
-            // Paragraph buttons
-            _buildNumberedListButton(context),
-            _buildBulletedListButton(context),
-            _buildCodeButton(context),
-            _buildQuoteButton(context),
-            _buildHorizontalRuleButton(context),
-            _buildDivider(context),
-            // Image buttons
-            if (isMobile) _buildGalleryButton(context),
-            if (isMobile) _buildCameraButton(context),
-            if (isDesktop) _buildPickImageButton(context),
-            _buildDrawImageButton(context),
-            _buildSearchImageButton(context),
-          ],
+          child: Container(
+            height: 56,
+            color: backgroundColor,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Wrap(
+                children: [
+                  // Text buttons
+                  _buildBoldButton(context),
+                  _buildItalicButton(context),
+                  _buildDivider(context),
+                  // Paragraph buttons
+                  _buildNumberedListButton(context),
+                  _buildBulletedListButton(context),
+                  _buildCodeButton(context),
+                  _buildQuoteButton(context),
+                  _buildHorizontalRuleButton(context),
+                  _buildDivider(context),
+                  // Image buttons
+                  if (isMobile) _buildGalleryButton(context),
+                  if (isMobile) _buildCameraButton(context),
+                  if (isDesktop) _buildPickImageButton(context),
+                  _buildDrawImageButton(context),
+                  _buildSearchImageButton(context),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );
@@ -256,24 +262,14 @@ class Toolbar extends StatelessWidget {
     required IconData icon,
     required String tooltipMessage,
   }) {
-    Widget buttonBuilder(
-      BuildContext context,
-      Attribute attribute,
-      IconData icon,
-      Color? fillColor,
-      // ignore: avoid_positional_boolean_parameters
-      bool? isToggled,
-      VoidCallback? onPressed,
-      VoidCallback? afterPressed, [
-      double iconSize = kDefaultIconSize,
-      QuillIconTheme? iconTheme,
-    ]) {
-      final theme = Theme.of(context);
+    Widget buttonBuilder(QuillToolbarToggleStyleButtonOptions options,
+        QuillToolbarToggleStyleButtonExtraOptions extraOptions) {
+      final theme = Theme.of(extraOptions.context);
 
       // Disabled button
-      if (onPressed == null) {
+      if (extraOptions.onPressed == null) {
         return _buildButton(
-          context,
+          extraOptions.context,
           icon: icon,
           iconColor: theme.disabledColor,
           onPressed: () => {},
@@ -282,33 +278,35 @@ class Toolbar extends StatelessWidget {
       }
 
       // Inactive button
-      if (isToggled == null || !isToggled) {
+      if (!extraOptions.isToggled) {
         return _buildButton(
-          context,
+          extraOptions.context,
           icon: icon,
           iconColor: theme.iconTheme.color!,
-          onPressed: onPressed,
+          onPressed: extraOptions.onPressed!,
           tooltipMessage: tooltipMessage,
         );
       }
 
       // Active button
       return _buildButton(
-        context,
+        extraOptions.context,
         icon: icon,
         iconColor: theme.colorScheme.primary,
         backgroundColor: theme.colorScheme.primary.withOpacity(0.1),
-        onPressed: onPressed,
+        onPressed: extraOptions.onPressed!,
         tooltipMessage: tooltipMessage,
       );
     }
 
-    return ToggleStyleButton(
+    return QuillToolbarToggleStyleButton(
       controller: controller,
       attribute: attribute,
-      icon: icon,
-      iconSize: _iconSize,
-      childBuilder: buttonBuilder,
+      options: QuillToolbarToggleStyleButtonOptions(
+        iconData: icon,
+        iconSize: _iconSize,
+        childBuilder: buttonBuilder,
+      ),
     );
   }
 
@@ -324,15 +322,18 @@ class Toolbar extends StatelessWidget {
       message: tooltipMessage,
       child: Padding(
         padding: const EdgeInsets.all(2),
-        child: QuillIconButton(
-          highlightElevation: 0,
-          hoverElevation: 0,
+        child: QuillToolbarIconButton(
+          iconTheme: QuillIconTheme(
+              iconButtonUnselectedStyle: ButtonStyle(
+                  backgroundColor: MaterialStateColor.resolveWith(
+                      (states) => backgroundColor!),
+                  elevation: MaterialStateProperty.all(0))),
           icon: Icon(
             icon,
             size: _iconSize,
             color: iconColor ?? Theme.of(context).iconTheme.color,
           ),
-          fillColor: backgroundColor,
+          isSelected: false,
           onPressed: onPressed,
         ),
       ),

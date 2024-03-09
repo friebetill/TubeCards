@@ -37,7 +37,7 @@ class _PageCallbackShortcutsState extends State<PageCallbackShortcuts> {
     // directly enable the KeyBindings, but there the bug exists.
     return FocusScope(
       autofocus: true,
-      onKey: (node, event) {
+      onKeyEvent: (node, event) {
         var result = KeyEventResult.ignored;
         for (final activator in widget.bindings.keys) {
           result = _applyKeyBinding(activator, event)
@@ -51,8 +51,8 @@ class _PageCallbackShortcutsState extends State<PageCallbackShortcuts> {
     );
   }
 
-  bool _applyKeyBinding(ShortcutActivator activator, RawKeyEvent event) {
-    if (activator.accepts(event, RawKeyboard.instance)) {
+  bool _applyKeyBinding(ShortcutActivator activator, KeyEvent event) {
+    if (activator.accepts(event, HardwareKeyboard.instance)) {
       widget.bindings[activator]!.call();
 
       return true;

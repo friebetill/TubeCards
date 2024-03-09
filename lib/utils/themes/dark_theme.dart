@@ -57,7 +57,6 @@ final ThemeData darkTheme = ThemeData(
   ),
   splashColor: const Color(0xFF394456),
   scaffoldBackgroundColor: _surfaceColor,
-  selectedRowColor: const Color(0xFF394456),
   textTheme: const TextTheme(
     headline1: TextStyle(color: _onSurfaceColor),
     headline2: TextStyle(color: _onSurfaceColor),
@@ -79,6 +78,7 @@ final ThemeData darkTheme = ThemeData(
     elevation8DPColor: _elevationColor(_surfaceColor, 8),
     elevation10DPColor: _elevationColor(_surfaceColor, 10),
     elevation24DPColor: _elevationColor(_surfaceColor, 24),
+    selectedRowColor: const Color(0xFF394456),
   ));
 
 final _primaryColor = Colors.blueAccent.shade100;

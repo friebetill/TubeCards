@@ -135,7 +135,24 @@ class Weekday {
   /// Returns the day representation of the FlutterNotificationsPlugin where
   /// Sunday is represented as a 1.
   Day toNotificationDay() {
-    return Day((value % 7) + 1);
+    final dayIndex = (value % 7) + 1;
+    switch (dayIndex) {
+      case 1:
+        return Day.sunday;
+      case 2:
+        return Day.monday;
+      case 3:
+        return Day.tuesday;
+      case 4:
+        return Day.wednesday;
+      case 5:
+        return Day.thursday;
+      case 6:
+        return Day.friday;
+      case 7:
+        return Day.saturday;
+    }
+    throw Exception('Unable to obtain day enum for notification.');
   }
 
   @override

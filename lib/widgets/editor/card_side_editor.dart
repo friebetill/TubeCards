@@ -37,30 +37,29 @@ class CardSideEditor extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return QuillEditor(
-      controller: controller,
-      scrollController: ScrollController(),
-      scrollable: true,
-      focusNode: focusNode!,
-      autoFocus: false,
-      readOnly: readOnly,
-      placeholder: placeholder,
-      expands: false,
-      padding: contentPadding,
-      embedBuilders: <EmbedBuilder>[
-        EmbedDividerBuilder(),
-        EmbedImageBuilder(),
-      ],
-      customStyles: buildEditorStyle(context),
-      onImagePaste: (bytes) async {
-        final uriPath = buildUriPath('${const Uuid().v1()}.png');
+      configurations: QuillEditorConfigurations(
+        controller: controller,
+        readOnly: readOnly,
+        placeholder: placeholder,
+        padding: contentPadding,
+        embedBuilders: <EmbedBuilder>[
+          EmbedDividerBuilder(),
+          EmbedImageBuilder(),
+        ],
+        customStyles: buildEditorStyle(context),
+        onImagePaste: (bytes) async {
+          final uriPath = buildUriPath('${const Uuid().v1()}.png');
 
-        await getIt<BaseCacheManager>().putFile(
-          uriPath,
-          bytes,
-          fileExtension: '.png',
-        );
-        return uriPath;
-      },
+          await getIt<BaseCacheManager>().putFile(
+            uriPath,
+            bytes,
+            fileExtension: '.png',
+          );
+          return uriPath;
+        },
+      ),
+      scrollController: ScrollController(),
+      focusNode: focusNode!,
     );
   }
 }

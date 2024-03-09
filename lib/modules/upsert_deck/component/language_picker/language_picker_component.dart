@@ -21,8 +21,8 @@ class LanguagePickerComponent extends StatelessWidget {
     required this.value,
     required this.onChanged,
     required this.hint,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final Locale? value;
 
@@ -112,7 +112,7 @@ class _LanguagePickerViewState extends State<_LanguagePickerView> {
         .add(_DropdownMenuEntry(locale: locale, languageName: languageName)));
 
     // Sorts by translated language name in ascending order.
-    menuEntries.sort();
+    menuEntries.sort((a, b) => a.languageName.compareTo(b.languageName));
 
     return menuEntries;
   }
@@ -172,7 +172,7 @@ class _LanguagePickerViewState extends State<_LanguagePickerView> {
 
 /// Represents the data used for a single language picker dropdown menu item.
 @immutable
-class _DropdownMenuEntry extends Comparable<_DropdownMenuEntry> {
+class _DropdownMenuEntry {
   _DropdownMenuEntry({required this.locale, required this.languageName});
 
   /// Locale the menu entry is representing.
@@ -182,9 +182,4 @@ class _DropdownMenuEntry extends Comparable<_DropdownMenuEntry> {
   ///
   /// This might not include the country name of the locale.
   final String languageName;
-
-  @override
-  int compareTo(_DropdownMenuEntry other) {
-    return languageName.compareTo(other.languageName);
-  }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quill/flutter_quill.dart';
 
-class EmbedDividerBuilder implements EmbedBuilder {
+class EmbedDividerBuilder extends EmbedBuilder {
   @override
   String get key => 'divider';
 
@@ -10,8 +10,10 @@ class EmbedDividerBuilder implements EmbedBuilder {
   Widget build(
     BuildContext context,
     QuillController controller,
-    Embed embed,
+    Embed node,
     bool readOnly,
+    bool inline,
+    TextStyle textStyle,
   ) {
     return const Divider();
   }

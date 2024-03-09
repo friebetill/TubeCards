@@ -7,9 +7,10 @@ list(APPEND FLUTTER_PLUGIN_LIST
   bitsdojo_window_windows
   file_selector_windows
   flutter_tts
-  pasteboard
+  irondash_engine_context
   sentry_flutter
   share_plus
+  super_native_extensions
   url_launcher_windows
 )
 

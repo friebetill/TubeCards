@@ -10,6 +10,7 @@ class CustomThemeData {
     required this.elevation8DPColor,
     required this.elevation10DPColor,
     required this.elevation24DPColor,
+    required this.selectedRowColor,
   });
 
   /// Color representing a successful action or status.
@@ -26,6 +27,8 @@ class CustomThemeData {
 
   /// Color for the 24dp height.
   final Color elevation24DPColor;
+
+  final Color selectedRowColor;
 }
 
 extension ThemeDataExtensions on ThemeData {

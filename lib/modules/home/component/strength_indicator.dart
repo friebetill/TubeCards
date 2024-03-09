@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 import '../../../../i18n/i18n.dart';
+import '../../../utils/themes/custom_theme.dart';
 
 class StrengthIndicator extends StatelessWidget {
   const StrengthIndicator({
@@ -103,7 +104,7 @@ class StrengthIndicator extends StatelessWidget {
           ? Colors.yellow.shade100
           : Color.alphaBlend(darkModeBlendColor, Colors.yellow.shade900);
     } else {
-      return Theme.of(context).selectedRowColor;
+      return Theme.of(context).custom.selectedRowColor;
     }
   }
 }

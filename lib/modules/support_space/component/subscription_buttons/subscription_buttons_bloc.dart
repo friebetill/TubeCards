@@ -21,15 +21,14 @@ class SubscriptionButtonsBloc {
       return _viewModel!;
     }
 
-    return _viewModel =
-        _supportUsRepository.purchaserInfo.map(_createViewModel);
+    return _viewModel = _supportUsRepository.customerInfo.map(_createViewModel);
   }
 
-  SubscriptionButtonsViewModel _createViewModel(PurchaserInfo purchaserInfo) {
+  SubscriptionButtonsViewModel _createViewModel(CustomerInfo customerInfo) {
     return SubscriptionButtonsViewModel(
-      hasSubscription: purchaserInfo.activeSubscriptions.isNotEmpty,
+      hasSubscription: customerInfo.activeSubscriptions.isNotEmpty,
       onUnsubscribeTap: () {
-        final url = Uri.tryParse(purchaserInfo.managementURL!);
+        final url = Uri.tryParse(customerInfo.managementURL!);
         if (url == null) {
           return;
         }

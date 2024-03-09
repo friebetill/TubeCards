@@ -7,8 +7,9 @@ list(APPEND FLUTTER_PLUGIN_LIST
   devicelocale
   file_selector_linux
   gtk
-  pasteboard
+  irondash_engine_context
   sentry_flutter
+  super_native_extensions
   url_launcher_linux
 )
 

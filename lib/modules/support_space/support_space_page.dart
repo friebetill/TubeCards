@@ -9,7 +9,7 @@ import 'repository/support_space_repository.dart';
 
 class SupportSpacePage extends StatefulWidget {
   /// The page where users can support TubeCards.
-  const SupportSpacePage({Key? key}) : super(key: key);
+  const SupportSpacePage({super.key});
 
   static const String routeName = '/support-us';
 
@@ -28,7 +28,7 @@ class SupportSpacePageState extends State<SupportSpacePage> {
   Widget build(BuildContext context) => const SupportSpaceComponent();
 
   Future<void> loadPurchaserInfo() async {
-    final purchaserInfo = await Purchases.getPurchaserInfo();
-    getIt<SupportSpaceRepository>().purchaserInfo.add(purchaserInfo);
+    final customerInfo = await Purchases.getCustomerInfo();
+    getIt<SupportSpaceRepository>().customerInfo.add(customerInfo);
   }
 }

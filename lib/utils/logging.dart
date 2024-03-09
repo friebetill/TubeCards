@@ -19,7 +19,6 @@ Future<void> setupLogging() async {
         Sentry.captureException(
           record.error,
           stackTrace: record.stackTrace,
-          hint: message,
         );
       } else {
         Sentry.captureMessage(message);

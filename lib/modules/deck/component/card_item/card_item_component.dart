@@ -8,6 +8,7 @@ import '../../../../utils/custom_markdown_body.dart';
 import '../../../../utils/durations.dart';
 import '../../../../utils/formatted_duration.dart';
 import '../../../../utils/logging/visual_element_ids.dart';
+import '../../../../utils/themes/custom_theme.dart';
 import '../../../../widgets/component/component.dart';
 import '../../../../widgets/list_tile_adapter.dart';
 import '../../../../widgets/visual_element.dart';
@@ -77,7 +78,7 @@ class _CardItemView extends StatelessWidget {
       childBuilder: (controller) {
         return ListTileAdapter(
           backgroundColor: viewModel.isSelected
-              ? Theme.of(context).selectedRowColor
+              ? Theme.of(context).custom.selectedRowColor
               : Colors.transparent,
           child: ListTile(
             leading: _buildAnimatedCircleAvatar(context),
@@ -124,7 +125,7 @@ class _CardItemView extends StatelessWidget {
             viewModel.onAvatarTap();
           },
           child: TweenAnimationBuilder<double>(
-            duration: Durations.milliseconds100,
+            duration: CustomDurations.milliseconds100,
             tween: Tween<double>(begin: 0, end: viewModel.isSelected ? pi : 0),
             builder: (context, value, child) {
               return Transform(

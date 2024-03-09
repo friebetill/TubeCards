@@ -23,7 +23,7 @@ class EmptyDeckState extends State<EmptyDeck>
   void initState() {
     super.initState();
     _animationController = AnimationController(vsync: this)
-      ..repeat(period: Durations.milliseconds4000);
+      ..repeat(period: CustomDurations.milliseconds4000);
   }
 
   @override

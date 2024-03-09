@@ -1,9 +1,10 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:delta_markdown/delta_markdown.dart';
+import 'package:delta_markdown_converter/delta_markdown_converter.dart';
 import 'package:flutter/material.dart' hide Card;
 import 'package:flutter_quill/flutter_quill.dart';
+import 'package:flutter_quill/quill_delta.dart';
 import 'package:injectable/injectable.dart';
 import 'package:logging/logging.dart';
 import 'package:quiver/core.dart';
@@ -347,21 +348,21 @@ class UpsertCardBloc with ComponentBuildContext, ComponentLifecycleListener {
       // not at an invalid position once the text gets replaced.
       ..updateSelection(
         TextSelection.fromPosition(const TextPosition(offset: 0)),
-        ChangeSource.LOCAL,
+        ChangeSource.local,
       )
       // Remove all text except the new line at the end.
       ..replaceText(0, controller.document.length - 1, '', null)
       ..compose(
         Delta.fromJson(jsonDecode(markdownToDelta(text)) as List),
         const TextSelection.collapsed(offset: 0),
-        ChangeSource.LOCAL,
+        ChangeSource.local,
       )
       // Position the cursor at the end of the text.
       ..updateSelection(
         TextSelection.fromPosition(
           TextPosition(offset: controller.document.length - 1),
         ),
-        ChangeSource.LOCAL,
+        ChangeSource.local,
       );
   }
 

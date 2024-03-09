@@ -119,9 +119,13 @@ final getIt = GetIt.instance;
 
 final _logger = Logger('main.dart');
 
-@InjectableInit()
+@InjectableInit(
+  initializerName: 'init', // default
+  preferRelativeImports: true, // default
+  asExtension: true, // default
+)
 Future<void> initDependencyInjection() {
-  return $initGetIt(getIt, environment: 'graphql_isolate'); // graphql_main
+  return getIt.init(environment: 'graphql_isolate'); // graphql_main
 }
 
 Future<void> _initReminders() async {

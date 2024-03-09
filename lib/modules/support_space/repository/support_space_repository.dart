@@ -7,5 +7,5 @@ class SupportSpaceRepository {
   SupportSpaceRepository();
 
   // ignore: close_sinks
-  final purchaserInfo = BehaviorSubject<PurchaserInfo>();
+  final customerInfo = BehaviorSubject<CustomerInfo>();
 }

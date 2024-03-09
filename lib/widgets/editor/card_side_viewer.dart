@@ -1,8 +1,9 @@
 import 'dart:convert';
 
-import 'package:delta_markdown/delta_markdown.dart';
+import 'package:delta_markdown_converter/delta_markdown_converter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_quill/flutter_quill.dart';
+import 'package:flutter_quill/quill_delta.dart';
 
 import 'editor_style.dart';
 import 'embed_divider_builder.dart';
@@ -34,24 +35,23 @@ class CardSideViewer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return QuillEditor(
-      controller: _controller,
+      configurations: QuillEditorConfigurations(
+        controller: _controller,
+        readOnly: _readOnly,
+        onTapUp: (_, __) {
+          onTap?.call();
+          return onTap != null;
+        },
+        enableInteractiveSelection: false,
+        padding: padding,
+        embedBuilders: [
+          EmbedDividerBuilder(),
+          EmbedImageBuilder(),
+        ],
+        customStyles: buildEditorStyle(context),
+      ),
       scrollController: ScrollController(),
-      scrollable: true,
       focusNode: FocusNode(canRequestFocus: false),
-      autoFocus: false,
-      readOnly: _readOnly,
-      onTapUp: (_, __) {
-        onTap?.call();
-        return onTap != null;
-      },
-      enableInteractiveSelection: false,
-      expands: false,
-      padding: padding,
-      embedBuilders: [
-        EmbedDividerBuilder(),
-        EmbedImageBuilder(),
-      ],
-      customStyles: buildEditorStyle(context),
     );
   }
 
@@ -60,6 +60,6 @@ class CardSideViewer extends StatelessWidget {
 
     return delta.isEmpty
         ? Document()
-        : (Document()..compose(delta, ChangeSource.LOCAL));
+        : (Document()..compose(delta, ChangeSource.local));
   }
 }

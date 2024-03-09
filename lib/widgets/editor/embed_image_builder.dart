@@ -17,7 +17,7 @@ import 'editor_utils.dart';
 
 final _logger = Logger((EmbedImageBuilder).toString());
 
-class EmbedImageBuilder implements EmbedBuilder {
+class EmbedImageBuilder extends EmbedBuilder {
   @override
   String get key => BlockEmbed.imageType;
 
@@ -27,10 +27,12 @@ class EmbedImageBuilder implements EmbedBuilder {
   Widget build(
     BuildContext context,
     QuillController controller,
-    Embed embed,
+    Embed node,
     bool readOnly,
+    bool inline,
+    TextStyle textStyle,
   ) {
-    final imageUrl = embed.value.data as String;
+    final imageUrl = node.value.data as String;
 
     return Center(
       child: FutureBuilder<File>(

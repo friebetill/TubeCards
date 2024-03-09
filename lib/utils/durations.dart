@@ -1,5 +1,5 @@
 /// Standarized durations for the application.
-class Durations {
+class CustomDurations {
   static const milliseconds100 = Duration(milliseconds: 100);
   static const milliseconds200 = Duration(milliseconds: 200);
   static const milliseconds400 = Duration(milliseconds: 400);

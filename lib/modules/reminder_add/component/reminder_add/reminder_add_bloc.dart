@@ -135,7 +135,8 @@ class ReminderAddBloc with ComponentBuildContext, ComponentLifecycleListener {
       snackBarAction: Platform.isAndroid || Platform.isIOS
           ? SnackBarAction(
               label: S.of(context).openSettings,
-              onPressed: AppSettings.openNotificationSettings,
+              onPressed: () => AppSettings.openAppSettings(
+                  type: AppSettingsType.notification),
             )
           : null,
     );

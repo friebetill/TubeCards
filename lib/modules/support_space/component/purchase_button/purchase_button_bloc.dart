@@ -51,7 +51,7 @@ class PurchaseButtonBloc
   }
 
   PurchaseButtonViewModel _createViewModel(
-    List<Product> products,
+    List<StoreProduct> products,
     String Function(String price) textCallback,
     bool isLoading,
     PurchaseType purchaseType,
@@ -79,21 +79,20 @@ class PurchaseButtonBloc
 
     _isLoading.add(true);
     try {
-      final purchaserInfo =
+      final customerInfo =
           await Purchases.purchaseProduct(productId, type: purchaseType);
 
       final didUserBuy = purchaseType == PurchaseType.inapp
           ? _supportUsRepository
-                  .purchaserInfo.value.nonSubscriptionTransactions.length <
-              purchaserInfo.nonSubscriptionTransactions.length
-          : _supportUsRepository
-                  .purchaserInfo.value.activeSubscriptions.length <
-              purchaserInfo.activeSubscriptions.length;
+                  .customerInfo.value.nonSubscriptionTransactions.length <
+              customerInfo.nonSubscriptionTransactions.length
+          : _supportUsRepository.customerInfo.value.activeSubscriptions.length <
+              customerInfo.activeSubscriptions.length;
       if (didUserBuy) {
         messenger.showSuccessSnackBar(theme: theme, text: i18n.thankYouText);
       }
 
-      _supportUsRepository.purchaserInfo.add(purchaserInfo);
+      _supportUsRepository.customerInfo.add(customerInfo);
     } on PlatformException catch (e, s) {
       handlePlatformException(context, e, s);
     } finally {

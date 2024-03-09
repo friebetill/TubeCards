@@ -50,7 +50,6 @@ final ThemeData lightTheme = ThemeData(
     bodyText1: TextStyle(color: Colors.grey.shade900),
     subtitle1: TextStyle(color: Colors.grey.shade900),
   ),
-  selectedRowColor: const Color(0xFFE8F0FD),
   scaffoldBackgroundColor: _surfaceColor,
   textTheme: TextTheme(
     headline4: TextStyle(color: Colors.grey.shade900),
@@ -62,6 +61,7 @@ final ThemeData lightTheme = ThemeData(
     elevation8DPColor: _surfaceColor,
     elevation10DPColor: _surfaceColor,
     elevation24DPColor: _surfaceColor,
+    selectedRowColor: const Color(0xFFE8F0FD),
   ));
 
 final _primaryColor = Colors.blue.shade700;

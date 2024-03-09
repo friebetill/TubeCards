@@ -101,7 +101,7 @@ class _LearnStatisticView extends StatelessWidget {
                         alignment: Alignment.centerRight,
                         child: AnimatedNumber(
                           end: strengthIncrease.abs(),
-                          duration: Durations.milliseconds2000,
+                          duration: CustomDurations.milliseconds2000,
                           style: numberStyle,
                           decimalPoint: 0,
                           isLoading: viewModel.isLoading,

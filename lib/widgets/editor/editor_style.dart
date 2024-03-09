@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quill/flutter_quill.dart';
-import 'package:tuple/tuple.dart';
 
 DefaultStyles buildEditorStyle(BuildContext context) {
   final theme = Theme.of(context);
@@ -10,7 +9,7 @@ DefaultStyles buildEditorStyle(BuildContext context) {
       .style
       .copyWith(fontSize: 20, height: 1.2, fontFamily: fontFamily);
 
-  const baseSpacing = Tuple2<double, double>(6, 0);
+  const baseSpacing = const VerticalSpacing(6, 0);
 
   return DefaultStyles(
     h1: DefaultTextBlockStyle(
@@ -20,8 +19,8 @@ DefaultStyles buildEditorStyle(BuildContext context) {
         height: 1.15,
         fontWeight: FontWeight.w300,
       ),
-      const Tuple2(16, 0),
-      const Tuple2(0, 0),
+      const VerticalSpacing(16, 0),
+      const VerticalSpacing(0, 0),
       null,
     ),
     h2: DefaultTextBlockStyle(
@@ -31,8 +30,8 @@ DefaultStyles buildEditorStyle(BuildContext context) {
         height: 1.15,
         fontWeight: FontWeight.normal,
       ),
-      const Tuple2(8, 0),
-      const Tuple2(0, 0),
+      const VerticalSpacing(8, 0),
+      const VerticalSpacing(0, 0),
       null,
     ),
     h3: DefaultTextBlockStyle(
@@ -42,14 +41,14 @@ DefaultStyles buildEditorStyle(BuildContext context) {
         height: 1.25,
         fontWeight: FontWeight.w500,
       ),
-      const Tuple2(8, 0),
-      const Tuple2(0, 0),
+      const VerticalSpacing(8, 0),
+      const VerticalSpacing(0, 0),
       null,
     ),
     paragraph: DefaultTextBlockStyle(
       baseStyle,
-      const Tuple2(6, 0),
-      const Tuple2(0, 0),
+      const VerticalSpacing(6, 0),
+      const VerticalSpacing(0, 0),
       null,
     ),
     bold: const TextStyle(fontWeight: FontWeight.bold),
@@ -65,21 +64,21 @@ DefaultStyles buildEditorStyle(BuildContext context) {
         fontSize: 20,
         color: Colors.grey.withOpacity(0.6),
       ),
-      const Tuple2(0, 0),
-      const Tuple2(0, 0),
+      const VerticalSpacing(0, 0),
+      const VerticalSpacing(0, 0),
       null,
     ),
     lists: DefaultListBlockStyle(
       baseStyle,
       baseSpacing,
-      const Tuple2(0, 6),
+      const VerticalSpacing(0, 6),
       null,
       null,
     ),
     quote: DefaultTextBlockStyle(
       TextStyle(color: baseStyle.color!.withOpacity(0.6)),
       baseSpacing,
-      const Tuple2(6, 2),
+      const VerticalSpacing(6, 2),
       BoxDecoration(
         border: Border(
           left: BorderSide(width: 4, color: Colors.grey.shade300),
@@ -96,7 +95,7 @@ DefaultStyles buildEditorStyle(BuildContext context) {
         height: 1.15,
       ),
       baseSpacing,
-      const Tuple2(0, 0),
+      const VerticalSpacing(0, 0),
       BoxDecoration(
         color: theme.brightness == Brightness.light
             ? Colors.blueGrey.shade50
@@ -107,19 +106,19 @@ DefaultStyles buildEditorStyle(BuildContext context) {
     indent: DefaultTextBlockStyle(
       baseStyle,
       baseSpacing,
-      const Tuple2(0, 6),
+      const VerticalSpacing(0, 6),
       null,
     ),
     align: DefaultTextBlockStyle(
       baseStyle,
-      const Tuple2(0, 0),
-      const Tuple2(0, 0),
+      const VerticalSpacing(0, 0),
+      const VerticalSpacing(0, 0),
       null,
     ),
     leading: DefaultTextBlockStyle(
       baseStyle,
-      const Tuple2(0, 0),
-      const Tuple2(0, 0),
+      const VerticalSpacing(0, 0),
+      const VerticalSpacing(0, 0),
       null,
     ),
     sizeSmall: const TextStyle(fontSize: 10),

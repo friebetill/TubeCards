@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../data/models/deck.dart';
 import '../../../../i18n/i18n.dart';
 import '../../../../utils/logging/visual_element_ids.dart';
+import '../../../../utils/themes/custom_theme.dart';
 import '../../../../widgets/component/component.dart';
 import '../../../../widgets/list_tile_adapter.dart';
 import '../../../../widgets/visual_element.dart';
@@ -78,6 +79,7 @@ class _InvitesView extends StatelessWidget {
               title: Text(S.of(context).inviteViewers),
               leading: CircleAvatar(
                 backgroundColor: Theme.of(context)
+                    .custom
                     .selectedRowColor
                     .withAlpha(isEnabled ? 255 : 100),
                 child: Icon(
@@ -122,6 +124,7 @@ class _InvitesView extends StatelessWidget {
               title: Text(S.of(context).inviteEditors),
               leading: CircleAvatar(
                 backgroundColor: Theme.of(context)
+                    .custom
                     .selectedRowColor
                     .withAlpha(isEnabled ? 255 : 100),
                 child: Icon(
@@ -152,7 +155,7 @@ class _InvitesView extends StatelessWidget {
             child: ListTile(
               title: Text(S.of(context).store),
               leading: CircleAvatar(
-                backgroundColor: Theme.of(context).selectedRowColor,
+                backgroundColor: Theme.of(context).custom.selectedRowColor,
                 child: Icon(
                   Icons.store_outlined,
                   color: Theme.of(context).colorScheme.primary,
@@ -190,6 +193,7 @@ class _InvitesView extends StatelessWidget {
               title: Text(S.of(context).publish),
               leading: CircleAvatar(
                 backgroundColor: Theme.of(context)
+                    .custom
                     .selectedRowColor
                     .withAlpha(isEnabled ? 255 : 100),
                 child: Icon(
@@ -230,7 +234,8 @@ class _InvitesViewSkeleton extends StatelessWidget {
         enabled: false,
         title: Text(S.of(context).inviteViewers),
         leading: CircleAvatar(
-          backgroundColor: Theme.of(context).selectedRowColor.withAlpha(100),
+          backgroundColor:
+              Theme.of(context).custom.selectedRowColor.withAlpha(100),
           child: Icon(
             Icons.visibility_outlined,
             color: Theme.of(context).disabledColor,
@@ -246,7 +251,8 @@ class _InvitesViewSkeleton extends StatelessWidget {
         enabled: false,
         title: Text(S.of(context).inviteEditors),
         leading: CircleAvatar(
-          backgroundColor: Theme.of(context).selectedRowColor.withAlpha(100),
+          backgroundColor:
+              Theme.of(context).custom.selectedRowColor.withAlpha(100),
           child: Icon(
             Icons.edit_outlined,
             color: Theme.of(context).disabledColor,

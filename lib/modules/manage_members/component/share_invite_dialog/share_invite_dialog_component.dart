@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../../../../data/models/role.dart';
 import '../../../../i18n/i18n.dart';
 import '../../../../utils/icon_sized_loading_indicator.dart';
+import '../../../../utils/themes/custom_theme.dart';
 import '../../../../widgets/component/component.dart';
 import 'share_invite_dialog_bloc.dart';
 import 'share_invite_dialog_view_model.dart';
@@ -67,7 +68,7 @@ class _ShareInviteDialogView extends StatelessWidget {
   Widget _buildPictogram(BuildContext context) {
     return CircleAvatar(
       radius: 36,
-      backgroundColor: Theme.of(context).selectedRowColor,
+      backgroundColor: Theme.of(context).custom.selectedRowColor,
       child: Icon(
         _viewModel.role == Role.viewer
             ? Icons.visibility_outlined
@@ -106,7 +107,7 @@ class _ShareInviteDialogView extends StatelessWidget {
   Widget _buildLink(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Theme.of(context).selectedRowColor,
+        color: Theme.of(context).custom.selectedRowColor,
         borderRadius: BorderRadius.circular(5),
       ),
       child: SizedBox(
